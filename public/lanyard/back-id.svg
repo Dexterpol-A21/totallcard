@@ -1,0 +1,35 @@
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo plástico -->
+  <rect width="400" height="600" fill="#fcfcfc" rx="20" ry="20" />
+  
+  <!-- Banner superior rojo -->
+  <rect x="0" y="0" width="400" height="80" fill="#e1061a" rx="20" ry="20" />
+  <!-- Rectángulo para tapar las curvas de abajo del banner -->
+  <rect x="0" y="40" width="400" height="40" fill="#e1061a" />
+  
+  <text x="200" y="52" font-family="sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">TECNOLOGÍA NFC</text>
+
+  <!-- Simulador de código QR al centro -->
+  <rect x="125" y="150" width="150" height="150" fill="none" stroke="#000000" stroke-width="4" rx="10" />
+  <!-- Cuadros internos del QR (fake) -->
+  <rect x="140" y="165" width="30" height="30" fill="#000000" />
+  <rect x="230" y="165" width="30" height="30" fill="#000000" />
+  <rect x="140" y="255" width="30" height="30" fill="#000000" />
+  <rect x="185" y="210" width="30" height="30" fill="#000000" />
+  <rect x="205" y="240" width="45" height="45" fill="#000000" />
+  
+  <text x="200" y="340" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333333" text-anchor="middle">ESCANEA EL CÓDIGO</text>
+  
+  <!-- Texto instructivo -->
+  <path d="M 50,380 L 350,380" stroke="#cccccc" stroke-width="2" />
+  
+  <text x="200" y="420" font-family="sans-serif" font-size="14" fill="#666666" text-anchor="middle">Acerca esta tarjeta a cualquier</text>
+  <text x="200" y="445" font-family="sans-serif" font-size="14" fill="#666666" text-anchor="middle">smartphone compatible para</text>
+  <text x="200" y="470" font-family="sans-serif" font-size="14" fill="#666666" text-anchor="middle">compartir tu contacto al instante.</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="520" width="400" height="80" fill="#111111" rx="20" ry="20" />
+  <rect x="0" y="520" width="400" height="40" fill="#111111" />
+  
+  <text x="200" y="565" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">www.totallcard.com</text>
+</svg>

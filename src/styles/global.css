@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-corporate-red: #E1061A;
+  --color-deep-charcoal: #333333;
+  --color-medium-gray: #757575;
+  --color-light-gray: #F2F2F2;
+  --color-white: #FFFFFF;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-headings: 'Work Sans', sans-serif;
+  
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}

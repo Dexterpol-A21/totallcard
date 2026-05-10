@@ -1,0 +1,1260 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Lanyard from '../components/Lanyard.jsx';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+        <!-- Lanyard global CTA -->
+        <div class="fixed inset-0 z-[100] pointer-events-none">
+            <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+        </div>
+
+        <Header submenu="none" />
+
+	<!-- Hero Section -->
+	<section class="min-h-[85vh] flex items-center pt-32 pb-8 md:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
+		<div class="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-8 items-center w-full">
+			<div class="z-10">
+				<p class="font-headings text-corporate-red font-bold text-xs md:text-sm tracking-widest uppercase mb-4">
+					Impresión de identidad. Conexión de confianza.
+				</p>
+				<h1 class="font-headings font-extrabold text-4xl md:text-5xl lg:text-6xl text-deep-charcoal leading-[1.1] mb-6">
+					Soluciones integrales en credencialización
+				</h1>
+				<p class="font-sans text-base md:text-lg text-medium-gray mb-6 max-w-xl">
+					Descubre nuestra oferta completa: desde impresión de credenciales PVC y tarjetas de lealtad, hasta impresoras de escritorio, software especializado y servicio técnico profesional.
+				</p>
+				
+				<div class="flex flex-col sm:flex-row gap-6 mb-6 items-center">
+					<a href="https://wa.me/5211234567890" class="download-button inline-flex">
+						<div class="docs py-3 px-6"> <!-- Ajuste de padding manual para el hero -->
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
+							<span class="font-bold text-[15px] tracking-wider uppercase">COTIZACIÓN POR WHATSAPP</span>
+						</div>
+						<div class="download">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+						</div>
+					</a>
+					<a href="#productos" class="more-button inline-flex">
+						<div class="docs py-3 px-6">
+							<span class="font-bold text-[15px] tracking-wider uppercase">Conocer más</span>
+						</div>
+						<div class="download">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+						</div>
+					</a>
+				</div>
+                
+                <div class="flex flex-wrap md:flex-nowrap justify-start gap-6 md:gap-8 pt-2">
+                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
+                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                        </div>
+                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Calidad<br />Garantizada</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
+                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Seguridad<br />Integrada</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
+                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Soluciones<br />Personalizadas</span>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="relative w-full h-[350px] md:h-[500px]">
+                <div class="absolute inset-0 z-0 opacity-10">
+                    <!-- Red angular lines background decoration -->
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full text-corporate-red" fill="none" stroke="currentColor" stroke-width="0.5">
+                        <path d="M0,100 L50,0 L100,100" />
+                    </svg>
+                </div>
+                                <!-- Hero Right Placeholder -->
+                                <div class="w-full h-full relative z-10 pointer-events-none select-none">
+                                        <img draggable="false" src="https://placehold.co/800x600/f9f9f9/e1061a?text=Impresitas+y+Tarjetas" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+                                </div>
+                                </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Productos Destacados -->
+        <section class="pb-10 pt-6 md:pt-10 bg-slate-50 px-6 relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-corporate-red/5 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="max-w-[1280px] mx-auto relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                                <div>
+                                        <div class="flex items-center gap-3 mb-3">
+                                                <div class="w-12 h-[2px] bg-corporate-red"></div>
+                                                <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Explora nuestro catálogo</span>
+                                        </div>
+                                        <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Productos Destacados</h2>
+                                </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <!-- Item 1: Impresoras -->
+                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                        <!-- Image Placeholder -->
+                                        <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
+                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Impresoras" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Impresoras PVC</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Impresión de alta calidad y durabilidad para credenciales seguras y profesionales.</p>
+                                        <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
+                                                Saber más 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </div>
+                                </a>
+
+                                <!-- Item 2: Tarjetas PVC -->
+                                <a href="#productos" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                        <!-- Image Placeholder -->
+                                        <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
+                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Tarjetas" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Tarjetas PVC</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Tarjetas inteligentes, proximidad y accesorios con la máxima seguridad y tecnología.</p>
+                                        <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
+                                                Saber más 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </div>
+                                </a>
+
+                                <!-- Item 3: Software -->
+                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                        <!-- Image Placeholder -->
+                                        <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
+                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Software" alt="Software Credencialización" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Software Credencialización</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Gestión segura y personalizada para el diseño y emisión de tarjetas.</p>
+                                        <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
+                                                Saber más 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </div>
+                                </a>
+
+                                <!-- Item 4: Consumibles -->
+                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                        <!-- Image Placeholder -->
+                                        <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
+                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Consumibles" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Consumibles y Cintas</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Ribbons, kits de limpieza y supplies originales de alto rendimiento.</p>
+                                        <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
+                                                Saber más 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </div>
+                                </a>
+                        </div>
+                </div>
+        </section>
+
+	<!-- Categorías de Productos -->
+        <section id="productos" class="pb-12 pt-6 md:pt-10 bg-light-gray/20 px-6 overflow-hidden">
+                <div class="max-w-[1280px] mx-auto relative">
+<div class="mb-12">
+                            <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Soluciones de Identificación</span>
+                            </div>
+                            <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal uppercase tracking-widest">Tarjetas, Gafetes y Más</h2>
+                        </div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" id="cards-container">
+				<!-- Item 1 (PVC) -->
+				<a href="/gafetes-empresariales" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:-rotate-1 relative flex flex-col w-full aspect-[54/86] max-w-[280px] mx-auto bg-white rounded-[14px] overflow-hidden shadow-md border border-gray-300" style="transition-delay: 0.1s;">
+                    <!-- Perforación (Punch) -->
+                    <div class="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-2.5 bg-gray-100 rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] border border-gray-300 z-30"></div>
+                    
+                    <!-- Header Corporativo -->
+                    <div class="w-full bg-white border-b border-gray-200 pt-7 pb-2 px-4 flex justify-between items-center z-20">
+						<div class="flex items-center">
+                            <!-- Icono Tarjeta (Izquierda) -->
+                            <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-4 object-contain -mt-0.5 -mr-2.5 relative z-30" />
+                            <!-- Texto con flechas arriba y abajo -->
+                            <div class="flex flex-col items-center justify-center -space-y-2">
+                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 relative z-20 w-[90px]" />
+                                <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-5 object-contain relative z-10" />
+                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 rotate-180 relative z-20 w-[90px]" />
+                            </div>
+                        </div>
+                        <div class="text-deep-charcoal text-[7.5px] uppercase font-bold tracking-widest text-right leading-[1.2]">Acceso<br>Autorizado</div>
+                    </div>
+
+                    <!-- Contenido y Foto -->
+                    <div class="flex-1 flex flex-col items-center p-5 pt-6 relative overflow-hidden">
+                        
+                        <!-- Marca de agua: Flecha Gigante Roja -->
+                        <div class="absolute -right-12 top-1/4 opacity-[0.06] -rotate-12 z-0 transition-transform duration-700 group-hover:scale-110 pointer-events-none">
+                            <img src="/icons/flechaLogoRojo.svg" alt="" class="w-48" />
+                        </div>
+
+                        <!-- Foto del Empleado (Silueta / Icono) -->
+                        <div class="w-[100px] h-[100px] rounded-full overflow-hidden border-[3px] border-corporate-red shadow-md bg-gray-50 mb-3 z-10 flex items-center justify-center relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        
+                        <!-- Datos -->
+                        <h3 class="font-headings font-bold text-lg text-deep-charcoal leading-tight text-center">Gafetes Empresariales</h3>
+                        <p class="font-sans text-[11px] text-corporate-blue font-semibold uppercase tracking-wider mb-1 mt-1">Identidad Corporativa</p>
+                        <p class="font-sans text-[12px] text-medium-gray text-center leading-snug w-full mt-2">Identificación profesional, segura y con estilo para los colaboradores de tu empresa.</p>
+                        
+                        <!-- Código de Barras -->
+                        <div class="mt-auto w-full">
+                            <div class="w-full flex flex-col items-center justify-center border-t border-gray-100 pt-3">
+                                <div class="flex justify-center gap-[2px] h-8 w-[80%] opacity-80">
+                                    <div class="w-1 h-full bg-black"></div>
+                                    <div class="w-0.5 h-full bg-black"></div>
+                                    <div class="w-1.5 h-full bg-black"></div>
+                                    <div class="w-0.5 h-full bg-black"></div>
+                                    <div class="w-1 h-full bg-black"></div>
+                                    <div class="w-2 h-full bg-black"></div>
+                                    <div class="w-[1px] h-full bg-black"></div>
+                                    <div class="w-1.5 h-full bg-black"></div>
+                                    <div class="w-0.5 h-full bg-black"></div>
+                                    <div class="w-1 h-full bg-black"></div>
+                                    <div class="w-0.5 h-full bg-black"></div>
+                                    <div class="w-2 h-full bg-black"></div>
+                                    <div class="w-[1px] h-full bg-black"></div>
+                                    <div class="w-1 h-full bg-black"></div>
+                                    <div class="w-1.5 h-full bg-black"></div>
+                                </div>
+                                <span class="text-[9px] tracking-[0.25em] font-mono text-gray-500 mt-1">84902175932</span>
+                            </div>
+                        </div>
+                    </div>
+				</a>
+
+				<!-- Item 2 (Escolares) -->
+				<a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:rotate-1 relative flex flex-col w-full aspect-[54/86] max-w-[280px] mx-auto bg-white rounded-[14px] overflow-hidden shadow-md border border-gray-300" style="transition-delay: 0.2s;">
+                    <!-- Perforación (Punch) -->
+                    <div class="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-2.5 bg-gray-100 rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] border border-gray-300 z-30"></div>
+                    
+                    <!-- Header Escolar -->
+                    <div class="w-full bg-[#1e3a8a] border-b-[4px] border-[#fbbf24] pt-7 pb-2 px-4 flex justify-between items-center z-20">
+						<div class="flex items-center">
+                            <!-- Icono Escudo (Simulación) -->
+                            <div class="w-6 h-7 bg-[#fbbf24] rounded-b-lg border-2 border-white flex items-center justify-center -mr-2 relative z-30">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                            </div>
+                            <div class="flex flex-col ml-3">
+                                <span class="text-white font-headings font-black text-[12px] leading-none tracking-wide">INSTITUTO</span>
+                                <span class="text-[#fbbf24] font-sans font-bold text-[8px] uppercase tracking-widest leading-none mt-0.5">Excelencia</span>
+                            </div>
+                        </div>
+                        <div class="text-white text-[7px] uppercase font-bold tracking-widest text-right leading-[1.2]">Ciclo<br>2026-2027</div>
+                    </div>
+
+                    <!-- Contenido y Foto -->
+                    <div class="flex-1 flex flex-col items-center p-5 pt-6 relative overflow-hidden">
+                        
+                        <!-- Elementos de diseño escolar de fondo -->
+                        <div class="absolute -right-6 top-10 w-24 h-24 bg-blue-50 rounded-full z-0 opacity-80"></div>
+                        <div class="absolute -left-8 -bottom-4 w-32 h-32 bg-yellow-50 rounded-full z-0 opacity-80"></div>
+
+                        <!-- Foto del Alumno -->
+                        <div class="w-[100px] h-[100px] overflow-hidden border-[3px] border-[#1e3a8a] shadow-md bg-gray-50 mb-3 z-10 flex items-center justify-center relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                        </div>
+                        
+                        <!-- Datos -->
+                        <h3 class="font-headings font-bold text-lg text-deep-charcoal leading-tight text-center relative z-10">Credencial Escolar</h3>
+                        <p class="font-sans text-[11px] text-[#1e3a8a] font-bold uppercase tracking-widest mb-1 mt-0.5 relative z-10">Alumno</p>
+                        <p class="font-sans text-[11px] text-medium-gray text-center leading-snug w-full mt-1 relative z-10 px-2">Soluciones seguras para estudiantes, docentes y administrativos.</p>
+                        
+                        <!-- Código de Barras y Matrícula -->
+                        <div class="mt-auto w-full relative z-10">
+                            <div class="w-full flex flex-col items-center justify-center pt-2">
+                                <div class="flex justify-center gap-[2px] h-8 w-[80%] opacity-80 mix-blend-multiply">
+                                    <div class="w-1.5 h-full bg-black"></div><div class="w-0.5 h-full bg-black"></div><div class="w-1 h-full bg-black"></div><div class="w-2 h-full bg-black"></div><div class="w-[1px] h-full bg-black"></div><div class="w-1.5 h-full bg-black"></div><div class="w-[1px] h-full bg-black"></div><div class="w-1 h-full bg-black"></div><div class="w-0.5 h-full bg-black"></div><div class="w-1 h-full bg-black"></div><div class="w-2 h-full bg-black"></div><div class="w-0.5 h-full bg-black"></div><div class="w-1.5 h-full bg-black"></div>
+                                </div>
+                                <span class="text-[9px] tracking-[0.2em] font-mono text-gray-500 mt-1">MAT-2026849</span>
+                            </div>
+                        </div>
+                    </div>
+				</a>
+
+
+                <!-- Item 8 (Lanyards) -->
+                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:-rotate-1 flex flex-col justify-between p-0 w-full aspect-[54/86] max-w-[280px] mx-auto bg-white/[0.03] backdrop-blur-xl rounded-[14px] overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.2)] border border-white/20 relative" style="transition-delay: 0.3s;">
+                    
+                    <!-- Textura de plástico vinil esmerilado (Portagafete transparente) -->
+                    <div class="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.6%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%220.5%22/%3E%3C/svg%3E');"></div>
+                    
+                    <!-- Header Complejo: Hardware Clip y Cinta Lanyard -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center z-20">
+                        <!-- Cinta de Lanyard (Sube hacia arriba) -->
+                        <div class="w-14 h-11 bg-corporate-red relative overflow-hidden flex items-end justify-center shadow-lg border-x mx-auto border-[#b00b21]" style="background-image: repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px);">
+                            <!-- Costura en la cinta -->
+                            <div class="absolute bottom-1.5 w-full h-[1px] border-b-[1.5px] border-dashed border-white/40"></div>
+                        </div>
+                        
+                        <!-- Gancho/Clip Metálico (Mosquetón perro) -->
+                        <div class="w-8 h-10 -mt-0.5 relative flex flex-col items-center z-10 filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.4)]">
+                            <!-- Base del anillo que sujeta la cinta -->
+                            <div class="w-7 h-2.5 bg-gradient-to-b from-[#d1d5db] to-[#94a3b8] rounded-sm border border-[#475569] shadow-inner"></div>
+                            <!-- Cuello giratorio -->
+                            <div class="w-3 h-2.5 bg-gradient-to-b from-[#94a3b8] to-[#475569] border-x border-[#334155]"></div>
+                            <!-- Cuerpo del gancho -->
+                            <div class="w-5 h-6 rounded-b-full border-[3px] border-t-0 border-[#cbd5e1] border-b-[#94a3b8] border-x-[#cbd5e1] relative shadow-[inset_0_1px_2px_rgba(0,0,0,0.5)]">
+                                <!-- Resorte/Pestillo lateral -->
+                                <div class="absolute -right-[4.5px] top-0 w-1 h-3.5 bg-gradient-to-l from-[#e2e8f0] to-[#94a3b8] rounded-l-full border border-l-0 border-[#475569]"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Agujero (Punch/Ranura) en el portagafete plástico -->
+                        <div class="w-14 h-2.5 rounded-full bg-slate-950/80 shadow-[inset_0_2px_4px_rgba(0,0,0,0.8),0_1px_0_rgba(255,255,255,0.3)] border border-slate-700/50 -mt-1.5 relative z-0"></div>
+                    </div>
+
+                    <!-- Falso Gafete insertado "dentro" del portagafetes -->
+                    <div class="absolute inset-x-5 top-[4.5rem] bottom-5 bg-slate-800 rounded-md border border-slate-700/80 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col pointer-events-none group-hover:bg-slate-750 transition-colors">
+                        
+                        <!-- Pleca superior del gafete impreso -->
+                        <div class="h-5 w-full bg-slate-700/80 border-b border-slate-600/50 flex space-x-1 items-center px-3 opacity-60">
+                            <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                            <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                        </div>
+
+                        <!-- Contenido y Copy del Gafete -->
+                        <div class="p-4 flex-1 flex flex-col justify-center relative">
+                            <!-- Falso Barcode/Patrón a la derecha -->
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2 flex space-x-[2px] opacity-10 rotate-90 transform origin-right">
+                                <div class="h-10 w-[2px] bg-white"></div><div class="h-10 w-1 bg-white"></div><div class="h-10 w-[1px] bg-white"></div><div class="h-10 w-[3px] bg-white"></div><div class="h-10 w-[2px] bg-white"></div><div class="h-10 w-1 bg-white"></div>
+                            </div>
+
+                            <div class="relative z-10">
+                                <h3 class="font-headings font-bold text-base md:text-lg mb-1 text-white leading-tight">Portagafetes y lanyards</h3>
+                                <p class="font-sans text-[10px] md:text-[11px] text-slate-400 leading-relaxed max-w-[85%]">Accesorios funcionales y resistentes que complementan tu identidad profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 3 (Membresía - Full PVC Horizontal) -->
+                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:rotate-2 relative flex flex-col w-full aspect-[86/54] lg:max-w-[400px] mx-auto bg-gradient-to-br from-[#1a1a1a] via-[#0d0d0d] to-black rounded-[14px] overflow-hidden shadow-xl border border-[#333]" style="transition-delay: 0.4s;">
+                    <!-- Reflejo Metálico -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-30"></div>
+                    <!-- Acento dorado fondo -->
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-600/10 blur-3xl rounded-full z-0"></div>
+
+                    <div class="p-5 sm:p-6 flex flex-col h-full relative z-20">
+                        <!-- Top Section -->
+                        <div class="flex justify-between items-start">
+                            <div class="flex flex-col">
+                                <span class="text-[#fbbf24] font-headings font-black text-2xl tracking-widest drop-shadow-md leading-none">CLUB</span>
+                                <span class="text-[#fbbf24]/80 font-sans font-light text-[9px] tracking-[0.4em] uppercase mt-1">Premium</span>
+                            </div>
+                            <span class="text-white/80 w-8 h-8 rounded-full border border-gray-700 bg-gray-900/50 flex items-center justify-center shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </span>
+                        </div>
+
+                        <!-- Parte Central: Chip y Descripción -->
+                        <div class="mt-4 flex justify-between items-center w-full">
+                            <!-- EMV Chip -->
+                            <div class="w-12 h-9 rounded-md border border-[#fbbf24]/50 bg-gradient-to-br from-[#fde68a] via-[#fbbf24] to-[#b45309] shadow-inner opacity-90 grid grid-cols-3 grid-rows-3 gap-[1px] p-[1px] shrink-0">
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm bg-black/10"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                                <div class="border border-black/10 rounded-sm"></div>
+                            </div>
+                            
+                            <!-- Titulo y Descripcion Integrados -->
+                            <div class="flex flex-col items-end text-right ml-3">
+                                <h3 class="text-[#fbbf24] font-headings font-bold text-base sm:text-lg md:text-xl leading-tight">Tarjetas de membresía</h3>
+                                <p class="text-gray-300 font-sans text-[11px] sm:text-[12px] leading-snug mt-2 max-w-[220px]">Fortalece la relación con tus clientes y ofrece experiencias exclusivas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Nombre del Cliente -->
+                        <div class="mt-auto flex justify-between items-end mb-2 border-t border-gray-700/50 pt-2">
+                            <div class="text-white/60 font-sans text-[11px] sm:text-[12px] tracking-widest uppercase font-semibold">MIEMBRO EXCLUSIVO</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 4 (Lealtad - Full PVC Horizontal) -->
+                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-rotate-2 relative flex flex-col w-full aspect-[86/54] lg:max-w-[400px] mx-auto bg-[#141414] rounded-[14px] overflow-hidden shadow-xl border border-gray-700/80" style="transition-delay: 0.5s;">
+                    <!-- Textura Mate y Reflejo transversal -->
+                    <div class="absolute inset-0 opacity-[0.04] mix-blend-overlay z-0" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+                    <div class="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-1/2 transition-all duration-1000 rotate-45 z-30 pointer-events-none"></div>
+                    
+                    <div class="p-5 sm:p-6 flex flex-col h-full relative z-20">
+                        <!-- Top Section con Titulo Original -->
+                        <div class="flex justify-between items-start mb-2 mt-1">
+                            <div class="flex flex-col">
+                                <h3 class="text-white font-headings font-bold text-base sm:text-lg md:text-xl leading-tight">Tarjetas de lealtad</h3>
+                                <p class="text-gray-300 font-sans text-[11px] sm:text-[12px] leading-snug mt-2 max-w-[90%]">Diseños atractivos que impulsan la lealtad y recompensan a tus clientes.</p>
+                            </div>
+                            <span class="text-gray-400 font-sans text-[9px] tracking-widest uppercase border border-gray-600 px-2 py-0.5 rounded-full shrink-0">Fidelidad</span>
+                        </div>
+
+                        <!-- Slots de sellos centralizados -->
+                        <div class="flex-1 flex flex-col justify-center w-full mt-3">
+                            <div class="flex justify-between items-center w-full max-w-[100%] mx-auto bg-black/60 p-2 sm:p-3 rounded-full border border-white/5 shadow-inner">
+                                <!-- Sello ganado -->
+                                <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-2 border-white/20 flex items-center justify-center bg-white/5 relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-white drop-shadow-md"><path d="M20 6L9 17l-5-5"/></svg>
+                                </div>
+                                <!-- Sello ganado -->
+                                <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-2 border-white/20 flex items-center justify-center bg-white/5 relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-white drop-shadow-md"><path d="M20 6L9 17l-5-5"/></svg>
+                                </div>
+                                <!-- Vacío 3 -->
+                                <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-2 border-dashed border-gray-600 flex items-center justify-center">
+                                    <span class="text-gray-500 font-bold text-sm">3</span>
+                                </div>
+                                <!-- Vacío 4 -->
+                                <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-2 border-dashed border-gray-600 flex items-center justify-center">
+                                    <span class="text-gray-500 font-bold text-sm">4</span>
+                                </div>
+                                <!-- Premio 5 -->
+                                <div class="w-8 sm:w-10 h-8 sm:h-10 rounded-full border-2 border-corporate-red/60 bg-corporate-red/10 flex items-center justify-center relative overflow-hidden group/gift">
+                                    <div class="absolute inset-0 bg-corporate-red/20 opacity-0 group-hover/gift:opacity-100 transition-opacity"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e1061a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative z-10"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto flex justify-between items-end border-t border-gray-800/80 pt-3">
+                            <div class="text-gray-400 font-sans text-[9px] sm:text-[10px] tracking-[0.2em] uppercase max-w-[70%] leading-relaxed">
+                                ACUMULA Y GANA BENEFICIOS
+                            </div>
+                            <div class="flex space-x-1">
+                                <div class="w-1.5 h-1.5 rounded-full bg-gray-600"></div><div class="w-1.5 h-1.5 rounded-full bg-gray-600"></div><div class="w-1.5 h-1.5 rounded-full bg-gray-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+<!-- Item 5 (QR - Full PVC Horizontal) -->
+                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:rotate-1 relative flex flex-row items-center justify-between w-full aspect-[86/54] lg:max-w-[400px] mx-auto bg-slate-900 rounded-[14px] overflow-hidden shadow-2xl border border-slate-700 px-5 sm:px-6 py-5 sm:py-6" style="transition-delay: 0.6s;">
+                    <!-- Textura mate PVC oscuro -->
+                    <div class="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+                    
+                    <!-- Reflejo curvo elegante polvo/luz -->
+                    <div class="absolute -inset-[100%] bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-1/2 transition-all duration-1000 -rotate-12 z-30 pointer-events-none"></div>
+
+                    <!-- Columna Izquierda (Información Estilo Contacto) -->
+                    <div class="flex flex-col justify-between h-full w-[55%] relative z-20 pr-3">
+                        <!-- Top Logo / Title -->
+                        <div class="flex flex-col mb-1 space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                                <h3 class="text-white font-headings font-bold text-[15px] sm:text-[17px] leading-tight">Tarjetas con QR</h3>
+                            </div>
+                        </div>
+
+                        <!-- Mid Text (Name block) -->
+                        <div class="my-auto mt-2">
+                            <h4 class="text-corporate-red font-sans font-bold text-[11px] sm:text-[12px] leading-tight tracking-[0.03em]">TOTALLCARD CONNECT</h4>
+                            <p class="text-slate-200 font-sans text-[10px] sm:text-[11px] leading-snug mt-2 opacity-95">Comparte información al instante y conecta de forma segura.</p>
+                        </div>
+
+                        <!-- Bottom lines (Contact style icons) -->
+                        <div class="space-y-[0.45rem] mt-3">
+                            <div class="flex items-center space-x-2 text-slate-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                                <span class="font-sans text-[8px] sm:text-[9px] tracking-wider">Conexión universal</span>
+                            </div>
+                            <!-- Cambiamos lo de las métricas por algo de contacto directo -->
+                            <div class="flex items-center space-x-2 text-slate-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span class="font-sans text-[8px] sm:text-[9px] tracking-wider">Contacto en 1 clic</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-slate-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 4 21 20 21 21 6 3 6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                <span class="font-sans text-[8px] sm:text-[9px] tracking-wider">V-Card Interactiva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha (QR Gigante y Realista) -->
+                    <div class="w-[43%] h-[90%] flex items-center justify-end relative z-20 group-hover:scale-[1.02] transition-transform duration-500">
+                        <div class="bg-[#f8f9fa] p-1.5 sm:p-2 rounded-sm w-full aspect-square flex items-center justify-center shadow-lg border border-slate-300">
+                            <!-- Patrón Complejo de QR SVG para mayor realismo -->
+                            <svg viewBox="0 0 100 100" class="w-full h-full" fill="#1e293b">
+                                <!-- Position markers -->
+                                <path fill-rule="evenodd" d="M11,11 h22 v22 h-22 v-22 z M14.5,14.5 v15 h15 v-15 h-15 z M18,18 h8 v8 h-8 v-8 z" />
+                                <path fill-rule="evenodd" d="M67,11 h22 v22 h-22 v-22 z M70.5,14.5 v15 h15 v-15 h-15 z M74,18 h8 v8 h-8 v-8 z" />
+                                <path fill-rule="evenodd" d="M11,67 h22 v22 h-22 v-22 z M14.5,70.5 v15 h15 v-15 h-15 z M18,74 h8 v8 h-8 v-8 z" />
+                                
+                                <!-- Data pixels -->
+                                <rect x="38" y="11" width="8" height="8"/><rect x="50" y="11" width="12" height="8"/>
+                                <rect x="42" y="23" width="12" height="6"/><rect x="58" y="23" width="5" height="10"/>
+                                <rect x="38" y="32" width="6" height="8"/><rect x="48" y="32" width="14" height="5"/>
+                                <rect x="11" y="38" width="8" height="8"/><rect x="23" y="38" width="12" height="5"/><rect x="42" y="40" width="8" height="8"/><rect x="54" y="40" width="16" height="8"/><rect x="74" y="38" width="8" height="5"/><rect x="85" y="38" width="4" height="8"/>
+                                <rect x="15" y="50" width="12" height="8"/><rect x="31" y="47" width="8" height="12"/><rect x="44" y="52" width="5" height="9"/><rect x="53" y="52" width="8" height="5"/><rect x="65" y="47" width="8" height="8"/><rect x="78" y="50" width="5" height="9"/><rect x="85" y="50" width="4" height="4"/>
+                                <rect x="11" y="62" width="5" height="3"/><rect x="20" y="62" width="8" height="3"/><rect x="32" y="62" width="16" height="8"/><rect x="53" y="60" width="8" height="12"/><rect x="65" y="62" width="5" height="8"/><rect x="74" y="62" width="12" height="8"/><rect x="85" y="58" width="4" height="12"/>
+                                <rect x="38" y="74" width="8" height="5"/><rect x="50" y="74" width="12" height="15"/><rect x="66" y="74" width="8" height="8"/><rect x="78" y="74" width="5" height="15"/>
+                                <rect x="38" y="83" width="8" height="6"/><rect x="66" y="85" width="8" height="4"/>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                <!-- Item 7 (RFID - Full PVC Horizontal) -->
+                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-rotate-1 relative flex flex-col w-full aspect-[86/54] lg:max-w-[400px] mx-auto bg-gradient-to-tr from-[#1e3a8a] to-[#2563eb] rounded-[14px] overflow-hidden shadow-xl border border-blue-900" style="transition-delay: 0.7s;">
+                    <!-- Reflejo brillante diagonal típico de PVC full-color -->
+                    <div class="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-1/2 transition-all duration-1000 rotate-45 z-30 pointer-events-none"></div>
+                    
+                    <!-- Elemento decorativo ondas RFID -->
+                    <div class="absolute -right-4 top-1/2 -translate-y-1/2 flex items-center justify-center opacity-10">
+                        <div class="w-32 h-32 rounded-full border-4 border-white"></div>
+                        <div class="absolute w-48 h-48 rounded-full border-4 border-white"></div>
+                        <div class="absolute w-64 h-64 rounded-full border-4 border-white"></div>
+                    </div>
+
+                    <div class="p-5 sm:p-6 flex flex-col h-full relative z-20">
+                        <!-- Top Section -->
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center border border-white/20 backdrop-blur-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.32a7.43 7.43 0 0 1 0 7.36"/><path d="M9.5 6.69a11.29 11.29 0 0 1 0 10.62"/><path d="M13 5.07a15.22 15.22 0 0 1 0 13.86"/><path d="M16.5 3.44a19.13 19.13 0 0 1 0 17.12"/></svg>
+                                </div>
+                                <span class="text-white/80 font-sans text-[8px] sm:text-[9px] tracking-[0.2em] uppercase border border-white/20 px-2 py-0.5 rounded-full z-10 relative bg-black/10">NFC / RFID</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="url(#rfid-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50">
+                                <defs><linearGradient id="rfid-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#93c5fd"/></linearGradient></defs>
+                                <path d="M11 20a3 3 0 0 1 -3 -3v-11l5 5" />
+                                <path d="M13 4a3 3 0 0 1 3 3v11l-5 -5" />
+                                <rect x="4" y="4" width="16" height="16" rx="3" />
+                            </svg>
+                        </div>
+
+                        <!-- Mid Section: Textos Integrados en el Diseño -->
+                        <div class="my-auto flex flex-col pt-3 relative z-10">
+                            <h3 class="text-white font-headings font-bold text-sm sm:text-base md:text-lg leading-tight mb-1">Tarjetas RFID / NFC</h3>
+                            <p class="text-blue-100/90 font-sans text-[10px] sm:text-[11px] leading-snug w-[80%] max-w-[220px]">Tecnología avanzada para control de acceso, pagos y seguimiento inteligente sin contacto.</p>
+                        </div>
+
+                        <!-- Bottom Section: Simulación de antena/chip interno -->
+                        <div class="mt-auto flex justify-between items-end border-t border-white/10 pt-3">
+                            <div class="text-white/40 font-sans text-[7px] sm:text-[8px] tracking-widest uppercase font-mono">
+                                ISO/IEC 14443 TIPO A
+                            </div>
+                            <!-- "Antena" expuesta de forma decorativa -->
+                            <div class="flex items-center space-x-1 opacity-40">
+                                <div class="w-1 h-3 border border-white rounded-sm"></div>
+                                <div class="w-1 h-4 border border-white rounded-sm"></div>
+                                <div class="w-1 h-5 border border-white rounded-sm bg-white"></div>
+                                <div class="w-1 h-4 border border-white rounded-sm"></div>
+                                <div class="w-1 h-3 border border-white rounded-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Item 9 (Eventos - Pase VIP) -->
+                                <a href="#" class="pvc-card w-full has-punch deal-ready group overflow-hidden bg-white flex flex-col pt-10 pb-0 px-0 rounded-[1rem] relative border border-slate-200 shadow-[0_4px_15px_rgba(0,0,0,0.05),0_15px_35px_rgba(0,0,0,0.05)] aspect-[86/54] lg:max-w-[400px] mx-auto text-slate-800 transition-all duration-700 hover:-translate-y-3 hover:rotate-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]" style="transition-delay: 0.8s;">
+
+                    <!-- Header Evento (Datos de Gafete Real) -->
+                    <div class="px-6 flex justify-between items-start w-full">
+                        <div class="flex flex-col">
+                            <span class="font-headings font-black text-slate-800 text-lg md:text-xl tracking-tight leading-none uppercase">SUMMIT <span class="text-fuchsia-600">2026</span></span>
+                            <span class="text-slate-400 font-sans text-[8px] md:text-[9px] font-bold tracking-widest mt-1">GLOBAL CONFERENCE PASSPORT</span>
+                        </div>
+                        
+                        <!-- Mini QR Code para escanear en stands -->
+                        <div class="bg-white p-1 rounded border border-slate-200 shadow-sm opacity-90">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <path d="M6 6h.01"/><path d="M17 6h.01"/><path d="M17 17h.01"/><path d="M6 17h.01"/>
+                                <path d="M10 10h4v4h-4z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Contenido Central: Textos informativos de la UI -->
+                    <div class="px-6 mt-3 flex-1 flex flex-col justify-start">
+						<h3 class="font-headings font-bold text-lg md:text-xl mb-1 text-slate-800 leading-tight">Credencialización para eventos</h3>
+						<p class="font-sans text-[11px] md:text-[12px] text-slate-500 leading-relaxed pr-4">Acreditaciones personalizadas para eventos, conferencias y convenciones con data variable.</p>
+					</div>
+
+                    <!-- Bottom Band (Nivel de Acceso) -->
+                    <div class="relative w-full h-12 bg-gradient-to-r from-fuchsia-600 to-orange-500 flex items-center justify-between px-6 overflow-hidden mt-auto">
+                        <!-- Holograma reflectivo al pasar el cursor -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out"></div>
+                        
+                        <div class="inline-flex items-center space-x-2 relative z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span class="text-white font-sans text-xs md:text-sm font-black tracking-widest uppercase" style="text-shadow: 0 1px 2px rgba(0,0,0,0.2);">ALL ACCESS VIP</span>
+                        </div>
+                        
+                        <!-- Call to action arrow -->
+                        <div class="text-white opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all relative z-10">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </div>
+                    </div>
+				</a>
+
+                <!-- Item 10 (Call to Action en Grid) -->
+                <a href="https://wa.me/5211234567890" target="_blank" class="pvc-card w-full deal-ready group bg-gradient-to-br from-red-50 to-white flex flex-col justify-center items-center px-4 py-0 rounded-[14px] overflow-hidden relative border border-corporate-red/30 shadow-md aspect-[86/54] lg:max-w-[400px] mx-auto text-center z-10 transition-all duration-700 hover:-translate-y-3 hover:-rotate-1 hover:shadow-[0_20px_40px_rgba(200,0,0,0.15)] hover:border-corporate-red hover:z-50" style="transition-delay: 0.9s;">
+                    
+                    <div class="absolute inset-0 pointer-events-none">
+                        <div class="absolute -right-10 -bottom-10 opacity-5 w-48 h-48 bg-corporate-red rounded-full blur-3xl"></div>
+                    </div>
+                    
+                    <div class="relative z-20 flex flex-col items-center justify-center h-full w-full">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-corporate-red/10 rounded-full flex items-center justify-center mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3 class="font-headings font-bold text-lg md:text-xl text-deep-charcoal leading-tight mb-1 md:mb-2">¿Necesitas asesoría?</h3>
+                        <p class="font-sans text-[10px] md:text-[11px] text-slate-500 mb-3 md:mb-4 max-w-[260px]">Te ayudamos a elegir los productos y tecnología ideales para tu proyecto.</p>
+                        
+                        <!-- Botón estilo Hero (download-button) -->
+                        <div class="mb-8 md:mb-10">
+                            <div class="download-button inline-flex transform scale-[0.80] md:scale-90 origin-center -mt-1 md:-mt-2">
+                                <div class="docs py-2 px-5">
+                                    <span class="font-bold text-[12px] tracking-wider uppercase">Cotizar por WhatsApp</span>
+                                </div>
+                                <div class="download">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+			</div>
+		</div>
+        
+        <!-- Script for "Dealing from stack" effect -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const cards = document.querySelectorAll('.pvc-card');
+                            cards.forEach((card) => {
+                                card.classList.remove('deal-ready');
+                                card.classList.add('deal-active');
+                                // Eliminar el delay de entrada después de 1 segundo para que el hover se dispare instantáneamente
+                                setTimeout(() => {
+                                    card.style.transitionDelay = '0s';
+                                }, 1000);
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                const container = document.getElementById('cards-container');
+                if (container) observer.observe(container);
+            });
+        </script>
+	</section>
+
+	<!-- Nuestro Proceso -->
+        <section class="py-10 md:py-12 bg-white px-6">
+                <div class="max-w-[1280px] mx-auto">
+                        <div class="mb-12">
+                                <div class="flex items-center gap-3 mb-3">
+                                        <div class="w-12 h-[2px] bg-corporate-red"></div>
+                                        <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Metodología</span>
+                                </div>
+                                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Nuestro Proceso, Tu Tranquilidad</h2>
+                        </div>
+
+                        <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full overflow-x-auto">
+                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between min-w-[800px] gap-8 lg:gap-4 xl:gap-8">
+                                        
+                                        <!-- Step 1 -->
+                                        <div class="flex items-start gap-4 flex-1">
+                                                <div class="w-12 h-12 flex items-center justify-center shrink-0 text-deep-charcoal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/><path d="m15 5 3 3"/></svg>
+                                                </div>
+                                                <div>
+                                                        <div class="flex items-center gap-3 mb-1">
+                                                                <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">1</span>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Diseño</h4>
+                                                        </div>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Analizamos tus necesidades y creamos el diseño ideal para tu organización.</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Arrow -->
+                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+
+                                        <!-- Step 2 -->
+                                        <div class="flex items-start gap-4 flex-1">
+                                                <div class="w-12 h-12 flex items-center justify-center shrink-0 text-deep-charcoal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                                                </div>
+                                                <div>
+                                                        <div class="flex items-center gap-3 mb-1">
+                                                                <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">2</span>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Impresión</h4>
+                                                        </div>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Utilizamos tecnología de vanguardia para garantizar resultados de alta calidad.</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Arrow -->
+                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+
+                                        <!-- Step 3 -->
+                                        <div class="flex items-start gap-4 flex-1">
+                                                <div class="w-13 h-12 flex items-center justify-center shrink-0 text-deep-charcoal relative -left-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="13" x="4" y="5" rx="2"/><path d="M16 2v3"/><path d="M8 2v3"/><path d="M4 10h16"/><path d="m8 14 2 2 4-4"/></svg>
+                                                </div>
+                                                <div>
+                                                        <div class="flex items-center gap-3 mb-1">
+                                                                <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">3</span>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Entrega</h4>
+                                                        </div>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Entregamos tus credenciales a tiempo y con la seguridad que tu proyecto merece.</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Arrow -->
+                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+
+                                        <!-- Step 4 -->
+                                        <div class="flex items-start gap-4 flex-1">
+                                                <div class="w-12 h-12 flex items-center justify-center shrink-0 text-deep-charcoal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                                                </div>
+                                                <div>
+                                                        <div class="flex items-center gap-3 mb-1">
+                                                                <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">4</span>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Soporte</h4>
+                                                        </div>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Te acompañamos con soporte técnico y mantenimiento continuo.</p>
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+    <!-- Venta de Equipos e Impresoras -->
+    <section id="impresoras" class="py-10 md:py-12 bg-slate-50 px-6 border-b border-light-gray/40">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-[2px] bg-corporate-red"></div>
+                        <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Venta de Equipos</span>
+                    </div>
+                    <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Impresoras y Consumibles</h2>
+                    <p class="font-sans text-slate-600 leading-relaxed mb-8">
+                        ¿Prefieres imprimir en tus propias instalaciones? Somos distribuidores autorizados de las marcas líderes a nivel global como <strong>Zebra, Fargo y Evolis</strong>. Encuentra con nosotros todo el hardware, cintas originales (ribbons), tarjetas en blanco y refacciones para impulsar tu propio centro de credencialización.
+                    </p>
+                    <a href="/#impresoras" class="more-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                        <div class="docs py-4 px-8 border-none">
+                            <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Ver equipos y suministros</span>
+                        </div>
+                        <div class="download border-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </div>
+                    </a>
+                </div>
+                <!-- Visual / Grid -->
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center aspect-square hover:shadow-md transition-shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red mb-4"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        <h4 class="font-headings font-bold text-deep-charcoal text-sm">Impresoras PVC</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center aspect-square hover:shadow-md transition-shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red mb-4"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        <h4 class="font-headings font-bold text-deep-charcoal text-sm">Consumibles Originales</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectores / Industrias -->
+    <section class="pb-10 pt-8 md:pb-12 md:pt-10 bg-white px-6 border-b border-light-gray/40">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Aplicaciones</span>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Sectores a los que servimos</h2>
+                <p class="font-sans text-slate-500 max-w-2xl">Nuestras soluciones de credencialización se adaptan a las exigencias de seguridad e identificación de múltiples industrias.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Sector 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Educación</h4>
+                    <p class="font-sans text-sm text-slate-500">Credenciales para estudiantes, personal docente y control de acceso en escuelas y universidades.</p>
+                </div>
+                <!-- Sector 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Corporativo</h4>
+                    <p class="font-sans text-sm text-slate-500">Identificaciones para empleados y visitantes, con integración para control de accesos en oficinas.</p>
+                </div>
+                <!-- Sector 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Salud</h4>
+                    <p class="font-sans text-sm text-slate-500">Gafetes para personal médico, pacientes y control de áreas restringidas en hospitales y clínicas.</p>
+                </div>
+                <!-- Sector 4 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Restaurantes y Hotelería</h4>
+                    <p class="font-sans text-sm text-slate-500">Tarjetas de cliente frecuente, gafetes para staff y llaves de acceso para habitaciones.</p>
+                </div>
+                <!-- Sector 5 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><polyline points="15,9 18,9 22,13 22,17"/><path d="M2 10.5h19.5"/><path d="M8 19v2"/><path d="M16 19v2"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Eventos y Expos</h4>
+                    <p class="font-sans text-sm text-slate-500">Pases y acreditaciones para visitantes, staff o VIP, facilitando un rápido registro visual o electrónico.</p>
+                </div>
+                <!-- Sector 6 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 10-4 4-4-4"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Clubes y Gimnasios</h4>
+                    <p class="font-sans text-sm text-slate-500">Membresías exclusivas y control de acceso automatizado para socios a través de tarjetas con código o chip.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios / Reseñas -->
+    <section class="py-10 md:py-12 bg-slate-50 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-[2px] bg-corporate-red"></div>
+                        <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Testimonios</span>
+                    </div>
+                    <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Clientes que confían</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Reseña 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="font-sans text-slate-600 text-sm leading-relaxed mb-8 italic">"Excelente calidad de impresión y entrega súper rápida. Renovar las credenciales de todo nuestro personal administrativo fue un proceso sumamente sencillo gracias a TotallCard."</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-500">M</div>
+                        <div>
+                            <h5 class="font-headings font-bold text-sm text-deep-charcoal">Martín Ramírez</h5>
+                            <p class="font-sans text-[11px] text-slate-400">Director RH, Corporativo Logístico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="font-sans text-slate-600 text-sm leading-relaxed mb-8 italic">"Los consumibles originales que compramos aquí hacen que nuestras impresoras duren más y libren errores. El servicio de soporte técnico es impecable si surge alguna duda."</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-500">C</div>
+                        <div>
+                            <h5 class="font-headings font-bold text-sm text-deep-charcoal">Claudia Vargas</h5>
+                            <p class="font-sans text-[11px] text-slate-400">Administradora Universitaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="font-sans text-slate-600 text-sm leading-relaxed mb-8 italic">"El software de credencialización que nos integraron es intuitivo. Redujimos un 40% el tiempo de emisión en nuestro centro médico. 100% recomendados."</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-500">R</div>
+                        <div>
+                            <h5 class="font-headings font-bold text-sm text-deep-charcoal">Roberto L.</h5>
+                            <p class="font-sans text-[11px] text-slate-400">TI, Red de Hospitales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / Preguntas Frecuentes -->
+    <section class="py-10 md:py-12 bg-white px-6 border-b border-light-gray/40">
+        <div class="max-w-[800px] mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Soporte</span>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Preguntas Frecuentes</h2>
+                <p class="font-sans text-slate-500">Todo lo que necesitas saber sobre procesos y envíos.</p>
+            </div>
+            
+            <div class="space-y-4 max-w-[800px] mx-auto w-full">
+                <!-- FAQ 1 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Hacen envíos a toda la república?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Sí, realizamos envíos de impresoras, consumibles y credencias por volumen a cualquier estado del país mediante paquetería segura y asegurada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Qué garantía tienen las impresoras PVC?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Nuestras impresoras cuentan con garantía directa que va de 1 a 3 años (dependiendo de la marca y modelo) contra defectos de fábrica, así como servicio de garantía en centros autorizados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Venden consumibles originales?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Por supuesto. Solo comercializamos cintas (ribbons), tarjetas de PVC y kits de limpieza 100% originales para garantizar que mantengas la vida útil de tus equipos instalados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action (Banner Final) -->
+    <section class="py-12 md:py-16 bg-corporate-red px-6 relative overflow-hidden">
+        <!-- SVG Decoración (Efecto Múltiples Ondas) -->
+        <div class="absolute inset-0 mix-blend-overlay opacity-20 pointer-events-none">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full text-white" fill="currentColor">
+                <path d="M0,0 C30,30 70,-10 100,50 L100,100 L0,100 Z" opacity="0.3"></path>
+                <path d="M0,50 C40,-10 60,60 100,20 L100,100 L0,100 Z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿Listo para mejorar tu seguridad?</h2>
+                <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Contáctanos ahora y un asesor te guiará para elegir la impresora, tarjeta o sistema perfecto para tu empresa.</p>
+            </div>
+            <div class="shrink-0">
+                <a href="#contacto" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                    <div class="docs py-4 px-8 border-none">
+                        <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Solicitar Cotización Gratuita</span>
+                    </div>
+                    <div class="download border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+	<Footer />
+</Layout>
+
+<style is:global>
+/* ---- HOVER MENU EFECTO FINAL ---- */
+.nav-item {
+  position: relative; transition: 0.5s ease; padding: 0.5rem 1rem; z-index: 1; text-transform: uppercase; border-radius: 4px;
+}
+.nav-item::before {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background-color: #e1061a; transition: 0.5s ease; border-radius: 4px;
+}
+.nav-item:hover { color: #fff; transition-delay: 0.5s; }
+.nav-item:hover::before { width: 100%; }
+.nav-item::after { 
+  content: ""; position: absolute; left: 0; bottom: 0; height: 0; width: 100%; background-color: #e1061a; transition: 0.4s ease; z-index: -1; border-radius: 4px;
+}
+.nav-item:hover::after { height: 100%; transition-delay: 0.4s; }
+
+/* ---- CARDS ANIMATION (EFECTO IMPRESORA) ---- */
+.deal-ready {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(-10deg) translateY(80px);
+    transform-origin: bottom center;
+}
+.deal-active {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+
+/* Efecto Holograma/Reflejo Global para todas las Tarjetas */
+.pvc-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+    transform: translateX(-150%);
+    transition: transform 0.8s ease-in-out;
+    pointer-events: none;
+    z-index: 50;
+    border-radius: inherit;
+}
+.pvc-card:hover::after {
+    transform: translateX(150%);
+}
+
+/* From Uiverse.io by barisdogansutcu */
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 13px; /* Texto más grande */
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 38px;
+  padding: 0.5rem 1.25rem; /* Mucho menos padding horizontal y vertical */
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #e1061a;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #25D366; /* Verde WhatsApp */
+  border: solid 1px #25D366;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.more-button {
+  position: relative;
+  border-width: 0;
+  color: #E1061A;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.more-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 38px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #E1061A;
+  color: #E1061A;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.more-button .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #E1061A;
+  color: white;
+  border: solid 1px #E1061A;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.more-button:hover .download {
+  transform: translateY(100%);
+}
+
+/* Modificador para botones sobre fondo rojo */
+.more-button.alt-button {
+    color: #4a5568; /* deep-charcoal */
+}
+.more-button.alt-button .docs {
+    background-color: white;
+    color: #4a5568; /* deep-charcoal */
+    border: none;
+}
+.more-button.alt-button .download {
+    background-color: #2d3748; /* graphite */
+    color: white;
+    border: none;
+}
+
+/* Animación de Efecto Impresora en Secciones */
+.print-section {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(-10deg) translateY(80px);
+  transform-origin: bottom center;
+  transition: opacity 1s ease, transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.print-section.printed {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+
+/* Animación Suave para el FAQ */
+details[open] summary ~ * {
+  animation: faq-slide-down 0.3s ease-out;
+}
+@keyframes faq-slide-down {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes faq-slide-up {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+</style>
+
+<script>
+    // Efecto Impresora al hacer Scroll
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleccionamos las secciones, ignorando el Hero que debe cargar de inmediato
+        const sections = document.querySelectorAll('section:not(:first-of-type)');
+        
+        sections.forEach(sec => {
+            sec.classList.add('print-section');
+        });
+
+        const printObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('printed');
+                    printObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        sections.forEach(sec => {
+            printObserver.observe(sec);
+        });
+
+        // FAQ Animación Suave (Morphing Cards)
+        const faqCards = document.querySelectorAll('.faq-card');
+        faqCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Cerrar las otras que estén abiertas
+                faqCards.forEach(otherCard => {
+                    if (otherCard !== card && otherCard.classList.contains('is-open')) {
+                        otherCard.classList.remove('is-open');
+                    }
+                });
+                
+                // Alternar el estado open de la tarjeta actual
+                card.classList.toggle('is-open');
+            });
+        });
+    });
+</script>

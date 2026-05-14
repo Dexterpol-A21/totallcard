@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- PÁGINA PRINCIPAL -->
+    <url>
+        <loc>https://totallcard.com/</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- PRODUCTOS PRINCIPALES -->
+    <url>
+        <loc>https://totallcard.com/impresoras</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/cintas-y-consumibles</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/portagafetes-y-lanyards</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- CREDENCIALES Y GAFETES -->
+    <url>
+        <loc>https://totallcard.com/gafetes-empresariales</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/gafetes-escolares</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- TARJETAS ESPECIALIZADAS -->
+    <url>
+        <loc>https://totallcard.com/tarjetas-de-lealtad</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/tarjetas-de-membresia</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/tarjetas-qr</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/tarjetas-rfid</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/pases-vip</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SERVICIOS -->
+    <url>
+        <loc>https://totallcard.com/mantenimiento</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/renta</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/soporte</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- EMPRESA Y GENERAL -->
+    <url>
+        <loc>https://totallcard.com/quienes-somos</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/sectores</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/faq</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- POLÍTICAS (Menor prioridad) -->
+    <url>
+        <loc>https://totallcard.com/politicas</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://totallcard.com/privacidad</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>

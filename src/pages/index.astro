@@ -5,13 +5,17 @@ import Lanyard from '../components/Lanyard.jsx';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
+<Layout 
+    title="Impresión de Gafetes y Credenciales PVC | TOTALLCARD"
+    description="Especialistas en impresión de gafetes de PVC, credenciales escolares, empresariales, impresoras, y consumibles. Más de 10 años de experiencia en México."
+    keywords="impresión de gafetes, credenciales pvc, gafetes empresariales, gafetes escolares, impresoras de tarjetas, tarjetas rfid, pases vip, totallcard"
+>
         <!-- Lanyard global CTA -->
-        <div class="fixed inset-0 z-[100] pointer-events-none">
+        <div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
             <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
 
-        <Header submenu="none" />
+        <Header submenu="empresa" active="INICIO" />
 
 	<!-- Hero Section -->
 	<section class="min-h-[85vh] flex items-center pt-32 pb-8 md:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
@@ -27,7 +31,7 @@ import Footer from '../components/Footer.astro';
 					Descubre nuestra oferta completa: desde impresión de credenciales PVC y tarjetas de lealtad, hasta impresoras de escritorio, software especializado y servicio técnico profesional.
 				</p>
 				
-				<div class="flex flex-col sm:flex-row gap-6 mb-6 items-center">
+				<div class="hidden md:flex flex-col sm:flex-row gap-6 mb-6 items-center">
 					<a href="https://wa.me/5211234567890" class="download-button inline-flex">
 						<div class="docs py-3 px-6"> <!-- Ajuste de padding manual para el hero -->
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
@@ -47,38 +51,52 @@ import Footer from '../components/Footer.astro';
 					</a>
 				</div>
                 
-                <div class="flex flex-wrap md:flex-nowrap justify-start gap-6 md:gap-8 pt-2">
-                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
-                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                <div class="flex flex-row flex-nowrap justify-between md:justify-start gap-2 sm:gap-4 md:gap-8 pt-2 w-full">
+                    <div class="flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 flex-1 md:flex-none">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red md:w-[22px] md:h-[22px]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
                         </div>
-                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Calidad<br />Garantizada</span>
+                        <span class="font-headings font-bold text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Calidad<br class="hidden md:block"/> Garantizada</span>
                     </div>
-                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
-                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <div class="flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 flex-1 md:flex-none">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red md:w-[22px] md:h-[22px]"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                         </div>
-                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Seguridad<br />Integrada</span>
+                        <span class="font-headings font-bold text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Seguridad<br class="hidden md:block"/> Integrada</span>
                     </div>
-                    <div class="flex flex-row items-center gap-4 w-full md:w-auto">
-                        <div class="w-12 h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    <div class="flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 flex-1 md:flex-none">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded bg-light-gray/40 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red md:w-[22px] md:h-[22px]"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
                         </div>
-                        <span class="font-headings font-bold text-[11px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Soluciones<br />Personalizadas</span>
+                        <span class="font-headings font-bold text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-deep-charcoal leading-snug">Soluciones<br class="hidden md:block"/> Personalizadas</span>
                     </div>
                 </div>
 			</div>
 			
-			<div class="relative w-full h-[350px] md:h-[500px]">
-                <div class="absolute inset-0 z-0 opacity-10">
-                    <!-- Red angular lines background decoration -->
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full text-corporate-red" fill="none" stroke="currentColor" stroke-width="0.5">
-                        <path d="M0,100 L50,0 L100,100" />
-                    </svg>
-                </div>
+			<div class="relative w-full h-auto md:h-[500px]">
                                 <!-- Hero Right Placeholder -->
-                                <div class="w-full h-full relative z-10 pointer-events-none select-none">
-                                        <img draggable="false" src="https://placehold.co/800x600/f9f9f9/e1061a?text=Impresitas+y+Tarjetas" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+                                <div class="w-full h-[300px] md:h-full relative z-10 pointer-events-none select-none">
+                                        <img draggable="false" src="/images/heroNoF.png" alt="Impresoras y Tarjetas PVC" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+                                </div>
+
+                                <div class="flex md:hidden flex-col sm:flex-row gap-6 mt-4 pb-2 items-center w-full justify-center relative z-50">
+                                        <a href="https://wa.me/5211234567890" class="download-button inline-flex">
+                                                <div class="docs py-3 px-6">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
+                                                        <span class="font-bold text-[15px] tracking-wider uppercase">COTIZACIÓN POR WHATSAPP</span>
+                                                </div>
+                                                <div class="download">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                                                </div>
+                                        </a>
+                                        <a href="#productos" class="more-button inline-flex">
+                                                <div class="docs py-3 px-6">
+                                                        <span class="font-bold text-[15px] tracking-wider uppercase">Conocer más</span>
+                                                </div>
+                                                <div class="download">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                                </div>
+                                        </a>
                                 </div>
                                 </div>
 			</div>
@@ -100,12 +118,12 @@ import Footer from '../components/Footer.astro';
                                 </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="flex items-center md:items-stretch md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 md:grid-cols-2 lg:grid-cols-4 md:gap-6 pb-6 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                                 <!-- Item 1: Impresoras -->
-                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                <a href="/impresoras" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Impresoras" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <img src="/images/impresoraindex.png" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Impresoras PVC</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Impresión de alta calidad y durabilidad para credenciales seguras y profesionales.</p>
@@ -116,10 +134,10 @@ import Footer from '../components/Footer.astro';
                                 </a>
 
                                 <!-- Item 2: Tarjetas PVC -->
-                                <a href="#productos" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                <a href="#productos" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Tarjetas" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <img src="/images/tarjetasindex.png" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Tarjetas PVC</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Tarjetas inteligentes, proximidad y accesorios con la máxima seguridad y tecnología.</p>
@@ -129,14 +147,14 @@ import Footer from '../components/Footer.astro';
                                         </div>
                                 </a>
 
-                                <!-- Item 3: Software -->
-                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                <!-- Item 3: Portagafetes y Lanyards -->
+                                <a href="/portagafetes-y-lanyards" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Software" alt="Software Credencialización" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <img src="/images/lanyardsindex.png" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
-                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Software Credencialización</h3>
-                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Gestión segura y personalizada para el diseño y emisión de tarjetas.</p>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Portagafetes y Lanyards</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Sujeción y protección elegante para las credenciales de tu personal.</p>
                                         <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
                                                 Saber más 
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -144,10 +162,10 @@ import Footer from '../components/Footer.astro';
                                 </a>
 
                                 <!-- Item 4: Consumibles -->
-                                <a href="#" class="group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                                <a href="/cintas-y-consumibles" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="https://placehold.co/400x300/f1f5f9/a1a1aa?text=Consumibles" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <img src="/images/consumiblesindex.png" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Consumibles y Cintas</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Ribbons, kits de limpieza y supplies originales de alto rendimiento.</p>
@@ -171,7 +189,17 @@ import Footer from '../components/Footer.astro';
                             <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal uppercase tracking-widest">Tarjetas, Gafetes y Más</h2>
                         </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" id="cards-container">
+<style>
+    @media(max-width: 767px){
+        .cards-gallery > a {
+            flex-shrink: 0 !important;
+            scroll-snap-align: center !important;
+            width: 85vw !important;
+            max-width: 320px !important;
+        }
+    }
+</style>
+<div class="flex items-center md:items-stretch md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 pb-8 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden cards-gallery" id="cards-container">
 				<!-- Item 1 (PVC) -->
 				<a href="/gafetes-empresariales" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:-rotate-1 relative flex flex-col w-full aspect-[54/86] max-w-[280px] mx-auto bg-white rounded-[14px] overflow-hidden shadow-md border border-gray-300" style="transition-delay: 0.1s;">
                     <!-- Perforación (Punch) -->
@@ -287,7 +315,7 @@ import Footer from '../components/Footer.astro';
 
 
                 <!-- Item 8 (Lanyards) -->
-                <a href="#" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:-rotate-1 flex flex-col justify-between p-0 w-full aspect-[54/86] max-w-[280px] mx-auto bg-white/[0.03] backdrop-blur-xl rounded-[14px] overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.2)] border border-white/20 relative" style="transition-delay: 0.3s;">
+                <a href="/portagafetes-y-lanyards" class="pvc-card deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:-rotate-1 flex flex-col justify-between p-0 w-full aspect-[54/86] max-w-[280px] mx-auto bg-white/[0.03] backdrop-blur-xl rounded-[14px] overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.2)] border border-white/20 relative" style="transition-delay: 0.3s;">
                     
                     <!-- Textura de plástico vinil esmerilado (Portagafete transparente) -->
                     <div class="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.6%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%220.5%22/%3E%3C/svg%3E');"></div>
@@ -671,8 +699,8 @@ import Footer from '../components/Footer.astro';
                                 <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Nuestro Proceso, Tu Tranquilidad</h2>
                         </div>
 
-                        <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full overflow-x-auto">
-                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between min-w-[800px] gap-8 lg:gap-4 xl:gap-8">
+                        <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full lg:overflow-visible overflow-hidden">
+                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:min-w-[800px] gap-8 lg:gap-4 xl:gap-8">
                                         
                                         <!-- Step 1 -->
                                         <div class="flex items-start gap-4 flex-1">
@@ -689,7 +717,7 @@ import Footer from '../components/Footer.astro';
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
@@ -708,7 +736,7 @@ import Footer from '../components/Footer.astro';
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
@@ -727,7 +755,7 @@ import Footer from '../components/Footer.astro';
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="hidden lg:flex text-corporate-red shrink-0 mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
@@ -775,13 +803,15 @@ import Footer from '../components/Footer.astro';
                 </div>
                 <!-- Visual / Grid -->
                 <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
-                    <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:bg-white/10 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white mb-4"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
-                        <h4 class="font-headings font-bold text-white text-sm">Impresoras PVC</h4>
+                    <div class="bg-white/5 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:border-white/30 transition-colors relative overflow-hidden group">
+                        <img src="/images/impresoraindex2.png" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
+                        <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Impresoras</h4>
                     </div>
-                    <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:bg-white/10 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white mb-4"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                        <h4 class="font-headings font-bold text-white text-sm">Consumibles Originales</h4>
+                    <div class="bg-white/5 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:border-white/30 transition-colors relative overflow-hidden group">
+                        <img src="/images/consumiblesindex2.png" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
+                        <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Consumibles</h4>
                     </div>
                 </div>
             </div>
@@ -791,7 +821,7 @@ import Footer from '../components/Footer.astro';
     <!-- Sectores / Industrias -->
     <section class="pb-10 pt-8 md:pb-12 md:pt-10 bg-white px-6 border-b border-light-gray/40">
         <div class="max-w-[1280px] mx-auto">
-            <div class="mb-12">
+            <div class="mb-12 px-6 lg:px-0">
                 <div class="flex items-center gap-3 mb-3">
                     <div class="w-12 h-[2px] bg-corporate-red"></div>
                     <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Aplicaciones</span>
@@ -800,9 +830,10 @@ import Footer from '../components/Footer.astro';
                 <p class="font-sans text-slate-500 max-w-2xl">Nuestras soluciones de credencialización se adaptan a las exigencias de seguridad e identificación de múltiples industrias.</p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Cards Container: Scroll horizontal en móviles, grid en escritorio -->
+            <div id="sectores-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 px-6 lg:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-3 md:overflow-visible relative">
                 <!-- Sector 1 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
@@ -810,7 +841,7 @@ import Footer from '../components/Footer.astro';
                     <p class="font-sans text-sm text-slate-500">Credenciales para estudiantes, personal docente y control de acceso en escuelas y universidades.</p>
                 </div>
                 <!-- Sector 2 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
                     </div>
@@ -818,7 +849,7 @@ import Footer from '../components/Footer.astro';
                     <p class="font-sans text-sm text-slate-500">Identificaciones para empleados y visitantes, con integración para control de accesos en oficinas.</p>
                 </div>
                 <!-- Sector 3 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
                     </div>
@@ -826,7 +857,7 @@ import Footer from '../components/Footer.astro';
                     <p class="font-sans text-sm text-slate-500">Gafetes para personal médico, pacientes y control de áreas restringidas en hospitales y clínicas.</p>
                 </div>
                 <!-- Sector 4 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
                     </div>
@@ -834,7 +865,7 @@ import Footer from '../components/Footer.astro';
                     <p class="font-sans text-sm text-slate-500">Tarjetas de cliente frecuente, gafetes para staff y llaves de acceso para habitaciones.</p>
                 </div>
                 <!-- Sector 5 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><polyline points="15,9 18,9 22,13 22,17"/><path d="M2 10.5h19.5"/><path d="M8 19v2"/><path d="M16 19v2"/></svg>
                     </div>
@@ -842,13 +873,23 @@ import Footer from '../components/Footer.astro';
                     <p class="font-sans text-sm text-slate-500">Pases y acreditaciones para visitantes, staff o VIP, facilitando un rápido registro visual o electrónico.</p>
                 </div>
                 <!-- Sector 6 -->
-                <div class="bg-slate-50 rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
+                <div class="bg-slate-50 min-w-[280px] w-[85vw] snap-center shrink-0 md:min-w-0 md:w-auto rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 10-4 4-4-4"/></svg>
                     </div>
                     <h4 class="font-headings font-bold text-deep-charcoal mb-2">Clubes y Gimnasios</h4>
                     <p class="font-sans text-sm text-slate-500">Membresías exclusivas y control de acceso automatizado para socios a través de tarjetas con código o chip.</p>
                 </div>
+            </div>
+
+            <!-- Controles de Galería (Solo Móviles) -->
+            <div id="sectores-dots" class="flex md:hidden justify-center gap-2 mt-2 pb-4">
+                <button aria-label="Ir a sector 1" class="w-4 h-2.5 rounded-full bg-corporate-red transition-all duration-300"></button>
+                <button aria-label="Ir a sector 2" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+                <button aria-label="Ir a sector 3" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+                <button aria-label="Ir a sector 4" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+                <button aria-label="Ir a sector 5" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+                <button aria-label="Ir a sector 6" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
             </div>
         </div>
     </section>
@@ -866,9 +907,9 @@ import Footer from '../components/Footer.astro';
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div id="resenas-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 px-4 md:px-0 hide-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-3 md:overflow-visible relative">
                 <!-- Reseña 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                <div class="snap-center shrink-0 min-w-[280px] w-[85vw] md:min-w-0 md:w-auto bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex gap-1 text-amber-400 mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -889,7 +930,7 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <!-- Reseña 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                <div class="snap-center shrink-0 min-w-[280px] w-[85vw] md:min-w-0 md:w-auto bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex gap-1 text-amber-400 mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -910,7 +951,7 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <!-- Reseña 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
+                <div class="snap-center shrink-0 min-w-[280px] w-[85vw] md:min-w-0 md:w-auto bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 flex flex-col justify-between">
                     <div>
                         <div class="flex gap-1 text-amber-400 mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -930,6 +971,70 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </div>
             </div>
+
+            <!-- Controles de Galería de Reseñas (Solo Móviles) -->
+            <div id="resenas-dots" class="flex md:hidden justify-center gap-2 mt-2 pb-4">
+                <button aria-label="Ir a reseña 1" class="w-4 h-2.5 rounded-full bg-corporate-red transition-all duration-300"></button>
+                <button aria-label="Ir a reseña 2" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+                <button aria-label="Ir a reseña 3" class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300"></button>
+            </div>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const setupGallery = (containerId, dotsId) => {
+                        const container = document.getElementById(containerId);
+                        const dotsContainer = document.getElementById(dotsId);
+                        
+                        if (!container || !dotsContainer) return;
+                        
+                        const dots = dotsContainer.querySelectorAll('button');
+                        const cards = Array.from(container.children).filter(child => child.tagName === 'DIV');
+
+                        dots.forEach((dot, index) => {
+                            dot.addEventListener('click', () => {
+                                const card = cards[index];
+                                if (card) {
+                                    const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                                    const containerCenter = container.offsetWidth / 2;
+                                    container.scrollTo({
+                                        left: cardCenter - containerCenter,
+                                        behavior: 'smooth'
+                                    });
+                                }
+                            });
+                        });
+
+                        container.addEventListener('scroll', () => {
+                            const containerCenter = container.scrollLeft + (container.offsetWidth / 2);
+                            let minDistance = Infinity;
+                            let activeIndex = 0;
+
+                            cards.forEach((card, index) => {
+                                const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                                const distance = Math.abs(containerCenter - cardCenter);
+                                if (distance < minDistance) {
+                                    minDistance = distance;
+                                    activeIndex = index;
+                                }
+                            });
+                            
+                            dots.forEach((dot, index) => {
+                                if (index === activeIndex) {
+                                    dot.classList.replace('bg-slate-300', 'bg-corporate-red');
+                                    dot.classList.replace('w-2.5', 'w-4');
+                                } else {
+                                    dot.classList.replace('bg-corporate-red', 'bg-slate-300');
+                                    dot.classList.replace('w-4', 'w-2.5');
+                                }
+                            });
+                        }, { passive: true });
+                    };
+
+                    // Reconstruimos el setup de galerías para incluir las dos
+                    setupGallery('sectores-container', 'sectores-dots');
+                    setupGallery('resenas-container', 'resenas-dots');
+                });
+            </script>
         </div>
     </section>
 

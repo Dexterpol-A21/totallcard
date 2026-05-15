@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 >
         <!-- Lanyard global CTA -->
         <div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-            <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+            <Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
         <Header submenu="equipos" active="CINTAS Y CONSUMIBLES" />
 	<!-- Hero Section: Centro de Impresión -->
@@ -55,7 +55,7 @@ import Footer from '../components/Footer.astro';
                 <picture class="contents">
     <source srcset="/images/consumiblespag.avif" type="image/avif" />
     <source srcset="/images/consumiblespag.webp" type="image/webp" />
-    <img src="/images/consumiblespag.png" alt="Consumibles y cintas para impresión" class="w-full h-full object-cover rounded-2xl" />
+    <img src="/images/consumiblespag.png" alt="Consumibles y cintas para impresión" class="w-full h-full object-cover rounded-2xl" / loading="lazy" decoding="async">
 </picture>
 			</div>
 		</div>
@@ -623,7 +623,7 @@ import Footer from '../components/Footer.astro';
                     <picture class="contents">
     <source srcset="/images/finalCTAcredenciales.avif" type="image/avif" />
     <source srcset="/images/finalCTAcredenciales.webp" type="image/webp" />
-    <img src="/images/finalCTAcredenciales.png" alt="Gafetes premium" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" />
+    <img src="/images/finalCTAcredenciales.png" alt="Gafetes premium" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" / loading="lazy" decoding="async">
 </picture>
                 </div>
             </div>

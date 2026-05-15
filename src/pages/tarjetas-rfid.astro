@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	keywords="tarjetas RFID, tarjetas de proximidad, tarjetas NFC, credenciales inteligentes, llaves de hotel, control de acceso RFID, Mifare, EM4100"
 >
 	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-		<Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+		<Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
 	</div>
 	<Header submenu="tarjetas" active="TARJETAS RFID / NFC" />
 
@@ -68,7 +68,7 @@ import Footer from '../components/Footer.astro';
                     <picture class="contents">
     <source srcset="/images/rfid.avif" type="image/avif" />
     <source srcset="/images/rfid.webp" type="image/webp" />
-    <img draggable="false" src="/images/rfid.png" alt="Tarjetas RFID" class="w-full h-full object-cover relative z-10 rounded-[2rem] shadow-2xl border-[8px] border-white pointer-events-none select-none" />
+    <img draggable="false" src="/images/rfid.png" alt="Tarjetas RFID" class="w-full h-full object-cover relative z-10 rounded-[2rem] shadow-2xl border-[8px] border-white pointer-events-none select-none" / loading="lazy" decoding="async">
 </picture>
                 </div>
 			</div>
@@ -737,7 +737,7 @@ import Footer from '../components/Footer.astro';
                     <picture class="contents">
     <source srcset="/images/finalCTAImprimir.avif" type="image/avif" />
     <source srcset="/images/finalCTAImprimir.webp" type="image/webp" />
-    <img src="/images/finalCTAImprimir.png" alt="Impresora de credenciales PVC" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" />
+    <img src="/images/finalCTAImprimir.png" alt="Impresora de credenciales PVC" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" / loading="lazy" decoding="async">
 </picture>
                 </div>
             </div>

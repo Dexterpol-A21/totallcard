@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 >
         <!-- Lanyard global CTA -->
         <div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-            <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+            <Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
 
         <Header submenu="empresa" active="INICIO" />
@@ -130,7 +130,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/impresoraindex.avif" type="image/avif" />
     <source srcset="/images/impresoraindex.webp" type="image/webp" />
-    <img src="/images/impresoraindex.png" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+    <img src="/images/impresoraindex.png" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy" decoding="async">
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Impresoras PVC</h3>
@@ -148,7 +148,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/tarjetasindex.avif" type="image/avif" />
     <source srcset="/images/tarjetasindex.webp" type="image/webp" />
-    <img src="/images/tarjetasindex.png" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+    <img src="/images/tarjetasindex.png" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy" decoding="async">
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Tarjetas PVC</h3>
@@ -166,7 +166,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/lanyardsindex.avif" type="image/avif" />
     <source srcset="/images/lanyardsindex.webp" type="image/webp" />
-    <img src="/images/lanyardsindex.png" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+    <img src="/images/lanyardsindex.png" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy" decoding="async">
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Portagafetes y Lanyards</h3>
@@ -184,7 +184,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/consumiblesindex.avif" type="image/avif" />
     <source srcset="/images/consumiblesindex.webp" type="image/webp" />
-    <img src="/images/consumiblesindex.png" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+    <img src="/images/consumiblesindex.png" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy" decoding="async">
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Consumibles y Cintas</h3>
@@ -232,17 +232,17 @@ import Footer from '../components/Footer.astro';
                             <picture class="contents">
     <source srcset="/images/logoIconNoF.avif" type="image/avif" />
     <source srcset="/images/logoIconNoF.webp" type="image/webp" />
-    <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-4 object-contain -mt-0.5 -mr-2.5 relative z-30" />
+    <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-4 object-contain -mt-0.5 -mr-2.5 relative z-30" / loading="lazy" decoding="async">
 </picture>
                             <!-- Texto con flechas arriba y abajo -->
                             <div class="flex flex-col items-center justify-center -space-y-2">
-                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 relative z-20 w-[90px]" />
+                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 relative z-20 w-[90px]" / loading="lazy" decoding="async">
                                 <picture class="contents">
     <source srcset="/images/logoTextoNoF.avif" type="image/avif" />
     <source srcset="/images/logoTextoNoF.webp" type="image/webp" />
-    <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-5 object-contain relative z-10" />
+    <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-5 object-contain relative z-10" / loading="lazy" decoding="async">
 </picture>
-                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 rotate-180 relative z-20 w-[90px]" />
+                                <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 rotate-180 relative z-20 w-[90px]" / loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="text-deep-charcoal text-[7.5px] uppercase font-bold tracking-widest text-right leading-[1.2]">Acceso<br>Autorizado</div>
@@ -253,7 +253,7 @@ import Footer from '../components/Footer.astro';
                         
                         <!-- Marca de agua: Flecha Gigante Roja -->
                         <div class="absolute -right-12 top-1/4 opacity-[0.06] -rotate-12 z-0 transition-transform duration-700 group-hover:scale-110 pointer-events-none">
-                            <img src="/icons/flechaLogoRojo.svg" alt="" class="w-48" />
+                            <img src="/icons/flechaLogoRojo.svg" alt="" class="w-48" / loading="lazy" decoding="async">
                         </div>
 
                         <!-- Foto del Empleado (Silueta / Icono) -->
@@ -835,7 +835,7 @@ import Footer from '../components/Footer.astro';
                         <picture class="contents">
     <source srcset="/images/impresoraindex2.avif" type="image/avif" />
     <source srcset="/images/impresoraindex2.webp" type="image/webp" />
-    <img src="/images/impresoraindex2.png" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+    <img src="/images/impresoraindex2.png" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" / loading="lazy" decoding="async">
 </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Impresoras</h4>
@@ -844,7 +844,7 @@ import Footer from '../components/Footer.astro';
                         <picture class="contents">
     <source srcset="/images/consumiblesindex2.avif" type="image/avif" />
     <source srcset="/images/consumiblesindex2.webp" type="image/webp" />
-    <img src="/images/consumiblesindex2.png" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+    <img src="/images/consumiblesindex2.png" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" / loading="lazy" decoding="async">
 </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Consumibles</h4>

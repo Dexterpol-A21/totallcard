@@ -124,7 +124,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 w-full h-full min-h-[400px] flex items-center justify-center">
 
                         <!-- Cinta de color extendida (Ribbon YMCKO) -->
-                        <div class="absolute w-[240px] md:w-[300px] h-[70px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 overflow-hidden opacity-95 shadow-[0_15px_30px_-5px_rgba(236,72,153,0.4)] z-10">
+                        <div class="absolute w-[180px] sm:w-[240px] md:w-[300px] h-[50px] md:h-[70px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 overflow-hidden opacity-95 shadow-[0_15px_30px_-5px_rgba(236,72,153,0.4)] z-10">
                             <!-- Patrón continuo YMCKO duplicado exactamente a la mitad para que el bucle encaje perfecto al hacer translateX(-50%) -->
                             <div class="w-[200%] h-full animate-stream-ribbon bg-[linear-gradient(to_right,#fde047_0%,#ec4899_10%,#06b6d4_20%,#1e293b_30%,#e2e8f0_40%,#fde047_50%,#ec4899_60%,#06b6d4_70%,#1e293b_80%,#e2e8f0_90%,#fde047_100%)]"></div>
                             <!-- Overlay estético para simular textura -->
@@ -132,27 +132,27 @@ import Footer from '../components/Footer.astro';
                         </div>
                         
                         <!-- Rollo Izquierdo (Suministro) -->
-                        <div class="absolute left-[10%] md:left-[15%] top-1/2 -translate-y-1/2 w-28 h-28 bg-white rounded-full shadow-2xl border-[6px] border-slate-50 flex items-center justify-center z-20 animate-spin-slow">
-                            <div class="absolute inset-0 rounded-full border-4 border-dashed border-slate-200 m-2"></div>
-                            <div class="w-8 h-8 rounded-full border-[5px] border-slate-800 bg-corporate-red"></div>
+                        <div class="absolute left-[5%] md:left-[15%] top-1/2 -translate-y-1/2 w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 bg-white rounded-full shadow-2xl border-[4px] md:border-[6px] border-slate-50 flex items-center justify-center z-20 animate-spin-slow">
+                            <div class="absolute inset-0 rounded-full border-[3px] md:border-4 border-dashed border-slate-200 m-1 md:m-2"></div>
+                            <div class="w-6 md:w-8 h-6 md:h-8 rounded-full border-[3px] md:border-[5px] border-slate-800 bg-corporate-red"></div>
                         </div>
 
                         <!-- Rollo Derecho (Recogida) -->
-                        <div class="absolute right-[10%] md:right-[15%] top-1/2 -translate-y-1/2 w-28 h-28 bg-slate-800 rounded-full shadow-2xl border-[6px] border-slate-700 flex items-center justify-center z-20 animate-spin-slow">
-                            <div class="absolute inset-0 rounded-full border-4 border-dashed border-slate-600 m-2"></div>
-                            <div class="w-8 h-8 rounded-full border-[5px] border-slate-500 bg-deep-charcoal"></div>
+                        <div class="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 bg-slate-800 rounded-full shadow-2xl border-[4px] md:border-[6px] border-slate-700 flex items-center justify-center z-20 animate-spin-slow">
+                            <div class="absolute inset-0 rounded-full border-[3px] md:border-4 border-dashed border-slate-600 m-1 md:m-2"></div>
+                            <div class="w-6 md:w-8 h-6 md:h-8 rounded-full border-[3px] md:border-[5px] border-slate-500 bg-deep-charcoal"></div>
                         </div>
 
                         <!-- Tarjeta PVC emergiendo (Consumible) -->
-                        <div class="absolute left-1/2 -translate-x-1/2 bottom-[10%] w-[200px] h-[130px] bg-white rounded-xl shadow-2xl p-5 border border-slate-100 z-30 transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-start overflow-hidden">
+                        <div class="absolute left-1/2 -translate-x-1/2 bottom-[5%] md:bottom-[10%] w-[160px] md:w-[200px] h-[100px] md:h-[130px] bg-white rounded-xl shadow-2xl p-4 md:p-5 border border-slate-100 z-30 transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-start overflow-hidden">
                             <!-- Reflejo holográfico ligado al ribbon duplicado para el bucle continuo -->
                             <div class="absolute top-0 left-0 w-[200%] h-full opacity-[0.15] bg-[linear-gradient(to_right,#fde047_0%,#ec4899_10%,#06b6d4_20%,#1e293b_30%,#e2e8f0_40%,#fde047_50%,#ec4899_60%,#06b6d4_70%,#1e293b_80%,#e2e8f0_90%,#fde047_100%)] animate-stream-ribbon pointer-events-none"></div>
                             
-                            <div class="w-12 h-12 rounded-full shadow-inner bg-slate-800 mb-3 ml-auto flex items-center justify-center text-white relative z-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <div class="w-8 md:w-12 h-8 md:h-12 rounded-full shadow-inner bg-slate-800 mb-2 md:mb-3 ml-auto flex items-center justify-center text-white relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="md:w-5 md:h-5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                             </div>
-                            <div class="w-2/3 h-2 bg-slate-200 rounded mb-2 relative z-10"></div>
-                            <div class="w-1/2 h-2 bg-slate-100 rounded relative z-10"></div>
+                            <div class="w-2/3 h-1.5 md:h-2 bg-slate-200 rounded mb-1.5 md:mb-2 relative z-10"></div>
+                            <div class="w-1/2 h-1.5 md:h-2 bg-slate-100 rounded relative z-10"></div>
                         </div>
 
                         <style>
@@ -275,7 +275,7 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <!-- Grid Único de Características (Impresión + Gestión) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 auto-rows-min">
+                <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 xl:gap-6 pb-6 px-4 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 lg:grid-cols-3 auto-rows-min md:overflow-visible w-[calc(100%+2rem)] -ml-4 md:w-full md:ml-0 relative [&>div]:min-w-[280px] [&>div]:w-[85vw] [&>div]:snap-center [&>div]:shrink-0 md:[&>div]:min-w-0 md:[&>div]:w-auto">
                     <!-- Card: Tarjetas PVC -->
                     <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all group overflow-hidden relative lg:col-span-1">
                         <div class="absolute -right-6 -bottom-6 opacity-[0.03] text-corporate-red transform group-hover:scale-110 transition-transform duration-500 pointer-events-none">
@@ -374,7 +374,7 @@ import Footer from '../components/Footer.astro';
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 xl:gap-6 pb-6 px-4 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-3 md:gap-8 auto-rows-min md:overflow-visible w-[calc(100%+2rem)] -ml-4 md:w-full md:ml-0 relative [&>div]:min-w-[280px] [&>div]:w-[85vw] [&>div]:snap-center [&>div]:shrink-0 md:[&>div]:min-w-0 md:[&>div]:w-auto">
                 <!-- Nivel 1: Baja Demanda -->
                 <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] pointer-events-none transition-transform group-hover:scale-110"></div>

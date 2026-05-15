@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 >
         <!-- Lanyard global CTA -->
         <div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-            <Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+            <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
 
         <Header submenu="empresa" active="INICIO" />
@@ -79,7 +79,7 @@ import Footer from '../components/Footer.astro';
                                         <picture class="contents">
     <source srcset="/images/heroNoF.avif" type="image/avif" />
     <source srcset="/images/heroNoF.webp" type="image/webp" />
-    <img draggable="false" src="/images/heroNoF.png" alt="Impresoras y Tarjetas PVC" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+    <img fetchpriority="high" draggable="false" src="/images/heroNoF.png" alt="Impresoras y Tarjetas PVC" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
 </picture>
                                 </div>
 

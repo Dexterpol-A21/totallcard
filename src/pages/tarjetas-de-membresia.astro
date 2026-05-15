@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	keywords="tarjetas de membresía, membresías PVC, credenciales para gimnasios, tarjetas para clubes, tarjetas socios, membresías VIP"
 >
 	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-		<Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+		<Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
 	</div>
 	<Header submenu="tarjetas" active="TARJETAS DE MEMBRESÍA" />
 
@@ -371,7 +371,7 @@ import Footer from '../components/Footer.astro';
 			</div>
 
 			<!-- Bento Grid Layout -->
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+			<div class="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
 				
 				<!-- Card 1: Alta Seguridad -->
 				<div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all group lg:col-span-1 lg:row-span-1 overflow-hidden relative">
@@ -525,18 +525,151 @@ import Footer from '../components/Footer.astro';
 				</div>
 
 			</div>
-		</div>
-	</section>
+            <!-- INICIO VERSIÓN MÓVIL Cards 1-3 -->
+            <div class="lg:hidden mt-8">
+                <div id="cards-container" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 px-4 w-[calc(100%+2rem)] -ml-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                    
+                    <!-- Card 1: Alta Seguridad -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm transition-all group overflow-hidden relative min-w-[85vw] snap-center flex-shrink-0">
+                        <div class="absolute -right-6 -bottom-6 opacity-[0.03] text-corporate-red transform group-hover:scale-110 transition-transform duration-500 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="relative z-10 h-full flex flex-col justify-start">
+                            <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3">Alta Seguridad</h3>
+                            <p class="font-sans text-sm text-medium-gray leading-relaxed">
+                                Opciones de laminado holográfico, microtexto y barniz UV para evitar falsificaciones y garantizar el acceso únicamente a personal autorizado.
+                            </p>
+                        </div>
+                    </div>
 
-        <!-- Accesorios Complementarios -->
+                    <!-- Card 2: Tecnología Inteligente -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm transition-all group overflow-hidden relative min-w-[85vw] snap-center flex-shrink-0">
+                        <div class="absolute -right-6 -bottom-6 opacity-[0.03] text-corporate-red transform group-hover:scale-110 transition-transform duration-500 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="14" x="3" y="5" rx="2" ry="2"/><path d="M3 11h18"/><path d="M7 15h.01"/></svg>
+                        </div>
+                        <div class="relative z-10 h-full flex flex-col justify-start">
+                            <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3">Tecnología Inteligente</h3>
+                            <p class="font-sans text-sm text-medium-gray leading-relaxed">
+                                Integración impecable con chips RFID, NFC (Mifare), banda magnética o códigos QR/Barras compatibles con sistemas de checado y torniquetes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Personalización Total -->
+                    <div class="bg-corporate-red rounded-3xl p-8 shadow-sm transition-all group text-white relative overflow-hidden min-w-[85vw] snap-center flex-shrink-0">
+                        <div class="absolute -right-6 -bottom-6 opacity-10 transform group-hover:scale-110 transition-transform duration-500 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+                        </div>
+                        <div class="relative z-10 h-full flex flex-col justify-start">
+                            <h3 class="font-headings font-bold text-xl mb-3">Personalización Total</h3>
+                            <p class="font-sans text-sm text-white/90 leading-relaxed">
+                                Material PVC estándar o compuesto ultraduradero, en formatos vertical u horizontal. Diseño 100% a medida respetando tu manual de marca.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Dots Pagination -->
+                <div class="flex justify-center gap-2 mt-4" id="dots-container">
+                    <div class="w-4 h-2 rounded-full bg-corporate-red transition-all duration-300"></div>
+                    <div class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300"></div>
+                    <div class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300"></div>
+                </div>
+            </div>
+            <!-- FIN VERSIÓN MÓVIL Cards 1-3 -->
+
+        <!-- VERSIÓN MÓVIL: Card 4 y 5 -->
+        <section class="py-10 px-6 bg-slate-50 border-b border-light-gray/40 lg:hidden">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-8">
+                    <h2 class="font-headings font-bold text-3xl text-deep-charcoal mb-4 text-center">Tecnología y Acabados</h2>
+                </div>
+
+                <div id="acabados-container" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 px-4 w-[calc(100%+2rem)] -ml-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                    
+                    <!-- Card 4 Mobile: Conectividad Total -->
+                    <div class="bg-gradient-to-br from-deep-charcoal to-[#1a1a24] rounded-3xl p-0 border border-gray-100/10 shadow-lg text-white relative min-w-[85vw] snap-center flex-shrink-0 flex flex-col overflow-hidden">
+                        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+                        
+                        <div class="p-8 relative z-10 flex flex-col h-full">
+                            <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase mb-4 block">Conectividad Total</span>
+                            <h3 class="font-headings font-bold text-2xl mb-4">Tecnologías de Acceso e Integración</h3>
+                            <p class="font-sans text-sm text-slate-300 leading-relaxed mb-6">
+                                Nuestros gafetes no son solo visuales. Los convertimos en herramientas inteligentes, compatibles con cualquier sistema de control de asistencia, puntos de venta o torniquetes de acceso.
+                            </p>
+                            
+                            <div class="space-y-4 text-sm mt-auto mb-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="mt-0.5 text-corporate-red"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                    <div><strong class="font-headings block">Chip RFID & NFC (Mifare)</strong><span class="text-slate-400 block text-xs mt-1">Ideal para accesos rápidos sin contacto.</span></div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="mt-0.5 text-corporate-red"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                    <div><strong class="font-headings block">Banda Magnética (HiCo/LoCo)</strong><span class="text-slate-400 block text-xs mt-1">Para sistemas tradicionales y cajas registradoras.</span></div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="mt-0.5 text-corporate-red"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                    <div><strong class="font-headings block">Códigos QR y Barras</strong><span class="text-slate-400 block text-xs mt-1">Impresión de alta precisión.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 Mobile: Acabados -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm relative min-w-[85vw] snap-center flex-shrink-0 flex flex-col">
+                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-2">Acabados y Elementos</h3>
+                        <p class="font-sans text-sm text-medium-gray leading-relaxed mb-6">
+                            Evita la falsificación y dale un toque premium a la presentación.
+                        </p>
+
+                        <div class="grid grid-cols-1 gap-3 mt-auto relative z-10 w-full">
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-gray-100 flex items-start gap-3 w-full">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[13px] leading-tight mb-0.5">Holograma</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-gray-100 flex items-start gap-3 w-full">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 0.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[13px] leading-tight mb-0.5">Barniz UV</h4>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-gray-100 flex items-start gap-3 w-full">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[13px] leading-tight mb-0.5">Microtexto</h4>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-50 p-4 rounded-2xl border border-gray-100 flex items-start gap-3 w-full">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[13px] leading-tight mb-0.5">Panel de Firma</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots Pagination -->
+                <div class="flex justify-center gap-2 mt-4" id="dots-acabados">
+                    <div class="w-4 h-2 rounded-full bg-corporate-red transition-all duration-300"></div>
+                    <div class="w-2 h-2 rounded-full bg-gray-300 transition-all duration-300"></div>
+                </div>
+            </div>
+        </section>
         <section class="py-10 md:py-12 px-6 bg-slate-50 border-b border-light-gray/40 overflow-hidden text-center">
                 <div class="max-w-[1280px] mx-auto">
                         <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Accesorios Complementarios</h2>
                         <p class="font-sans text-medium-gray mb-12">Tenemos la solución completa. Adquiere también los accesorios para portar tus credenciales.</p>
                         
-                        <div class="grid md:grid-cols-3 gap-8">
+                        <div id="accesorios-container" class="flex md:grid md:grid-cols-3 overflow-x-auto snap-x snap-mandatory gap-4 md:gap-8 pb-4 md:pb-0 px-4 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden w-[calc(100%+2rem)] -ml-4 md:w-full md:ml-0">
                             <!-- Cintas Lanyards -->
-                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                            <div class="group bg-white h-[280px] min-w-[75vw] md:min-w-0 snap-center rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
                                 <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mb-4">
                                     <svg viewBox="0 0 100 200" class="w-24 h-48 origin-top" style="animation: swayAnimation 3s ease-in-out infinite alternate;">
                                         <path d="M 30,-20 C 30,50 10,80 40,110 C 50,120 50,120 60,110 C 90,80 70,50 70,-20" fill="none" stroke="#e1061a" stroke-width="6" stroke-linecap="round"/>
@@ -573,7 +706,7 @@ import Footer from '../components/Footer.astro';
                             </div>
 
                             <!-- Porta Gafetes -->
-                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                            <div class="group bg-white h-[280px] min-w-[75vw] md:min-w-0 snap-center rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
                                 <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-20px]">
                                     <svg viewBox="0 0 100 150" class="w-24 h-[140px]">
                                         <rect x="25" y="40" width="50" height="70" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" opacity="0.6"/>
@@ -767,6 +900,50 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
+    <!-- Script de Galerías Móviles -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Helper function to setup gallery dots
+            function setupGalleryConfig(containerId, dotsContainerId) {
+                const container = document.getElementById(containerId);
+                const dotsContainer = document.getElementById(dotsContainerId);
+                
+                if (!container || !dotsContainer) return;
+                
+                const cards = container.children;
+                if (cards.length === 0) return;
+
+                // Create dots
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < cards.length; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${i === 0 ? 'bg-corporate-red w-4' : 'bg-gray-300'}`;
+                    dotsContainer.appendChild(dot);
+                }
+
+                const dots = dotsContainer.children;
+
+                // Update dots on scroll
+                container.addEventListener('scroll', () => {
+                    const scrollLeft = container.scrollLeft;
+                    const cardWidth = cards[0].offsetWidth + parseInt(window.getComputedStyle(cards[0]).marginRight || 0); // Include gap
+                    const activeIndex = Math.round(scrollLeft / cardWidth);
+
+                    for (let i = 0; i < dots.length; i++) {
+                        if (i === activeIndex) {
+                            dots[i].className = 'w-4 h-2 rounded-full transition-all duration-300 bg-corporate-red';
+                        } else {
+                            dots[i].className = 'w-2 h-2 rounded-full transition-all duration-300 bg-gray-300';
+                        }
+                    }
+                });
+            }
+
+            // Init mobile galleries
+            setupGalleryConfig('cards-container', 'dots-container');
+            setupGalleryConfig('acabados-container', 'dots-acabados');
+        });
+    </script>
         <Footer />
 
 </Layout>

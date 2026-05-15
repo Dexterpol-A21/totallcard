@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	keywords="gafetes empresariales, credenciales corporativas, identificaciones para empresas, gafetes de seguridad, impresión PVC corporativo"
 >
 	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-                <Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+                <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
         <Header submenu="tarjetas" active="GAFETES EMPRESARIALES" />
 	<section class="lg:min-h-[85vh] flex items-start lg:items-center pt-8 pb-8 lg:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">

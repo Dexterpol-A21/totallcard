@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	keywords="tarjetas con QR, tarjetas de presentación digitales, credenciales con QR, gafetes código QR, tarjetas de contacto, vCard QR"
 >
 	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-		<Lanyard client:media="(min-width: 1024px)" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+		<Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
 	</div>
 	<Header submenu="tarjetas" active="TARJETAS CON QR" />
 
@@ -387,8 +387,8 @@ import Footer from '../components/Footer.astro';
                                 <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Características</h2>
 			</div>
 
-			<!-- Bento Grid Layout -->
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+			<!-- Bento Grid Layout Desktop -->
+			<div class="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
 				
 				<!-- Card 1: Alta Seguridad -->
 				<div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all group lg:col-span-1 lg:row-span-1 overflow-hidden relative">
@@ -540,8 +540,88 @@ import Footer from '../components/Footer.astro';
                         </div>
                     </div>
 				</div>
-
 			</div>
+
+            <!-- Interactivo Conectividad / Acabados Mobile Slider -->
+            <div class="lg:hidden w-full relative mt-6">
+                <!-- Wrapper id para el script JS -->
+                <div id="acabados-container" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 -ml-4 w-[calc(100%+2rem)] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden items-stretch">
+                    
+                    <!-- Mobile Card: Conectividad (Reducida y simplificada) -->
+                    <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 border border-slate-700 shadow-lg min-w-[85vw] snap-center relative overflow-hidden flex flex-col justify-start pb-[300px]">
+                        <div class="relative z-20 mb-8">
+                            <h3 class="font-headings font-bold text-2xl text-white mb-2">Conectividad Integrada</h3>
+                            <p class="font-sans text-slate-400 text-sm leading-relaxed">
+                                El celular del cliente se convierte en la principal pantalla para interactuar al instante.
+                            </p>
+                        </div>
+                        
+                        <!-- Mini Phone mock (Static for mobile) -->
+                        <div class="absolute bottom-[-20px] right-4 z-10 w-[180px] h-[360px] bg-slate-900 rounded-[2rem] border-4 border-slate-700 shadow-2xl p-2 transform rotate-[-8deg] opacity-80">
+                             <!-- Phone Screen -->
+                             <div class="w-full h-full bg-slate-800 rounded-[1.5rem] overflow-hidden relative">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-900 border border-slate-700 rounded-[1.5rem]">
+                                    <div class="w-16 h-16 border-4 border-slate-700 border-t-corporate-red border-l-corporate-red rounded-lg absolute"></div>
+                                    <div class="w-16 h-16 border-4 border-slate-700 border-b-corporate-red border-r-corporate-red rounded-lg absolute"></div>
+                                    <svg class="w-10 h-10 text-slate-500 my-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect x="7" y="7" width="10" height="10" rx="2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Mini Card mock -->
+                         <div class="absolute right-[40%] bottom-[60%] z-20 w-24 h-32 bg-white/20 backdrop-blur-md border border-white/30 rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.3)] flex flex-col p-2 transform rotate-[15deg]">
+                            <div class="w-6 h-1 bg-white/40 rounded-full mx-auto mb-2"></div>
+                            <div class="w-full flex items-center gap-2 mb-3">
+                                <div class="w-5 h-5 rounded-full bg-white/30"></div>
+                                <div class="w-8 h-1.5 bg-white/30 rounded-full"></div>
+                            </div>
+                            <div class="w-full h-8 bg-white/10 rounded border border-white/5 mb-2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Card: Acabados -->
+                    <div class="bg-slate-50 rounded-3xl p-6 border border-gray-200 shadow-inner flex flex-col min-w-[85vw] snap-center">
+                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-2">Acabados Especiales</h3>
+                        <p class="font-sans text-sm text-medium-gray leading-relaxed mb-6">
+                            Evita la falsificación y dale un toque premium.
+                        </p>
+
+                        <div class="grid grid-cols-1 gap-3 mt-auto">
+                            <!-- Holograma -->
+                            <div class="bg-white p-4 rounded-2xl border border-gray-100 flex items-start gap-4 shadow-sm">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[14px] leading-tight mb-1">Holograma</h4>
+                                    <p class="text-[12px] text-slate-500 leading-tight">Genérico o diseño personalizado.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Barniz UV -->
+                            <div class="bg-white p-4 rounded-2xl border border-gray-100 flex items-start gap-4 shadow-sm">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 0.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[14px] leading-tight mb-1">Barniz UV</h4>
+                                    <p class="text-[12px] text-slate-500 leading-tight">Resalta logos y protege.</p>
+                                </div>
+                            </div>
+
+                            <!-- Panel de Firma -->
+                            <div class="bg-white p-4 rounded-2xl border border-gray-100 flex items-start gap-4 shadow-sm">
+                                <div class="text-corporate-red shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+                                <div>
+                                    <h4 class="font-bold text-deep-charcoal text-[14px] leading-tight mb-1">Panel de Firma</h4>
+                                    <p class="text-[12px] text-slate-500 leading-tight">Espacio para firmas permanentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicadores Dots Acabados Mobile -->
+                <div id="dots-acabados" class="flex justify-center gap-2 mt-4 lg:hidden">
+                    <!-- Dots generados por JS -->
+                </div>
+            </div>
 		</div>
 	</section>
 
@@ -551,7 +631,7 @@ import Footer from '../components/Footer.astro';
                         <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Accesorios Complementarios</h2>
                         <p class="font-sans text-medium-gray mb-12">Tenemos la solución completa. Adquiere también los accesorios para portar tus credenciales.</p>
                         
-                        <div class="grid md:grid-cols-3 gap-8">
+                        <div class="hidden lg:grid md:grid-cols-3 gap-8">
                             <!-- Cintas Lanyards -->
                             <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
                                 <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mb-4">
@@ -578,6 +658,97 @@ import Footer from '../components/Footer.astro';
                                             <rect x="46" y="125" width="8" height="10" rx="2" fill="#cbd5e1" />
                                         </g>
                                         <circle cx="50" cy="40" r="20" fill="#141414" />
+                                        <circle cx="50" cy="40" r="8" fill="#fff" />
+                                    </svg>
+                                </div>
+                                <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                    <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Yoyos Retráctiles</h4>
+                                </div>
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                            </div>
+
+                            <!-- Porta Gafetes -->
+                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-20px]">
+                                    <svg viewBox="0 0 100 150" class="w-24 h-[140px]">
+                                        <rect x="25" y="40" width="50" height="70" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" opacity="0.6"/>
+                                        <path d="M 40,40 L 60,40" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+                                        <g style="animation: sleeveCard 4s ease-in-out infinite;">
+                                            <rect x="30" y="20" width="40" height="60" rx="3" fill="#141414" />
+                                            <rect x="35" y="30" width="15" height="15" rx="2" fill="#fff" opacity="0.9"/>
+                                            <rect x="35" y="55" width="20" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                            <rect x="35" y="65" width="30" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                        </g>
+                                        <rect x="25" y="40" width="50" height="70" rx="4" fill="none" stroke="#cbd5e1" stroke-width="3" />
+                                    </svg>
+                                </div>
+                                <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                    <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Porta Gafetes</h4>
+                                </div>
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Accesorios Slider Mobile -->
+                        <div class="lg:hidden w-full relative">
+                            <div id="accesorios-container" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 -ml-4 w-[calc(100%+2rem)] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden items-stretch">
+                                <!-- Cintas Lanyards -->
+                                <div class="group bg-white h-[280px] min-w-[75vw] snap-center rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                    <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mb-4">
+                                        <svg viewBox="0 0 100 200" class="w-24 h-48 origin-top" style="animation: swayAnimation 3s ease-in-out infinite alternate;">
+                                            <path d="M 30,-20 C 30,50 10,80 40,110 C 50,120 50,120 60,110 C 90,80 70,50 70,-20" fill="none" stroke="#e1061a" stroke-width="6" stroke-linecap="round"/>
+                                            <rect x="40" y="110" width="20" height="25" rx="3" fill="#cbd5e1" />
+                                            <path d="M 45,135 L 45,145 C 45,150 55,150 55,145 L 55,135" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Cintas Lanyards</h4>
+                                    </div>
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                                </div>
+
+                                <!-- Yoyos Retráctiles -->
+                                <div class="group bg-white h-[280px] min-w-[75vw] snap-center rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                    <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-30px]">
+                                        <svg viewBox="0 0 100 200" class="w-24 h-48">
+                                            <rect x="49" y="50" width="2" height="80" fill="#94a3b8" class="origin-top" style="animation: yoyoStringScale 4s ease-in-out infinite;" />
+                                            <g style="animation: yoyoCardMove 4s ease-in-out infinite;">
+                                                <rect x="30" y="130" width="40" height="25" rx="3" fill="#141414" stroke="#333" stroke-width="1" />
+                                                <rect x="34" y="135" width="10" height="10" rx="1" fill="#e1061a" opacity="0.8"/>
+                                                <rect x="46" y="125" width="8" height="10" rx="2" fill="#cbd5e1" />
+                                            </g>
+                                            <circle cx="50" cy="40" r="20" fill="#141414" />
+                                            <circle cx="50" cy="40" r="8" fill="#fff" />
+                                        </svg>
+                                    </div>
+                                    <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Yoyos Retráctiles</h4>
+                                    </div>
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                                </div>
+
+                                <!-- Porta Gafetes -->
+                                <div class="group bg-white h-[280px] min-w-[75vw] snap-center rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                    <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-20px]">
+                                        <svg viewBox="0 0 100 150" class="w-24 h-[140px]">
+                                            <rect x="25" y="40" width="50" height="70" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" opacity="0.6"/>
+                                            <path d="M 40,40 L 60,40" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+                                            <g style="animation: sleeveCard 4s ease-in-out infinite;">
+                                                <rect x="30" y="20" width="40" height="60" rx="3" fill="#141414" />
+                                                <rect x="35" y="30" width="15" height="15" rx="2" fill="#fff" opacity="0.9"/>
+                                                <rect x="35" y="55" width="20" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                                <rect x="35" y="65" width="30" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                            </g>
+                                            <rect x="25" y="40" width="50" height="70" rx="4" fill="none" stroke="#cbd5e1" stroke-width="3" />
+                                        </svg>
+                                    </div>
+                                    <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Porta Gafetes</h4>
+                                    </div>
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                                </div>
+                            </div>
+                        </div>
                                         <circle cx="50" cy="40" r="14" fill="#222" />
                                         <circle cx="50" cy="40" r="6" fill="#e1061a" />
                                         <rect x="45" y="10" width="10" height="14" rx="2" fill="#cbd5e1" />

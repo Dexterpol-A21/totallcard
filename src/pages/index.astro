@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 >
         <!-- Lanyard global CTA -->
         <div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-            <Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+            <Lanyard client:visible position={[0, 0, 45]} gravity={[0, -40, 0]} />
         </div>
 
         <Header submenu="empresa" active="INICIO" />

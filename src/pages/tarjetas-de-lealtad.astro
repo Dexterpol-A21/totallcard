@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 	keywords="tarjetas de lealtad, tarjetas cliente frecuente, tarjetas de puntos, tarjetas de regalo PVC, tarjetas VIP clientes, fidelización"
 >
 	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
-		<Lanyard client:visible position={[0, 0, 45]} gravity={[0, -40, 0]} />
+		<Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
 	</div>
 	<Header submenu="tarjetas" active="TARJETAS DE LEALTAD" />
 

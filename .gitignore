@@ -1,6 +1,10 @@
 # build output
 dist/
 
+# Ignorar archivos PNG de gran peso (usaremos AVIF/WEBP)
+public/images/*.png
+public/images/*.PNG
+
 # generated types
 .astro/
 

@@ -68,7 +68,7 @@ import Footer from '../components/Footer.astro';
                     <picture class="contents">
     <source srcset="/images/qr.avif" type="image/avif" />
     <source srcset="/images/qr.webp" type="image/webp" />
-    <img draggable="false" src="/images/qr.png" alt="Tarjetas QR" class="w-full h-full object-cover relative z-10 rounded-[2rem] shadow-2xl border-[8px] border-white pointer-events-none select-none" / loading="lazy" decoding="async">
+    <img draggable="false" src="/images/qr.webp" alt="Tarjetas QR" class="w-full h-full object-cover relative z-10 rounded-[2rem] shadow-2xl border-[8px] border-white pointer-events-none select-none" loading="lazy" decoding="async" />
 </picture>
                 </div>
 			</div>
@@ -921,7 +921,7 @@ import Footer from '../components/Footer.astro';
                     <picture class="contents">
     <source srcset="/images/finalCTAImprimir.avif" type="image/avif" />
     <source srcset="/images/finalCTAImprimir.webp" type="image/webp" />
-    <img src="/images/finalCTAImprimir.png" alt="Impresora de credenciales PVC" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" / loading="lazy" decoding="async">
+    <img src="/images/finalCTAImprimir.webp" alt="Impresora de credenciales PVC" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" loading="lazy" decoding="async" />
 </picture>
                 </div>
             </div>
@@ -955,6 +955,51 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
+    <!-- Script de Galerías Móviles -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Helper function to setup gallery dots
+            function setupGalleryConfig(containerId, dotsContainerId) {
+                const container = document.getElementById(containerId);
+                const dotsContainer = document.getElementById(dotsContainerId);
+                
+                if (!container || !dotsContainer) return;
+                
+                const cards = container.children;
+                if (cards.length === 0) return;
+
+                // Create dots
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < cards.length; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${i === 0 ? 'bg-corporate-red w-4' : 'bg-gray-300'}`;
+                    dotsContainer.appendChild(dot);
+                }
+
+                const dots = dotsContainer.children;
+
+                // Update dots on scroll
+                container.addEventListener('scroll', () => {
+                    const scrollLeft = container.scrollLeft;
+                    const cardWidth = cards[0].offsetWidth + parseInt(window.getComputedStyle(cards[0]).marginRight || 0); // Include gap
+                    const activeIndex = Math.round(scrollLeft / cardWidth);
+
+                    for (let i = 0; i < dots.length; i++) {
+                        if (i === activeIndex) {
+                            dots[i].className = 'w-4 h-2 rounded-full transition-all duration-300 bg-corporate-red';
+                        } else {
+                            dots[i].className = 'w-2 h-2 rounded-full transition-all duration-300 bg-gray-300';
+                        }
+                    }
+                });
+            }
+
+            // Init mobile galleries
+            setupGalleryConfig('cards-container', 'dots-container');
+            setupGalleryConfig('acabados-container', 'dots-acabados');
+            setupGalleryConfig('accesorios-container', 'dots-accesorios');
+        });
+    </script>
         <Footer />
 
 </Layout>

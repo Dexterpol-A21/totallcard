@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+    title="Aviso de Privacidad | TOTALLCARD"
+    description="Aviso de privacidad de TOTALLCARD. Conoce cómo protegemos y manejamos tu información al navegar por nuestro sitio web."
+    keywords="aviso de privacidad, políticas de uso, protección de datos, totallcard"
+>
+    <Header active="PRIVACIDAD" />
+
+    <!-- Hero Section Minimalista -->
+    <section class="relative pt-8 pb-8 md:pt-48 md:pb-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mb-8 pt-6">
+                <!-- Letras Gigantes (Izquierda) -->
+                <h1 class="font-headings font-black text-[5.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[10rem] text-black leading-[0.75] tracking-tighter uppercase shrink-0">
+                    AVISO DE<br/>
+                    <span class="text-corporate-red">PRIVACIDAD.</span>
+                </h1>
+
+                <!-- Eslogan (Derecha Gigante) -->
+                <div class="lg:w-full lg:mt-4 flex lg:justify-end items-center">
+                    <p class="font-headings text-black font-black text-4xl sm:text-6xl lg:text-[4rem] xl:text-[4.5rem] tracking-tighter uppercase leading-[0.85] lg:text-right border-l-8 lg:border-l-0 lg:border-r-[16px] border-corporate-red pl-6 lg:pl-0 lg:pr-8">
+                        PROTEGEMOS<br/>TUS<br/>
+                        <span class="text-corporate-red">DATOS.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Legal -->
+    <section class="py-10 md:py-16 bg-slate-50 px-6 border-t border-b border-light-gray/40">
+        <div class="max-w-[800px] mx-auto bg-white p-8 md:p-12 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="font-headings font-bold text-2xl md:text-3xl text-deep-charcoal mb-8 border-b-2 border-corporate-red pb-4">Política de Privacidad y Manejo de Datos</h2>
+            <div class="space-y-6 font-sans text-slate-600 leading-relaxed">
+                <p>En <strong>TOTALLCARD</strong> valoramos tu confianza y respetamos tu privacidad. Este documento describe de manera general cómo manejamos la información recopilada a través de nuestra página web.</p>
+                
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">1. Recopilación de Información</h3>
+                    <p>Al visitar nuestro sitio web, enviar un formulario de contacto o interactuar a través de nuestros canales oficiales (como WhatsApp o correo electrónico), es posible que nos proporciones datos de contacto básicos (nombre, teléfono, correo) únicamente con la finalidad de brindarte información, cotizaciones o el soporte solicitado.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">2. Uso de la Información</h3>
+                    <p>Los datos que nos compartes se utilizan exclusivamente para propósitos operativos y comerciales relacionados con tu interés en nuestros productos. <strong>No vendemos, alquilamos ni distribuimos</strong> tu información personal a terceros ajenos a nuestra operación sin tu conocimiento o consentimiento previo.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">3. Cookies y Tecnologías de Rastreo</h3>
+                    <p>Nuestro sitio puede usar <em>cookies</em> y tecnologías similares para mejorar tu experiencia de navegación e identificar estadísticas generales del sitio (como páginas más visitadas). Puedes configurar o bloquear el uso de estas herramientas directamente desde tu navegador.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">4. Seguridad de la Plataforma</h3>
+                    <p>Implementamos medidas pertinentes para blindar la información mientras transita y se almacena temporalmente. Aunque ninguna transmisión masiva por internet es 100% invulnerable, nuestro compromiso es operar bajo buenas prácticas de administración.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">5. Modificaciones al Aviso</h3>
+                    <p>Nos reservamos el derecho explícito de actualizar, modificar o adaptar este aviso de privacidad en cualquier momento, de acuerdo con actualizaciones legales o transformaciones en nuestra operación central. Se te aconseja monitorear esta página para actualizaciones eventuales.</p>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100 italic text-sm">
+                    <p>Última actualización: Mayo 2026. Para dudas o aclaraciones sobre el cuidado de tus interacciones con la base de origen de nuestro sitio, puedes contactarnos sin problema desde nuestra línea de soporte publicada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

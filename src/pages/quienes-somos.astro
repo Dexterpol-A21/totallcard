@@ -1,0 +1,271 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+---
+
+<Layout 
+    title="Quiénes Somos | Especialistas en Credencialización | TOTALLCARD"
+    description="Empresa mexicana especializada en soluciones integrales de identificación, impresión de gafetes PVC de alta calidad técnica y tecnología precisa para tu identidad corporativa."
+    keywords="quiénes somos totallcard, especialistas credencialización, credenciales PVC México, empresa gafetes, soluciones de identificación, totall card méxico"
+>
+    <Header submenu="empresa" active="QUIÉNES SOMOS" />
+
+    <!-- Hero Section Minimalista (Titular y Eslogan Lateral) -->
+    <section class="relative pt-8 pb-8 md:pt-48 md:pb-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mb-8 pt-6">
+                <!-- Letras Gigantes (Izquierda) -->
+                <h1 class="font-headings font-black text-[5.5rem] sm:text-[8rem] md:text-[11rem] lg:text-[13rem] text-black leading-[0.75] tracking-tighter uppercase shrink-0">
+                    QUIÉNES<br/>
+                    <span class="text-corporate-red">SOMOS.</span>
+                </h1>
+
+                <!-- Eslogan (Derecha Gigante) -->
+                <div class="lg:w-full lg:mt-4 flex lg:justify-end items-center">
+                    <p class="font-headings text-black font-black text-4xl sm:text-6xl lg:text-[4.5rem] xl:text-[5.5rem] tracking-tighter uppercase leading-[0.85] lg:text-right border-l-8 lg:border-l-0 lg:border-r-[16px] border-corporate-red pl-6 lg:pl-0 lg:pr-8">
+                        IMPRESIÓN DE<br/>IDENTIDAD.<br/>
+                        <span class="text-corporate-red">CONEXIÓN DE<br/>CONFIANZA.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contenido Inferior -->
+            <div class="mt-8">
+                <!-- Texto descriptivo -->
+                <div class="max-w-3xl">
+                    <p class="font-headings font-bold text-xl md:text-3xl text-black leading-snug mb-6 border-l-8 border-corporate-red pl-6">
+                        EXPERTOS EN CREDENCIALIZACIÓN Y TARJETAS DE LEALTAD.
+                    </p>
+                    <p class="font-sans text-black/70 text-lg md:text-xl mb-4 pl-8">
+                        Empresa mexicana especializada en proporcionar soluciones integrales de identificación. Tecnología precisa sin complicaciones innecesarias.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Línea separadora limpia -->
+    <div class="w-full h-px bg-black/10"></div>
+
+    <!-- Misión / Visión Section -->
+    <section class="py-12 md:py-16 bg-white px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="order-2 md:order-1 bg-white min-h-[400px] rounded-3xl relative overflow-hidden border border-slate-100 flex items-center justify-center shadow-lg">
+                    <!-- Imagen Filosofía -->
+                    <picture class="contents">
+    <source srcset="/images/quienessomos.avif" type="image/avif" />
+    <source srcset="/images/quienessomos.webp" type="image/webp" />
+    <img src="/images/quienessomos.png" alt="Filosofía y Calidad Totallcard" class="w-full h-full object-cover">
+</picture>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-[2px] bg-corporate-red"></div>
+                        <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">FILOSOFÍA</span>
+                    </div>
+                    <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-8">Nuestra Filosofía</h2>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.836-1.658L12 12l-4.164 4.17a2 2 0 0 0-.836 1.658V22"/><path d="M17 2v4.172a2 2 0 0 1-.836 1.658L12 12l-4.164-4.17a2 2 0 0 1-.836-1.658V2"/></svg>
+                                Misión
+                            </h3>
+                            <p class="font-sans text-slate-500 leading-relaxed">
+                                Proveer a empresas y corporativos soluciones tecnológicas de identificación e impresión seguras y eficientes, entregando tarjetas y equipos de la más alta calidad para fortalecer su imagen, lealtad y seguridad.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+                                Visión
+                            </h3>
+                            <p class="font-sans text-slate-500 leading-relaxed">
+                                Convertirnos en el estándar número uno a nivel nacional en la fabricación de credenciales en PVC inteligente y distribución de la tecnología de credencialización en la que confían las grandes corporaciones y franquicias en México.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por Qué Elegirnos Section -->
+    <section class="py-16 md:py-24 bg-slate-50 px-6 border-t border-b border-light-gray/40">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <div class="flex items-center gap-3 mb-3 md:justify-start justify-center">
+                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">VENTAJAS COMPETITIVAS</span>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Lo que nos diferencia</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Ventaja 1 -->
+                <div class="bg-slate-50 pvc-card has-punch rounded-[1rem] p-8 hover:-translate-y-1 transition-transform border border-slate-200 flex flex-col items-center text-center shadow-md hover:shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Máxima calidad Garantizada</h4>
+                    <p class="font-sans text-sm text-slate-500">Utilizamos PVC de la más alta durabilidad y tecnología de impresión líder a nivel mundial, garantizando colores vibrantes y legibilidad perfecta.</p>
+                </div>
+                
+                <!-- Ventaja 2 -->
+                <div class="bg-slate-50 pvc-card has-punch rounded-[1rem] p-8 hover:-translate-y-1 transition-transform border border-slate-200 flex flex-col items-center text-center shadow-md hover:shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Producción Eficiente</h4>
+                    <p class="font-sans text-sm text-slate-500">Disposición de equipos y consumibles que nos permite tener excelentes tiempos de entrega, adaptados a tus urgencias corporativas.</p>
+                </div>
+                
+                <!-- Ventaja 3 -->
+                <div class="bg-slate-50 pvc-card has-punch rounded-[1rem] p-8 hover:-translate-y-1 transition-transform border border-slate-200 flex flex-col items-center text-center shadow-md hover:shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-2">Atención Personalizada</h4>
+                    <p class="font-sans text-sm text-slate-500">No somos un ecommerce automatizado más. Un asesor experto toma tu proyecto y te acompaña desde la idea gráfica hasta que tienes el producto en mano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action (Banner Final) -->
+    <section class="py-12 md:py-16 bg-corporate-red px-6 relative overflow-hidden">
+        <!-- SVG Decoración (Efecto Múltiples Ondas) -->
+        <div class="absolute inset-0 mix-blend-overlay opacity-20 pointer-events-none">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full text-white" fill="currentColor">
+                <path d="M0,0 C30,30 70,-10 100,50 L100,100 L0,100 Z" opacity="0.3"></path>
+                <path d="M0,50 C40,-10 60,60 100,20 L100,100 L0,100 Z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿Buscas credenciales profesionales o tarjetas de lealtad?</h2>
+                <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Contáctanos ahora y un asesor te guiará para elegir la solución perfecta que tu negocio necesita.</p>
+            </div>
+            <div class="shrink-0">
+                <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                    <div class="docs py-4 px-8 border-none">
+                        <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Solicitar Cotización Gratuita</span>
+                    </div>
+                    <div class="download border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<style>
+/* Efectos Call To Action Bottom */
+.more-button {
+  position: relative;
+  border-width: 0;
+  color: #E1061A;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.more-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 38px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #E1061A;
+  color: #E1061A;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.more-button .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #E1061A;
+  color: white;
+  border: solid 1px #E1061A;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.more-button:hover .download {
+  transform: translateY(100%);
+}
+
+/* Modificador para botones sobre fondo rojo */
+.more-button.alt-button {
+    color: #4a5568; /* deep-charcoal */
+}
+.more-button.alt-button .docs {
+    background-color: white;
+    color: #4a5568; /* deep-charcoal */
+    border: none;
+}
+.more-button.alt-button .download {
+    background-color: #2d3748; /* graphite */
+    color: white;
+    border: none;
+}
+
+/* Animación de Efecto Impresora en Secciones */
+.print-section {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(-10deg) translateY(80px);
+  transform-origin: bottom center;
+  transition: opacity 1s ease, transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.print-section.printed {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Efecto Impresora al hacer Scroll
+        const sections = document.querySelectorAll('section:not(:first-of-type)');
+        
+        sections.forEach(sec => {
+            sec.classList.add('print-section');
+        });
+
+        const printObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('printed');
+                    printObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        sections.forEach(sec => {
+            printObserver.observe(sec);
+        });
+    });
+</script>

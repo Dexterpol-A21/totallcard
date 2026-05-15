@@ -52,4 +52,10 @@ Antes de marcar una página o feature como "Aprobada", verifica esto:
 - [x] ¿Verificaste que no existan dos `<section>` blancas seguidas con márgenes dobles (ej. exceso de `<br>` o padding sumado)?
 - [x] ¿El botón de llamadas a la acción (*Call to Action*) del Hero y del Footer es de color Contrastante (`text-white`) con fondos sólidos identificables?
 - [x] ¿Todos los encabezados secundarios (`h2`, `h3`) usan el pre-título rojo corporativo con la línea a su lado?
-- [x] ¿Existen los bordes súper finos sutiles (`border-b border-light-gray/40`) entre secciones que tienen el mismo color de fondo para crear un respiro psicológico en el scroll de usuario?
+- [x] ¿Existen los bordes súper finos sutiles (`border-b border-light-gray/40`) entre secciones que tienen el mismo color de fondo para crear un respiro psicológicamente ordenado?
+- [x] ¿Todas las secciones se animan suavemente al hacer scroll (Efecto Impresora / `.print-section`)?
+
+## Regla 5: Animaciones de Carga en Scroll (Efecto Impresora)
+Para mantener la interactividad y hacer un guiño al giro de impresión, todas las páginas de producto y tarjetas deben implementar el "Efecto Impresora" al hacer scroll:
+1. Las clases genéricas `.print-section` deben estar aplicadas vía CSS.
+2. Todas las etiquetas `<section>` (salvo el Hero inicial) deben inyectarse y observarse con `IntersectionObserver` vía JavaScript.gico en el scroll de usuario?

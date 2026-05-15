@@ -4,16 +4,22 @@ import '../styles/global.css';
 interface Props {
 	title?: string;
 	description?: string;
+	keywords?: string;
+	image?: string;
+	canonical?: string;
 }
 
 const { 
-	title = "TOTALLCARD | Impresión de Identidad. Conexión de Confianza.",
-	description = "Impresión de Identidad. Conexión de Confianza. TOTALLCARD ofrece credenciales de alta seguridad para escuelas, residenciales y compatibilidad total con Soft Restaurant."
+	title = "Impresión de Gafetes PVC y Credenciales de Seguridad | TOTALLCARD",
+	description = "Impresión de Identidad. Conexión de Confianza. TOTALLCARD ofrece credenciales de alta seguridad para escuelas, residenciales y compatibilidad total con Soft Restaurant.",
+	keywords = "credenciales, PVC, gafetes, tarjetas de lealtad, identificación, TotallCard, impresión de tarjetas",
+	image = "/images/cards-hero.webp",
+	canonical = Astro.url ? Astro.url.href : "https://totallcard.com"
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -26,11 +32,30 @@ const {
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
-		<meta name="description" content={description} />
-		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Basic SEO -->
 		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonical} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(image, Astro.url)} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonical} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
 	</head>
-	<body class="bg-light-gray font-sans text-deep-charcoal antialiased selection:bg-corporate-red selection:text-white">
+	<body class="bg-light-gray font-sans text-deep-charcoal antialiased selection:bg-corporate-red selection:text-white overflow-x-hidden w-full relative">
 		<slot />
 	</body>
 </html>

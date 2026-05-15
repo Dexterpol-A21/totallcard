@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+    title="Mantenimiento de Equipos | TOTALLCARD"
+    description="Mantenimiento preventivo y correctivo para impresoras de PVC. Alargamos la vida útil de tus equipos."
+    keywords="mantenimiento de impresoras pvc, reparacion impresoras pvc"
+>
+    <Header submenu="servicios" active="MANTENIMIENTO DE EQUIPOS" />
+
+    <!-- Hero Section Minimalista -->
+    <section class="relative pt-8 pb-8 md:pt-48 md:pb-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mb-8 pt-6">
+                <!-- Letras Gigantes (Izquierda) -->
+                <h1 class="font-headings font-black text-[4rem] sm:text-[5.5rem] md:text-[7rem] lg:text-[7.5rem] xl:text-[8.5rem] text-black leading-[0.75] tracking-tighter uppercase shrink-0">
+                    MANTENI-<br/>MIENTO<br/>
+                    <span class="text-corporate-red">DE EQUIPOS.</span>
+                </h1>
+
+                <!-- Eslogan (Derecha Gigante) -->
+                <div class="lg:w-full lg:mt-4 flex lg:justify-end items-center">
+                    <p class="font-headings text-black font-black text-4xl sm:text-6xl lg:text-[4.5rem] tracking-tighter uppercase leading-[0.85] lg:text-right border-l-8 lg:border-l-0 lg:border-r-[16px] border-corporate-red pl-6 lg:pl-0 lg:pr-8">
+                        VIDA ÚTIL<br/>EXTENDIDA.<br/>
+                        <span class="text-corporate-red">CERO PAROS.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contenido Inferior -->
+            <div class="mt-8">
+                <!-- Texto descriptivo -->
+                <div class="max-w-3xl">
+                    <p class="font-headings font-bold text-xl md:text-3xl text-black leading-snug mb-6 border-l-8 border-corporate-red pl-6">
+                        SOLUCIONES PREVENTIVAS Y CORRECTIVAS.
+                    </p>
+                    <p class="font-sans text-black/70 text-lg md:text-xl mb-4 pl-8">
+                        Respaldo y mantenimiento enfocado en proteger tus impresoras PVC. Contamos con experiencia en las diversas marcas del mercado.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-slate-50 px-6 border-t border-light-gray/40">
+        <div class="max-w-[1400px] mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Beneficio 1 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Mantenimiento Preventivo</h3>
+                    <p class="font-sans text-black/70 text-lg">
+                        Limpieza profunda, ajuste de sensores, lubricación de engranes y actualización de firmware. Evita paros inesperados en tu producción de gafetes.
+                    </p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Mantenimiento Correctivo</h3>
+                    <p class="font-sans text-black/70 text-lg">
+                        Manejo de fallas y sustitución de piezas mecánicas o electrónicas dañadas (como algunos cabezales, sensores o rodillos de tracción).
+                    </p>
+                </div>
+                
+                <!-- Beneficio 3 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none md:col-span-2">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-corporate-red opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Protege tu Inversión</h3>
+                            <p class="font-sans text-black/70 text-lg">
+                                Contamos con personal altamente calificado para cuidar la buena operación de tus equipos y buscar que recuperes la máxima calidad y nitidez desde el primer servicio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Señales de Alerta -->
+    <section class="py-16 md:py-24 bg-white px-6">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="mb-12 border-l-8 border-corporate-red pl-6">
+                <h2 class="font-headings font-black text-3xl md:text-5xl text-black uppercase tracking-tighter mb-4">
+                    ¿Cuándo solicitar <span class="text-corporate-red">Servicio?</span>
+                </h2>
+                <p class="font-sans text-black/70 text-lg max-w-2xl">
+                    No esperes a que tu producción se detenga por completo. Identifica estos síntomas comunes en tus impresoras de tarjetas PVC.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Líneas Blancas</h4>
+                    <p class="font-sans text-sm text-slate-600">Aparición de líneas sin impresión a lo largo del gafete, generalmente indica daño irreversible o suciedad excesiva en el cabezal.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Atascos Frecuentes</h4>
+                    <p class="font-sans text-sm text-slate-600">Las tarjetas se quedan atoradas dentro del mecanismo. Clara señal de rodillos sucios, correas desgastadas o sensores bloqueados.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-9 5 18 3-10h6"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Colores Opacos</h4>
+                    <p class="font-sans text-sm text-slate-600">Pérdida de intensidad en los colores o registro desfasado de los paneles. Requiere calibración fina de sensores y calor.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Errores de Software</h4>
+                    <p class="font-sans text-sm text-slate-600">Leds parpadeando en rojo o alertas en la pantalla (Ribbon Out, Card Jam, RFID Error) deteniendo el flujo normal de expedición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="py-16 md:py-24 bg-slate-900 px-6 border-y-[8px] border-corporate-red">
+        <div class="max-w-[1400px] mx-auto text-center">
+            <h2 class="font-headings font-black text-3xl md:text-5xl text-white uppercase tracking-tighter mb-4">
+                Metodología de <span class="text-corporate-red">Trabajo</span>
+            </h2>
+            <p class="font-sans text-white/70 text-lg mb-16 max-w-2xl mx-auto">
+                Un proceso sencillo para identificar el problema de tu equipo y darle la mejor solución.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative max-w-6xl mx-auto">
+                <!-- Línea conectora Desktop -->
+                <div class="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-[2px] bg-slate-700 -z-0"></div>
+
+                <!-- Paso 1 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">1</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Recepción y Revisión</h4>
+                    <p class="font-sans text-slate-400 text-sm">Inspeccionamos de manera general tu equipo para ubicar los problemas principales y buscar la manera de solucionarlos.</p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">2</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Propuesta y Aprobación</h4>
+                    <p class="font-sans text-slate-400 text-sm">Te compartimos las opciones de reparación y ajustes necesarios. Una vez que confirmes la ruta de acción, comenzamos a trabajar.</p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">3</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Ejecución y Ajustes</h4>
+                    <p class="font-sans text-slate-400 text-sm">Realizamos la limpieza, reparación o calibración del equipo buscando que vuelva a operar correctamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / Preguntas Frecuentes - Mantenimiento -->
+    <section class="py-16 md:py-24 bg-slate-50 px-6 border-b border-light-gray/40">
+        <div class="max-w-[800px] mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Soporte Técnico</span>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Preguntas Frecuentes</h2>
+                <p class="font-sans text-slate-500">Aclaremos todas tus dudas sobre nuestro servicio de mantenimiento y reparación.</p>
+            </div>
+            
+            <div class="space-y-4 max-w-[800px] mx-auto w-full">
+                <!-- FAQ 1 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Hacen reparaciones a domicilio?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Para reparaciones complejas sugerimos que el equipo ingrese a nuestro laboratorio, aunque para mantenimiento preventivo, ajustes rápidos o capacitaciones, un técnico puede acudir a tus instalaciones (aplican restricciones geográficas).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Cuánto tarda en promedio una revisión?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Buscamos realizar la exploración inicial tan pronto como recibimos el equipo para entregarte una propuesta de forma ágil y oportuna.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Qué tipo de piezas se utilizan?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Utilizamos componentes fiables y seleccionados específicamente para tratar de recuperar al cien por ciento el funcionamiento de tu impresora.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Flotante CTA -->
+    <section class="py-12 md:py-16 bg-corporate-red px-6 relative overflow-hidden">
+        <div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿NECESITAS ATENCIÓN ESPECIALIZADA INMEDIATA?</h2>
+                <p class="font-sans text-white/90 text-sm md:text-base max-w-xl">Contamos con técnicos capacitados listos para apoyarte a recuperar tu producción.</p>
+            </div>
+            <div class="shrink-0">
+                <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                    <div class="docs py-4 px-8 border-none flex items-center bg-white text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                        <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">COTIZA TU SERVICIO</span>
+                    </div>
+                    <div class="download border-none bg-green-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<style is:global>
+.more-button { position: relative; border-width: 0; color: #E1061A; font-size: 13px; font-weight: 600; border-radius: 4px; z-index: 1; }
+.more-button .docs { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 38px; padding: 0.5rem 1.25rem; border-radius: 4px; z-index: 1; background-color: white; border: 1px solid #E1061A; color: #E1061A; transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+.more-button .download { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; max-width: 90%; margin: 0 auto; z-index: -1; border-radius: 4px; transform: translateY(0%); background-color: #E1061A; color: white; border: solid 1px #E1061A; transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+.more-button:hover .download { transform: translateY(100%); }
+.more-button.alt-button { color: #4a5568; }
+.more-button.alt-button .docs { background-color: white; color: #e1061a; border: none; }
+.more-button.alt-button .download { background-color: #22c55e; color: white; border: none; }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Implementación de las Interactive Morphing Cards (FAQ)
+        const faqCards = document.querySelectorAll('.faq-card');
+        
+        faqCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Cerrar las otras que estén abiertas (Acordeón único)
+                faqCards.forEach(otherCard => {
+                    if (otherCard !== card && otherCard.classList.contains('is-open')) {
+                        otherCard.classList.remove('is-open');
+                    }
+                });
+                
+                // Alternar el estado open de la tarjeta interactuada
+                card.classList.toggle('is-open');
+            });
+        });
+    });
+</script>

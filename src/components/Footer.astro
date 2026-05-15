@@ -9,11 +9,19 @@
             <div class="mb-6 block">
                 <div class="flex items-center">
                     <!-- Icono Tarjeta (Izquierda) -->
-                    <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-8 md:h-10 object-contain brightness-0 invert -mt-1 mr-2 md:mr-3 relative z-30" />
+                    <picture class="contents">
+    <source srcset="/images/logoIconNoF.avif" type="image/avif" />
+    <source srcset="/images/logoIconNoF.webp" type="image/webp" />
+    <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-8 md:h-10 object-contain brightness-0 invert -mt-1 mr-2 md:mr-3 relative z-30" />
+</picture>
                     <!-- Texto con flechas -->
                     <div class="flex flex-col items-center justify-center -space-y-7 brightness-0 invert">
                         <img src="/icons/flechaLogo.svg" alt="" class="h-12 md:h-16 relative z-20 w-[180px] md:w-[240px]" />
-                        <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-10 md:h-12 object-contain relative z-10" />
+                        <picture class="contents">
+    <source srcset="/images/logoTextoNoF.avif" type="image/avif" />
+    <source srcset="/images/logoTextoNoF.webp" type="image/webp" />
+    <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-10 md:h-12 object-contain relative z-10" />
+</picture>
                         <img src="/icons/flechaLogo.svg" alt="" class="h-12 md:h-16 rotate-180 relative z-20 w-[180px] md:w-[240px]" />
                     </div>
                 </div>
@@ -38,13 +46,13 @@
         <div class="lg:col-span-1">
             <h4 class="font-sans font-bold uppercase tracking-wider text-xs mb-6 text-white">Tarjetas</h4>
             <ul class="space-y-3 font-sans text-[13px] text-white/70">
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Gafetes Empresariales</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Credencial Escolar</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Tarjetas de Membresía</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Tarjetas de Lealtad</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Tarjetas con QR</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Tarjetas RFID / NFC</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Credenciales para Eventos</a></li>
+                <li><a href="/gafetes-empresariales" class="hover:text-corporate-red transition-colors">Gafetes Empresariales</a></li>
+                <li><a href="/gafetes-escolares" class="hover:text-corporate-red transition-colors">Credencial Escolar</a></li>
+                <li><a href="/tarjetas-de-membresia" class="hover:text-corporate-red transition-colors">Tarjetas de Membresía</a></li>
+                <li><a href="/tarjetas-de-lealtad" class="hover:text-corporate-red transition-colors">Tarjetas de Lealtad</a></li>
+                <li><a href="/tarjetas-qr" class="hover:text-corporate-red transition-colors">Tarjetas con QR</a></li>
+                <li><a href="/tarjetas-rfid" class="hover:text-corporate-red transition-colors">Tarjetas RFID / NFC</a></li>
+                <li><a href="/pases-vip" class="hover:text-corporate-red transition-colors">Credenciales para Eventos</a></li>
             </ul>
         </div>
 
@@ -53,8 +61,8 @@
             <h4 class="font-sans font-bold uppercase tracking-wider text-xs mb-6 text-white">Impresoras y Equipo</h4>
             <ul class="space-y-3 font-sans text-[13px] text-white/70">
                 <li><a href="/impresoras" class="hover:text-corporate-red transition-colors">Venta de Impresoras</a></li>
-                <li><a href="/impresoras#consumibles" class="hover:text-corporate-red transition-colors">Cintas y Consumibles</a></li>
-                <li><a href="/impresoras#accesorios" class="hover:text-corporate-red transition-colors">Portagafetes y Lanyards</a></li>
+                <li><a href="/cintas-y-consumibles" class="hover:text-corporate-red transition-colors">Cintas y Consumibles</a></li>
+                <li><a href="/portagafetes-y-lanyards" class="hover:text-corporate-red transition-colors">Portagafetes y Lanyards</a></li>
             </ul>
         </div>
 
@@ -62,10 +70,9 @@
         <div class="lg:col-span-1">
             <h4 class="font-sans font-bold uppercase tracking-wider text-xs mb-6 text-white">Servicios</h4>
             <ul class="space-y-3 font-sans text-[13px] text-white/70">
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Software e Integraciones</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Mantenimiento de Equipos</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Soporte Técnico</a></li>
-                <li><a href="#" class="hover:text-corporate-red transition-colors">Renta de Equipos</a></li>
+                <li><a href="/mantenimiento" class="hover:text-corporate-red transition-colors">Mantenimiento de Equipos</a></li>
+                <li><a href="/soporte" class="hover:text-corporate-red transition-colors">Soporte Técnico</a></li>
+                <li><a href="/renta" class="hover:text-corporate-red transition-colors">Renta de Equipos</a></li>
             </ul>
         </div>
 
@@ -73,31 +80,19 @@
         <div class="lg:col-span-1">
             <h4 class="font-sans font-bold uppercase tracking-wider text-xs mb-6 text-white">Empresa</h4>
             <ul class="space-y-4 font-sans text-[13px] text-white/70">
-                <li><a href="/#empresa" class="hover:text-corporate-red transition-colors flex items-center gap-2">¿Quiénes Somos?</a></li>
-                <li><a href="/#faq" class="hover:text-corporate-red transition-colors flex items-center gap-2">Preguntas Frecuentes</a></li>
-                <li><a href="/#sectores" class="hover:text-corporate-red transition-colors flex items-center gap-2">Sectores Atendidos</a></li>
+                <li><a href="/quienes-somos" class="hover:text-corporate-red transition-colors flex items-center gap-2">¿Quiénes Somos?</a></li>
+                <li><a href="/faq" class="hover:text-corporate-red transition-colors flex items-center gap-2">Preguntas Frecuentes</a></li>
+                <li><a href="/sectores" class="hover:text-corporate-red transition-colors flex items-center gap-2">Sectores Atendidos</a></li>
                 <li class="pt-2 border-t border-white/10 mt-2">
-                    <a href="tel:+525512345678" class="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer w-fit mt-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:text-corporate-red transition-colors"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        +52 55 1234 5678
-                    </a>
+                    <div class="flex items-center gap-3 text-white w-fit mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-corporate-red"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Envíos a toda la República Mexicana
+                    </div>
                 </li>
                 <li>
-                    <a href="mailto:ventas@totallcard.com" class="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:text-corporate-red transition-colors"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                        ventas@totallcard.com
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:text-corporate-red transition-colors"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                        Querétaro, México
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5211234567890" class="flex items-center gap-3 hover:text-[#25D366] transition-colors group cursor-pointer w-fit pt-2">
+                    <a href="https://wa.me/525615429492" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-[#25D366] transition-colors group cursor-pointer w-fit pt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#25D366]"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
-                        <span class="font-bold">Cotización por WhatsApp</span>
+                        <span class="font-bold">56 1542 9492</span>
                     </a>
                 </li>
             </ul>
@@ -105,13 +100,15 @@
     </div>
 
     <!-- Copyright -->
-    <div class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="font-sans text-white/50 text-[11px]">
-            &copy; 2026 TOTALLCARD. Todos los derechos reservados.
+    <div class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div class="font-sans text-white/50 text-[11px] leading-relaxed">
+            <p class="mb-1">&copy; 2026 TOTALLCARD. | Envíos a toda la República Mexicana.</p>
+            <p class="text-[9px] text-white/30">*Soft Restaurant® y National Soft® son marcas registradas y se mencionan únicamente con fines informativos. No existe afiliación o patrocinio directo.</p>
+        </div>
         </p>
         <div class="flex gap-6 font-sans text-white/50 text-[11px]">
-            <a href="#" class="hover:text-white transition-colors">Aviso de privacidad</a>
-            <a href="#" class="hover:text-white transition-colors">Términos y condiciones</a>
+            <a href="/privacidad" class="hover:text-white transition-colors">Aviso de privacidad</a>
+            <a href="/politicas" class="hover:text-white transition-colors">Términos y condiciones</a>
         </div>
     </div>
 </footer>

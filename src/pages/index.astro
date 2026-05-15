@@ -18,7 +18,7 @@ import Footer from '../components/Footer.astro';
         <Header submenu="empresa" active="INICIO" />
 
 	<!-- Hero Section -->
-	<section class="min-h-[85vh] flex items-center pt-32 pb-8 md:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
+	<section class="lg:min-h-[85vh] flex items-start lg:items-center pt-8 pb-8 lg:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
 		<div class="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-8 items-center w-full">
 			<div class="z-10">
 				<p class="font-headings text-corporate-red font-bold text-xs md:text-sm tracking-widest uppercase mb-4">
@@ -32,7 +32,7 @@ import Footer from '../components/Footer.astro';
 				</p>
 				
 				<div class="hidden md:flex flex-col sm:flex-row gap-6 mb-6 items-center">
-					<a href="https://wa.me/5211234567890" class="download-button inline-flex">
+					<a href="https://wa.me/525615429492" class="download-button inline-flex">
 						<div class="docs py-3 px-6"> <!-- Ajuste de padding manual para el hero -->
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
 							<span class="font-bold text-[15px] tracking-wider uppercase">COTIZACIÓN POR WHATSAPP</span>
@@ -76,7 +76,11 @@ import Footer from '../components/Footer.astro';
 			<div class="relative w-full h-auto md:h-[500px]">
                                 <!-- Hero Right Placeholder -->
                                 <div class="w-full h-[300px] md:h-full relative z-10 pointer-events-none select-none">
-                                        <img draggable="false" src="/images/heroNoF.png" alt="Impresoras y Tarjetas PVC" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+                                        <picture class="contents">
+    <source srcset="/images/heroNoF.avif" type="image/avif" />
+    <source srcset="/images/heroNoF.webp" type="image/webp" />
+    <img draggable="false" src="/images/heroNoF.png" alt="Impresoras y Tarjetas PVC" class="w-full h-full object-contain relative z-10 scale-110 object-right pointer-events-none select-none" />
+</picture>
                                 </div>
 
                                 <div class="flex md:hidden flex-col sm:flex-row gap-6 mt-4 pb-2 items-center w-full justify-center relative z-50">
@@ -123,7 +127,11 @@ import Footer from '../components/Footer.astro';
                                 <a href="/impresoras" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="/images/impresoraindex.png" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <picture class="contents">
+    <source srcset="/images/impresoraindex.avif" type="image/avif" />
+    <source srcset="/images/impresoraindex.webp" type="image/webp" />
+    <img src="/images/impresoraindex.png" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+</picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Impresoras PVC</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Impresión de alta calidad y durabilidad para credenciales seguras y profesionales.</p>
@@ -137,7 +145,11 @@ import Footer from '../components/Footer.astro';
                                 <a href="#productos" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="/images/tarjetasindex.png" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <picture class="contents">
+    <source srcset="/images/tarjetasindex.avif" type="image/avif" />
+    <source srcset="/images/tarjetasindex.webp" type="image/webp" />
+    <img src="/images/tarjetasindex.png" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+</picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Tarjetas PVC</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Tarjetas inteligentes, proximidad y accesorios con la máxima seguridad y tecnología.</p>
@@ -151,7 +163,11 @@ import Footer from '../components/Footer.astro';
                                 <a href="/portagafetes-y-lanyards" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="/images/lanyardsindex.png" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <picture class="contents">
+    <source srcset="/images/lanyardsindex.avif" type="image/avif" />
+    <source srcset="/images/lanyardsindex.webp" type="image/webp" />
+    <img src="/images/lanyardsindex.png" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+</picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Portagafetes y Lanyards</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Sujeción y protección elegante para las credenciales de tu personal.</p>
@@ -165,7 +181,11 @@ import Footer from '../components/Footer.astro';
                                 <a href="/cintas-y-consumibles" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <img src="/images/consumiblesindex.png" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <picture class="contents">
+    <source srcset="/images/consumiblesindex.avif" type="image/avif" />
+    <source srcset="/images/consumiblesindex.webp" type="image/webp" />
+    <img src="/images/consumiblesindex.png" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+</picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Consumibles y Cintas</h3>
                                         <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Ribbons, kits de limpieza y supplies originales de alto rendimiento.</p>
@@ -209,11 +229,19 @@ import Footer from '../components/Footer.astro';
                     <div class="w-full bg-white border-b border-gray-200 pt-7 pb-2 px-4 flex justify-between items-center z-20">
 						<div class="flex items-center">
                             <!-- Icono Tarjeta (Izquierda) -->
-                            <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-4 object-contain -mt-0.5 -mr-2.5 relative z-30" />
+                            <picture class="contents">
+    <source srcset="/images/logoIconNoF.avif" type="image/avif" />
+    <source srcset="/images/logoIconNoF.webp" type="image/webp" />
+    <img src="/images/logoIconNoF.png" alt="Icono Tarjeta" class="h-4 object-contain -mt-0.5 -mr-2.5 relative z-30" />
+</picture>
                             <!-- Texto con flechas arriba y abajo -->
                             <div class="flex flex-col items-center justify-center -space-y-2">
                                 <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 relative z-20 w-[90px]" />
-                                <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-5 object-contain relative z-10" />
+                                <picture class="contents">
+    <source srcset="/images/logoTextoNoF.avif" type="image/avif" />
+    <source srcset="/images/logoTextoNoF.webp" type="image/webp" />
+    <img src="/images/logoTextoNoF.PNG" alt="TotallCard" class="h-5 object-contain relative z-10" />
+</picture>
                                 <img src="/icons/flechaLogoRojo.svg" alt="" class="h-6 rotate-180 relative z-20 w-[90px]" />
                             </div>
                         </div>
@@ -804,12 +832,20 @@ import Footer from '../components/Footer.astro';
                 <!-- Visual / Grid -->
                 <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
                     <div class="bg-white/5 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:border-white/30 transition-colors relative overflow-hidden group">
-                        <img src="/images/impresoraindex2.png" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                        <picture class="contents">
+    <source srcset="/images/impresoraindex2.avif" type="image/avif" />
+    <source srcset="/images/impresoraindex2.webp" type="image/webp" />
+    <img src="/images/impresoraindex2.png" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+</picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Impresoras</h4>
                     </div>
                     <div class="bg-white/5 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex flex-col items-center justify-center text-center aspect-square hover:border-white/30 transition-colors relative overflow-hidden group">
-                        <img src="/images/consumiblesindex2.png" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                        <picture class="contents">
+    <source srcset="/images/consumiblesindex2.avif" type="image/avif" />
+    <source srcset="/images/consumiblesindex2.webp" type="image/webp" />
+    <img src="/images/consumiblesindex2.png" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+</picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Consumibles</h4>
                     </div>
@@ -1136,7 +1172,7 @@ import Footer from '../components/Footer.astro';
                 <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Contáctanos ahora y un asesor te guiará para elegir la impresora, tarjeta o sistema perfecto para tu empresa.</p>
             </div>
             <div class="shrink-0">
-                <a href="#contacto" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
                     <div class="docs py-4 px-8 border-none">
                         <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Solicitar Cotización Gratuita</span>
                     </div>

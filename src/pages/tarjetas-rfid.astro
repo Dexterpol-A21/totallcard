@@ -1,15 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Lanyard from '../components/Lanyard.jsx';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Tarjetas RFID / Proximidad | TotallCard" description="Identificación profesional, segura y con estilo para los colaboradores de tu empresa. Refuerza la identidad corporativa con TOTALLCARD.">
-	
+<Layout 
+	title="Tarjetas de Proximidad RFID y NFC (Control de Acceso) | TOTALLCARD" 
+	description="Tarjetas RFID y NFC de proximidad (Mifare 13.56 MHz, 125 kHz) para control de acceso, asistencia y cerraduras de hotel. Tecnología y seguridad en PVC duradero."
+	keywords="tarjetas RFID, tarjetas de proximidad, tarjetas NFC, credenciales inteligentes, llaves de hotel, control de acceso RFID, Mifare, EM4100"
+>
+	<div class="hidden lg:flex fixed inset-0 z-[100] pointer-events-none w-screen h-screen">
+		<Lanyard client:only="react" position={[0, 0, 45]} gravity={[0, -40, 0]} />
+	</div>
 	<Header submenu="tarjetas" active="TARJETAS RFID / NFC" />
 
 	<!-- Hero Section: Gafetes Empresariales -->
-	<section class="min-h-[85vh] flex items-center pt-32 pb-8 md:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
+	<section class="lg:min-h-[85vh] flex items-start lg:items-center pt-8 pb-8 lg:pt-40 md:pb-12 px-6 bg-white overflow-hidden relative">
 		<div class="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-8 items-center w-full">
 			<div class="z-10">
 				<p class="font-headings text-corporate-red font-bold text-xs md:text-sm tracking-widest uppercase mb-4">
@@ -23,7 +30,7 @@ import Footer from '../components/Footer.astro';
 				</p>
 				
 				<div class="flex flex-col sm:flex-row gap-6 mb-6 items-center">
-					<a href="https://wa.me/5211234567890" class="download-button inline-flex">
+					<a href="https://wa.me/525615429492" class="download-button inline-flex">
 						<div class="docs py-3 px-6">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
 							<span class="font-bold text-[15px] tracking-wider uppercase">COTIZACIÓN POR WHATSAPP</span>
@@ -57,15 +64,12 @@ import Footer from '../components/Footer.astro';
 			</div>
 			
 			<div class="relative w-full h-[350px] md:h-[500px]">
-                <div class="w-full h-full relative z-10 flex items-center justify-center pointer-events-none select-none">
-                    <!-- Placeholder Box Full Size -->
-                    <div class="w-full h-full border-2 border-dashed border-slate-300 bg-white/50 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center p-6 shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="text-slate-300 mb-4"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-                        <span class="text-slate-400 font-sans text-sm font-bold uppercase tracking-[0.1em] text-center">
-                            Inserta aquí la imagen<br />
-                            <span class="font-normal normal-case text-slate-400/80">(Mockup de Gafete Empresarial)</span>
-                        </span>
-                    </div>
+                <div class="w-full h-[300px] md:h-full relative z-10 pointer-events-none select-none">
+                    <picture class="contents">
+    <source srcset="/images/rfid.avif" type="image/avif" />
+    <source srcset="/images/rfid.webp" type="image/webp" />
+    <img draggable="false" src="/images/rfid.png" alt="Tarjetas RFID" class="w-full h-full object-cover relative z-10 rounded-[2rem] shadow-2xl border-[8px] border-white pointer-events-none select-none" />
+</picture>
                 </div>
 			</div>
 		</div>
@@ -87,15 +91,15 @@ import Footer from '../components/Footer.astro';
                     <!-- Sector 1 -->
                     <div class="bg-white rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center shadow-sm">
                         <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mb-4 text-corporate-red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 2v20l-2-2"/><path d="M20 2v20l2-2"/><path d="M15 6h2"/><path d="M15 10h2"/><path d="M15 14h2"/><path d="M15 18h2"/><path d="M7 6h2"/><path d="M7 10h2"/><path d="M7 14h2"/><path d="M7 18h2"/></svg>
                         </div>
-                        <h4 class="font-headings font-bold text-deep-charcoal mb-2">Corporativos</h4>
-                        <p class="font-sans text-xs text-slate-500">Manejo de identidad visual para empresas de todos tamaños.</p>
+                        <h4 class="font-headings font-bold text-deep-charcoal mb-2">Oficinas y Corporativos</h4>
+                        <p class="font-sans text-xs text-slate-500">Control de acceso seguro para empleados en corporativos.</p>
                     </div>
                     <!-- Sector 2 -->
                     <div class="bg-white rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center shadow-sm">
                         <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mb-4 text-corporate-red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
                         </div>
                         <h4 class="font-headings font-bold text-deep-charcoal mb-2">Estacionamientos</h4>
                         <p class="font-sans text-xs text-slate-500">Acceso automatizado al aproximar la tarjeta a la pluma.</p>
@@ -103,7 +107,7 @@ import Footer from '../components/Footer.astro';
                     <!-- Sector 3 -->
                     <div class="bg-white rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center shadow-sm">
                         <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mb-4 text-corporate-red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
                         </div>
                         <h4 class="font-headings font-bold text-deep-charcoal mb-2">Hoteles</h4>
                         <p class="font-sans text-xs text-slate-500">Llaves electrónicas para habitaciones.</p>
@@ -111,7 +115,7 @@ import Footer from '../components/Footer.astro';
                     <!-- Sector 4 -->
                     <div class="bg-white rounded-2xl p-8 hover:-translate-y-1 transition-transform border border-slate-100 flex flex-col items-center text-center shadow-sm">
                         <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mb-4 text-corporate-red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"/><path d="m21.5 21.5-1.4-1.4"/><path d="M3.9 3.9 2.5 2.5"/><path d="M6.404 7.172a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1 2.829-2.829l6.364 6.364a2 2 0 1 1-2.829 2.829l1.767 1.768a2 2 0 1 1-2.828 2.829z"/></svg>
                         </div>
                         <h4 class="font-headings font-bold text-deep-charcoal mb-2">Gimnasios y Hospitales</h4>
                         <p class="font-sans text-xs text-slate-500">Uso de casilleros y equipos restringidos.</p>
@@ -123,11 +127,11 @@ import Footer from '../components/Footer.astro';
 	<!-- Diagrama / Infografía de Credencial -->
         <section class="py-10 md:py-12 px-6 bg-white relative overflow-hidden border-b border-light-gray/40">
         <div class="max-w-[1280px] mx-auto text-center mb-16 relative z-10">
-            <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Anatomía de un Gafete</h2>
-            <p class="font-sans text-medium-gray max-w-2xl mx-auto">100% personalizable a tus necesidades y diseño. Conoce las características físicas que podemos incluir.</p>
+            <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Anatomía de una Tarjeta Inteligente RFID</h2>
+            <p class="font-sans text-medium-gray max-w-2xl mx-auto">Inteligencia invisible. Descubre cómo los chips internos y antenas aseguran un acceso rápido, seguro y sin contacto.</p>
         </div>
 
-        <div class="max-w-[1000px] mx-auto relative flex items-center justify-center min-h-[500px] lg:min-h-[550px] z-10">
+        <div class="max-w-[1000px] mx-auto relative flex flex-col items-center justify-center min-h-[500px] lg:min-h-[550px] z-10">
             
             <!-- TARJETA CENTRAL -->
             <div class="pvc-card z-30 transform hover:scale-105 transition-transform duration-500 deal-ready group transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-rotate-1 relative flex flex-col w-full aspect-[86/54] lg:max-w-[400px] mx-auto bg-gradient-to-tr from-[#1e3a8a] to-[#2563eb] rounded-[14px] overflow-hidden shadow-xl border border-blue-900" >
@@ -185,66 +189,66 @@ import Footer from '../components/Footer.astro';
             <div class="hidden lg:block absolute inset-0 pointer-events-none z-20">
                 
                 <!-- Apunte 1: Perforación (Arriba Izquierda) -->
-                <div class="absolute top-[5%] left-[-15%] text-right w-[320px]">
+                <div class="absolute top-[20%] left-[-15%] text-right w-[320px]">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-slate-100 inline-block pointer-events-auto hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-2 mb-1 justify-end">
-                            <h4 class="font-headings font-bold text-deep-charcoal">Perforación Estándar</h4>
+                            <h4 class="font-headings font-bold text-deep-charcoal">Antena Invisible</h4>
                             <div class="w-2 h-2 rounded-full bg-corporate-red"></div>
                         </div>
-                        <p class="font-sans text-xs text-slate-500">Slot compatible con broches, yoyos y lanyards de cualquier tipo.</p>
+                        <p class="font-sans text-xs text-slate-500">Chip interior (Mifare o Proximity) completamente oculto.</p>
                     </div>
                     <!-- Línea SVG -->
-                    <svg class="absolute top-1/2 left-[100%] ml-2 w-[160px] h-[60px] overflow-visible" style="transform: translateY(-50%)">
-                        <path d="M0,30 Q80,30 160,80" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
-                        <circle cx="160" cy="80" r="4" fill="#e1061a" />
+                    <svg class="absolute top-1/2 left-[100%] ml-2 w-[110px] h-[60px] overflow-visible" style="transform: translateY(-50%)">
+                        <path d="M0,30 Q55,30 110,60" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
+                        <circle cx="110" cy="60" r="4" fill="#e1061a" />
                     </svg>
                 </div>
 
                 <!-- Apunte 2: Diseño Institucional (Centro Derecha) -->
-                <div class="absolute top-[25%] right-[-15%] text-left w-[320px]">
+                <div class="absolute top-[35%] right-[-15%] text-left w-[320px]">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-slate-100 inline-block pointer-events-auto hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-2 mb-1 justify-start">
                             <div class="w-2 h-2 rounded-full bg-corporate-red"></div>
-                            <h4 class="font-headings font-bold text-deep-charcoal">Diseño Corporativo</h4>
+                            <h4 class="font-headings font-bold text-deep-charcoal">Impresión Edge-to-Edge</h4>
                         </div>
-                        <p class="font-sans text-xs text-slate-500">Integración de logotipos y colores exactos de manual de marca.</p>
+                        <p class="font-sans text-xs text-slate-500">Gráficos a todo color que cubren el 100% de la superficie inteligente.</p>
                     </div>
                     <!-- Línea SVG -->
-                    <svg class="absolute top-1/2 right-[100%] mr-2 w-[160px] h-[40px] overflow-visible" style="transform: translateY(-50%)">
-                        <path d="M160,20 Q80,20 0,90" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
-                        <circle cx="0" cy="90" r="4" fill="#e1061a" />
+                    <svg class="absolute top-1/2 right-[100%] mr-2 w-[110px] h-[40px] overflow-visible" style="transform: translateY(-50%)">
+                        <path d="M110,20 Q55,20 0,60" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
+                        <circle cx="0" cy="60" r="4" fill="#e1061a" />
                     </svg>
                 </div>
 
                 <!-- Apunte 3: Foto (Centro Izquierda) -->
-                <div class="absolute top-[45%] left-[-15%] text-right w-[320px]">
+                <div class="absolute top-[60%] left-[-15%] text-right w-[320px]">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-slate-100 inline-block pointer-events-auto hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-2 mb-1 justify-end">
-                            <h4 class="font-headings font-bold text-deep-charcoal">Resolución Fotográfica</h4>
+                            <h4 class="font-headings font-bold text-deep-charcoal">Folio Consecutivo</h4>
                             <div class="w-2 h-2 rounded-full bg-corporate-red"></div>
                         </div>
-                        <p class="font-sans text-xs text-slate-500">Tecnología re-transferencia, resalta rostros sin perder detalle.</p>
+                        <p class="font-sans text-xs text-slate-500">Numeración física grabada como respaldo de la información digital.</p>
                     </div>
                     <!-- Línea SVG -->
-                    <svg class="absolute top-1/2 left-[100%] ml-2 w-[180px] h-[20px] overflow-visible" style="transform: translateY(-50%)">
-                        <path d="M0,10 L160,10" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
-                        <circle cx="160" cy="10" r="4" fill="#e1061a" />
+                    <svg class="absolute top-1/2 left-[100%] ml-2 w-[110px] h-[20px] overflow-visible" style="transform: translateY(-50%)">
+                        <path d="M0,10 L110,10" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
+                        <circle cx="110" cy="10" r="4" fill="#e1061a" />
                     </svg>
                 </div>
 
                 <!-- Apunte 4: Seguridad (Abajo Derecha) -->
-                <div class="absolute top-[75%] right-[-15%] text-left w-[320px]">
+                <div class="absolute top-[70%] right-[-15%] text-left w-[320px]">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-slate-100 inline-block pointer-events-auto hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-2 mb-1 justify-start">
                             <div class="w-2 h-2 rounded-full bg-corporate-red"></div>
-                            <h4 class="font-headings font-bold text-deep-charcoal">Tecnología Opcional</h4>
+                            <h4 class="font-headings font-bold text-deep-charcoal">Seguridad Encriptada</h4>
                         </div>
-                        <p class="font-sans text-xs text-slate-500">Códigos 1D/2D, QR o embutido de chips rfid (MiFare, Proximidad).</p>
+                        <p class="font-sans text-xs text-slate-500">Prevención de clonación para control de acceso y cobros seguros.</p>
                     </div>
                     <!-- Línea SVG -->
-                    <svg class="absolute top-1/2 right-[100%] mr-2 w-[180px] h-[60px] overflow-visible" style="transform: translateY(-50%)">
-                        <path d="M180,30 Q90,30 20,-10" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
-                        <circle cx="20" cy="-10" r="4" fill="#e1061a" />
+                    <svg class="absolute top-1/2 right-[100%] mr-2 w-[110px] h-[60px] overflow-visible" style="transform: translateY(-50%)">
+                        <path d="M110,30 Q55,30 0,0" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4" />
+                        <circle cx="0" cy="0" r="4" fill="#e1061a" />
                     </svg>
                 </div>
 
@@ -253,20 +257,20 @@ import Footer from '../components/Footer.astro';
             <!-- ANOTACIONES MOBILE (Lista debajo de la tarjeta en móvil) -->
             <div class="lg:hidden w-full mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 text-left relative z-20">
                 <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Perforación Estándar</h4>
-                    <p class="font-sans text-xs text-slate-500">Slot compatible con todos nuestros portagafetes y lanyards.</p>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Antena Invisible</h4>
+                    <p class="font-sans text-xs text-slate-500">Chip interior (Mifare o Proximity) completamente oculto.</p>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Diseño Corporativo</h4>
-                    <p class="font-sans text-xs text-slate-500">Integración de logotipos y manual de marca exactos.</p>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Impresión Edge-to-Edge</h4>
+                    <p class="font-sans text-xs text-slate-500">Gráficos a todo color que cubren el 100% de la superficie inteligente.</p>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Resolución Fotográfica</h4>
-                    <p class="font-sans text-xs text-slate-500">Impresión brillante que resalta rostros sin distorsión.</p>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Folio Consecutivo</h4>
+                    <p class="font-sans text-xs text-slate-500">Numeración física grabada como respaldo de la información digital.</p>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Tecnología</h4>
-                    <p class="font-sans text-xs text-slate-500">Códigos de barras, QR o chips RFID de proximidad.</p>
+                    <h4 class="font-headings font-bold text-deep-charcoal mb-1 flex items-center gap-2"><span class="text-corporate-red">&bull;</span> Seguridad Encriptada</h4>
+                    <p class="font-sans text-xs text-slate-500">Prevención de clonación para control de acceso y cobros seguros.</p>
                 </div>
             </div>
 
@@ -284,8 +288,8 @@ import Footer from '../components/Footer.astro';
                                 <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Nuestro Proceso, Tu Tranquilidad</h2>
                         </div>
 
-                        <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full overflow-x-auto relative">
-                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between min-w-[1000px] gap-8 lg:gap-4 xl:gap-8">
+                        <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full overflow-hidden relative">
+                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between min-w-full lg:min-w-[1000px] gap-8 lg:gap-4 xl:gap-8">
                                         
                                         <!-- Step 1 -->
                                         <div class="flex items-start gap-4 flex-1">
@@ -440,16 +444,46 @@ import Footer from '../components/Footer.astro';
                             </div>
                         </div>
                     </div>
-                    <!-- Mockup image placeholder area -->
-                    <div class="w-full md:w-2/5 min-h-[250px] bg-slate-800/50 backdrop-blur-sm border-l border-white/10 flex items-center justify-center p-6 relative z-10">
-                        <div class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 mx-auto mb-3"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
-                            <span class="text-slate-400 font-sans text-[10px] font-bold uppercase tracking-[0.1em] block mb-1">
-                                Mockup de Gafete
-                            </span>
-                            <span class="font-sans text-[10px] text-slate-500 block">(Escaneándose en equipo)</span>
+                    <!-- Interfaz Animada NFC Tap -->
+                    <div class="w-full md:w-2/5 min-h-[250px] bg-[#0c0c11] border-l border-white/10 flex items-center justify-center p-6 relative z-10 overflow-hidden group/nfc">
+                        <!-- Lector de Pared -->
+                        <div class="relative w-28 h-40 bg-gradient-to-b from-[#1a1a24] to-black rounded-lg border border-gray-700 shadow-2xl flex flex-col items-center justify-start pt-6 z-10 isolate">
+                            <!-- NFC / RFID Logo glowing -->
+                            <svg class="w-10 h-10 text-slate-600 z-20 transition-all duration-700 group-hover/nfc:text-[#38bdf8] group-hover/nfc:drop-shadow-[0_0_12px_#38bdf8]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                                <rect x="9" y="9" width="6" height="6"/>
+                                <path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/>
+                                <path d="M20 9h3"/><path d="M20 14h3"/><path d="M1 9h3"/><path d="M1 14h3"/>
+                            </svg>
+                            <!-- Pantalla del Lector -->
+                            <div class="mt-6 w-16 h-8 bg-black rounded border border-gray-800 flex items-center justify-center overflow-hidden relative">
+                                <div class="w-2 h-2 rounded-full bg-corporate-red/30 transition-all duration-300 group-hover/nfc:bg-[#22c55e] group-hover/nfc:shadow-[0_0_10px_#22c55e,0_0_20px_#22c55e]"></div>
+                            </div>
+
+                            <!-- Ondas NFC Animadas (detalles radiales) -->
+                            <div class="absolute top-[2.5rem] left-1/2 w-4 h-4 rounded-full border-2 border-[#38bdf8]/0 origin-center -translate-x-1/2 -translate-y-1/2 group-hover/nfc:animate-[ripple_1.5s_ease-out_infinite]"></div>
+                            <div class="absolute top-[2.5rem] left-1/2 w-4 h-4 rounded-full border-2 border-[#38bdf8]/0 origin-center -translate-x-1/2 -translate-y-1/2 group-hover/nfc:animate-[ripple_1.5s_ease-out_infinite_0.4s]"></div>
+                            <div class="absolute top-[2.5rem] left-1/2 w-4 h-4 rounded-full border-2 border-[#38bdf8]/0 origin-center -translate-x-1/2 -translate-y-1/2 group-hover/nfc:animate-[ripple_1.5s_ease-out_infinite_0.8s]"></div>
+                        </div>
+
+                        <!-- Tarjeta Flotante -->
+                        <div class="absolute left-[80%] top-[80%] z-20 w-32 h-44 bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-[0_15px_35px_rgba(0,0,0,0.5)] flex flex-col p-3 transform -translate-x-1/2 -translate-y-1/2 rotate-[25deg] transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/nfc:left-[50%] group-hover/nfc:top-[50%] group-hover/nfc:rotate-0 group-hover/nfc:scale-95 group-hover/nfc:z-30">
+                            <div class="w-8 h-2 bg-white/40 rounded-full mx-auto mb-4"></div>
+                            <div class="w-full flex items-center gap-3 mb-5">
+                                <div class="w-7 h-7 rounded-full bg-white/30"></div>
+                                <div class="w-12 h-2.5 bg-white/30 rounded-full"></div>
+                            </div>
+                            <div class="w-full h-12 bg-white/10 rounded border border-white/5 mb-3"></div>
+                            <div class="w-3/4 h-2 bg-white/20 rounded-full"></div>
                         </div>
                     </div>
+                    
+                    <style>
+                        @keyframes ripple {
+                            0% { width: 2rem; height: 2rem; border-color: rgba(56, 189, 248, 0.8); opacity: 1; }
+                            100% { width: 12rem; height: 12rem; border-color: rgba(56, 189, 248, 0); opacity: 0; }
+                        }
+                    </style>
 				</div>
 
 				<!-- Card 5: Acabados (Grid mini bento inside) -->
@@ -505,28 +539,70 @@ import Footer from '../components/Footer.astro';
                         <p class="font-sans text-medium-gray mb-12">Tenemos la solución completa. Adquiere también los accesorios para portar tus credenciales.</p>
                         
                         <div class="grid md:grid-cols-3 gap-8">
-                                <div class="border-2 border-dashed border-slate-200 bg-white h-[250px] rounded-xl flex items-center justify-center flex-col p-6 shadow-sm">
-                                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center mb-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-slate-400"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                                        </div>
-                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal">Cintas Lanyards</h4>
-                                        <span class="text-xs text-slate-400 mt-2">(Inserta Mockup)</span>
+                            <!-- Cintas Lanyards -->
+                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mb-4">
+                                    <svg viewBox="0 0 100 200" class="w-24 h-48 origin-top" style="animation: swayAnimation 3s ease-in-out infinite alternate;">
+                                        <path d="M 30,-20 C 30,50 10,80 40,110 C 50,120 50,120 60,110 C 90,80 70,50 70,-20" fill="none" stroke="#e1061a" stroke-width="6" stroke-linecap="round"/>
+                                        <rect x="40" y="110" width="20" height="25" rx="3" fill="#cbd5e1" />
+                                        <path d="M 45,135 L 45,145 C 45,150 55,150 55,145 L 55,135" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
                                 </div>
-                                <div class="border-2 border-dashed border-slate-200 bg-white h-[250px] rounded-xl flex items-center justify-center flex-col p-6 shadow-sm">
-                                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center mb-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-slate-400"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/></svg>
-                                        </div>
-                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal">Yoyos Retráctiles</h4>
-                                        <span class="text-xs text-slate-400 mt-2">(Inserta Mockup)</span>
+                                <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                    <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Cintas Lanyards</h4>
                                 </div>
-                                <div class="border-2 border-dashed border-slate-200 bg-white h-[250px] rounded-xl flex items-center justify-center flex-col p-6 shadow-sm">
-                                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center mb-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-slate-400"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                        </div>
-                                        <h4 class="font-headings font-bold text-lg text-deep-charcoal">Porta Gafetes</h4>
-                                        <span class="text-xs text-slate-400 mt-2">(Inserta Mockup)</span>
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                            </div>
+
+                            <!-- Yoyos Retráctiles -->
+                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-30px]">
+                                    <svg viewBox="0 0 100 200" class="w-24 h-48">
+                                        <rect x="49" y="50" width="2" height="80" fill="#94a3b8" class="origin-top" style="animation: yoyoStringScale 4s ease-in-out infinite;" />
+                                        <g style="animation: yoyoCardMove 4s ease-in-out infinite;">
+                                            <rect x="30" y="130" width="40" height="25" rx="3" fill="#141414" stroke="#333" stroke-width="1" />
+                                            <rect x="34" y="135" width="10" height="10" rx="1" fill="#e1061a" opacity="0.8"/>
+                                            <rect x="46" y="125" width="8" height="10" rx="2" fill="#cbd5e1" />
+                                        </g>
+                                        <circle cx="50" cy="40" r="20" fill="#141414" />
+                                        <circle cx="50" cy="40" r="14" fill="#222" />
+                                        <circle cx="50" cy="40" r="6" fill="#e1061a" />
+                                        <rect x="45" y="10" width="10" height="14" rx="2" fill="#cbd5e1" />
+                                    </svg>
                                 </div>
+                                <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                    <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Yoyos Retráctiles</h4>
+                                </div>
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                            </div>
+
+                            <!-- Porta Gafetes -->
+                            <div class="group bg-white h-[280px] rounded-xl flex items-center justify-center relative overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgba(225,6,26,0.1)] transition-all duration-300">
+                                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none mt-[-20px]">
+                                    <svg viewBox="0 0 100 150" class="w-24 h-[140px]">
+                                        <rect x="25" y="40" width="50" height="70" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" opacity="0.6"/>
+                                        <path d="M 40,40 L 60,40" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+                                        <g style="animation: sleeveCard 4s ease-in-out infinite;">
+                                            <rect x="30" y="20" width="40" height="60" rx="3" fill="#141414" />
+                                            <rect x="35" y="30" width="15" height="15" rx="2" fill="#fff" opacity="0.9"/>
+                                            <rect x="35" y="55" width="20" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                            <rect x="35" y="65" width="30" height="4" rx="1" fill="#fff" opacity="0.7"/>
+                                        </g>
+                                        <rect x="25" y="40" width="50" height="70" rx="4" fill="none" stroke="#cbd5e1" stroke-width="3" />
+                                    </svg>
+                                </div>
+                                <div class="absolute bottom-6 left-0 right-0 z-20 text-center">
+                                    <h4 class="font-headings font-bold text-lg text-deep-charcoal transition-colors group-hover:text-corporate-red">Porta Gafetes</h4>
+                                </div>
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
+                            </div>
                         </div>
+                        <style>
+                            @keyframes swayAnimation { 0% { transform: rotate(-5deg); } 100% { transform: rotate(5deg); } }
+                            @keyframes yoyoStringScale { 0%, 100% { transform: scaleY(0.2); } 50% { transform: scaleY(1); } }
+                            @keyframes yoyoCardMove { 0%, 100% { transform: translateY(-60px); } 50% { transform: translateY(0); } }
+                            @keyframes sleeveCard { 0%, 100% { transform: translateY(-20px); opacity: 0; } 20%, 80% { transform: translateY(0); opacity: 1; } }
+                        </style>
                 </div>
         </section>
 
@@ -549,7 +625,7 @@ import Footer from '../components/Footer.astro';
 
                     <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
                         <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
-                            ¿Cuál es el pedido mínimo para gafetes empresariales?
+                            ¿Hacen envíos a toda la República Mexicana?
                         </h3>
                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
                             <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
@@ -559,7 +635,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
                         <div class="overflow-hidden">
                             <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
-                                No contamos con un pedido mínimo estricto, sin embargo, ofrecemos precios preferenciales por volumen para corporativos. Podemos surtir desde una sola pieza hasta tirajes de miles de credenciales.
+                                Sí, enviamos a todos los estados de México mediante paqueterías seguras y rastreables (Estafeta, DHL, FedEx). Garantizamos que tu pedido llegue en perfectas condiciones hasta la puerta de tus oficinas.
                             </div>
                         </div>
                     </div>
@@ -571,7 +647,7 @@ import Footer from '../components/Footer.astro';
 
                     <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
                         <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
-                            ¿Pueden integrar la tecnología de nuestro sistema de acceso actual?
+                            ¿Ustedes realizan el diseño de las tarjetas o gafetes?
                         </h3>
                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
                             <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
@@ -581,7 +657,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
                         <div class="overflow-hidden">
                             <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
-                                Sí, trabajamos con diversas tecnologías como chips RFID, NFC (Mifare), código de barras y banda magnética. Nuestros gafetes son completamente compatibles con la mayoría de los sistemas de checado y accesos del mercado.
+                                Contamos con un equipo de diseño que puede crear y adaptar el formato respetando estrictamente tu manual de identidad, colores corporativos y logotipo; o bien, si ya tienes un diseño propio, podemos trabajar e imprimir directamente con él.
                             </div>
                         </div>
                     </div>
@@ -593,7 +669,7 @@ import Footer from '../components/Footer.astro';
 
                     <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
                         <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
-                            ¿Ustedes realizan el diseño del gafete?
+                            ¿De qué material están fabricadas las tarjetas con chip?
                         </h3>
                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
                             <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
@@ -603,7 +679,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
                         <div class="overflow-hidden">
                             <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
-                                Contamos con un equipo de diseño que puede crear y adaptar el formato respetando estrictamente tu manual de identidad, colores corporativos y logotipo; o bien, si ya tienes un diseño propio, podemos trabajar e imprimir directamente con él.
+                                Todas nuestras tarjetas y credenciales con chip integrado están fabricadas en PVC rígido de alta calidad. Esto brinda durabilidad para el uso continuo en sistemas de acceso, protegiendo el chip interno de daños.
                             </div>
                         </div>
                     </div>
@@ -657,14 +733,12 @@ import Footer from '../components/Footer.astro';
                 <div class="relative flex items-center justify-center mt-8 md:mt-0">
                     <!-- Glow effect -->
                     <div class="absolute w-3/4 h-3/4 bg-corporate-red/20 blur-3xl rounded-full"></div>
-                    <!-- Placeholder de la impresora -->
-                    <div class="w-full aspect-[4/3] max-w-[400px] bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl flex flex-col items-center justify-center relative z-10 shadow-2xl p-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 mb-4"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
-                        <span class="text-slate-400 font-sans text-sm font-bold uppercase tracking-[0.1em] text-center">
-                            Imagen de Impresora PVC<br />
-                            <span class="font-normal normal-case text-slate-500">(Fargo, Zebra, Evolis)</span>
-                        </span>
-                    </div>
+                    <!-- Imagen de la impresora -->
+                    <picture class="contents">
+    <source srcset="/images/finalCTAImprimir.avif" type="image/avif" />
+    <source srcset="/images/finalCTAImprimir.webp" type="image/webp" />
+    <img src="/images/finalCTAImprimir.png" alt="Impresora de credenciales PVC" class="w-full max-w-[400px] aspect-[4/3] object-cover rounded-[2rem] shadow-2xl border-[8px] border-white relative z-10 pointer-events-none select-none" />
+</picture>
                 </div>
             </div>
         </section>
@@ -685,7 +759,7 @@ import Footer from '../components/Footer.astro';
                 <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Cotiza hoy mismo el volumen que necesitas. Tenemos soluciones personalizadas y precios especiales por mayoreo.</p>
             </div>
             <div class="shrink-0">
-                <a href="#contacto" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
                     <div class="docs py-4 px-8 border-none">
                         <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Solicitar Cotización</span>
                     </div>
@@ -773,10 +847,44 @@ import Footer from '../components/Footer.astro';
 }
 .download-button:hover .download { transform: translateY(100%); }
 
+
+/* Animación de Efecto Impresora en Secciones */
+.print-section {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(-10deg) translateY(80px);
+  transform-origin: bottom center;
+  transition: opacity 1s ease, transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.print-section.printed {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+
 </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+
+        // Efecto Impresora al hacer Scroll
+        const sections = document.querySelectorAll('section:not(:first-of-type)');
+        
+        sections.forEach(sec => {
+            sec.classList.add('print-section');
+        });
+
+        const printObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('printed');
+                    printObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        sections.forEach(sec => {
+            printObserver.observe(sec);
+        });
+
         // Implementación de las Interactive Morphing Cards (FAQ)
         const faqCards = document.querySelectorAll('.faq-card');
         

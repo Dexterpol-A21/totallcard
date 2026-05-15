@@ -1,0 +1,318 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+    title="Renta de Equipos y Credencializadoras | TOTALLCARD"
+    description="Servicio de arrendamiento de impresoras PVC para proyectos temporales, eventos logísticos escolares y corporativos."
+    keywords="renta de impresoras pvc, alquiler credencializadoras, impresoras tarjetas temporales"
+>
+    <!-- El Header debe marcar RENTA DE EQUIPOS si el menú correspondiente existe en el objeto active -->
+    <Header submenu="servicios" active="RENTA DE EQUIPOS" />
+
+    <!-- Hero Section Minimalista -->
+    <section class="relative pt-8 pb-8 md:pt-48 md:pb-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mb-8 pt-6">
+                <!-- Letras Gigantes (Izquierda) -->
+                <h1 class="font-headings font-black text-[4rem] sm:text-[5.5rem] md:text-[7rem] lg:text-[7.5rem] xl:text-[8.5rem] text-black leading-[0.75] tracking-tighter uppercase shrink-0">
+                    RENTA DE<br/>
+                    <span class="text-corporate-red">EQUIPOS.</span>
+                </h1>
+
+                <!-- Eslogan (Derecha Gigante) -->
+                <div class="lg:w-full lg:mt-4 flex lg:justify-end items-center">
+                    <p class="font-headings text-black font-black text-4xl sm:text-6xl lg:text-[4.5rem] tracking-tighter uppercase leading-[0.85] lg:text-right border-l-8 lg:border-l-0 lg:border-r-[16px] border-corporate-red pl-6 lg:pl-0 lg:pr-8">
+                        IMPRIME.<br/>SIN INVER-<br/>
+                        <span class="text-corporate-red">SIÓN.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contenido Inferior -->
+            <div class="mt-8">
+                <!-- Texto descriptivo -->
+                <div class="max-w-3xl">
+                    <p class="font-headings font-bold text-xl md:text-3xl text-black leading-snug mb-6 border-l-8 border-corporate-red pl-6">
+                        PRODUCE EN TEMPORADAS DE ALTA DEMANDA.
+                    </p>
+                    <p class="font-sans text-black/70 text-lg md:text-xl mb-4 pl-8">
+                        Accede a equipos funcionales solo por el tiempo que requiera tu proyecto o evento, evitando gastos de adquisición y manteniendo un flujo logístico constante.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-slate-50 px-6 border-t border-light-gray/40">
+        <div class="max-w-[1400px] mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Beneficio 1 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Disponibilidad Flexible</h3>
+                    <p class="font-sans text-black/70 text-lg">
+                        Adaptamos esquemas temporales para que uses la tecnología adecuada en proyectos de inscripción, campañas y jornadas de trabajo limitadas.
+                    </p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Sin Costo de Mantenimiento</h3>
+                    <p class="font-sans text-black/70 text-lg">
+                        Libérate de la depreciación del capital. Nosotros te facilitamos los equipos habilitados para que te centres meramente en imprimir.
+                    </p>
+                </div>
+                
+                <!-- Beneficio 3 -->
+                <div class="bg-white group pvc-card w-full has-punch deal-ready rounded-[1rem] border border-slate-200 hover:border-corporate-red p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 relative lg:max-w-none md:col-span-2">
+                    <div class="w-16 h-1 bg-corporate-red mb-6 group-hover:scale-x-110 origin-left transition-transform duration-300"></div>
+                    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-corporate-red opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-headings font-black text-2xl uppercase text-black mb-3">Flujo Continuo</h3>
+                            <p class="font-sans text-black/70 text-lg">
+                                Si tienes credencializadoras en reparación o experimentas cuellos de botella por demanda excedente, la renta impulsa tus operaciones productivas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Escenarios -->
+    <section class="py-16 md:py-24 bg-white px-6">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="mb-12 border-l-8 border-corporate-red pl-6">
+                <h2 class="font-headings font-black text-3xl md:text-5xl text-black uppercase tracking-tighter mb-4">
+                    ¿Cuándo es <span class="text-corporate-red">útil rentar?</span>
+                </h2>
+                <p class="font-sans text-black/70 text-lg max-w-2xl">
+                    Circunstancias donde requerirás un equipo adicional sin la obligación de sumarlo a tu inventario permanente.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Eventos Masivos</h4>
+                    <p class="font-sans text-sm text-slate-600">Control de asistencia, foros corporativos o exposiciones de corta duración que demandan credenciales al momento.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Picos de Demanda</h4>
+                    <p class="font-sans text-sm text-slate-600">Ciclos de inscripciones escolares o contrataciones masivas donde tu capacidad operativa se queda corta.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Equipos en Taller</h4>
+                    <p class="font-sans text-sm text-slate-600">Mientras reparamos tu impresora de cabecera, adquiere una unidad de respaldo para mantener tu ritmo.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-6 border border-slate-200 rounded-xl hover:border-corporate-red hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-corporate-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h4 class="font-headings font-bold text-xl mb-2 uppercase tracking-wide">Evaluación Previa</h4>
+                    <p class="font-sans text-sm text-slate-600">Ideal cuando necesitas probar dinámicas logísticas antes de convencerte en adquirir tu propio equipo a largo plazo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="py-16 md:py-24 bg-slate-900 px-6 border-y-[8px] border-corporate-red">
+        <div class="max-w-[1400px] mx-auto text-center">
+            <h2 class="font-headings font-black text-3xl md:text-5xl text-white uppercase tracking-tighter mb-4">
+                Pasos de <span class="text-corporate-red">Arrendamiento</span>
+            </h2>
+            <p class="font-sans text-white/70 text-lg mb-16 max-w-2xl mx-auto">
+                Facilitamos un proceso claro para proporcionarte equipos operativos en tiempo y forma en tu sede.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative max-w-6xl mx-auto">
+                <!-- Línea conectora Desktop -->
+                <div class="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-[2px] bg-slate-700 -z-0"></div>
+
+                <!-- Paso 1 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">1</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Planeación Inicial</h4>
+                    <p class="font-sans text-slate-400 text-sm">Validamos los requisitos del proyecto (cantidad de tarjetas y fechas estimadas) para perfilar una oferta viable para tus necesidades.</p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">2</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Asignación de Unidad</h4>
+                    <p class="font-sans text-slate-400 text-sm">Disponemos del equipo propicio. Te apoyamos asesorándote en consumibles suplementarios que apoyarán la operación.</p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="relative z-10 border border-slate-800 bg-slate-900/80 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-corporate-red text-white font-headings font-bold text-2xl rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl ring-8 ring-slate-900">3</div>
+                    <h4 class="font-headings font-bold text-white text-xl mb-3 uppercase tracking-wide">Entrega y Devolución</h4>
+                    <p class="font-sans text-slate-400 text-sm">Recibe las máquinas rentadas operativas. Al finalizar tu ciclo de uso, coordinamos la recolección o devolución respectiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / Preguntas Frecuentes - Renta -->
+    <section class="py-16 md:py-24 bg-slate-50 px-6 border-b border-light-gray/40">
+        <div class="max-w-[800px] mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+                    <div class="w-12 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Renta de Equipos</span>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal mb-4">Preguntas Frecuentes</h2>
+                <p class="font-sans text-slate-500">Puntos relevantes sobre el arrendamiento tecnológico temporal.</p>
+            </div>
+            
+            <div class="space-y-4 max-w-[800px] mx-auto w-full">
+                <!-- FAQ 1 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Por cuánto tiempo puedo rentar la unidad?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Nuestros esquemas brindan márgenes adaptables según el modelo de arrendamiento que requieras, ya sea por unos días concretos o periodos ampliados por la naturaleza de tu exigencia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Están incluidos los insumos y consumibles?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                La renta se enfoca en brindarte el hardware listo operativamente. En cuanto a las cintas de color y tarjetas blancas (consumibles), te capacitaremos para proveerte únicamente lo necesario basándonos en tu cálculo de volumen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 (Morphing Card) -->
+                <div class="faq-card group bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-500 relative z-10 hover:shadow-md [&.is-open]:shadow-xl [&.is-open]:scale-[1.02] [&.is-open]:border-corporate-red">
+                    <div class="absolute inset-0 bg-corporate-red transform -translate-y-full transition-transform duration-500 ease-in-out z-0 group-[.is-open]:translate-y-0 pointer-events-none"></div>
+
+                    <div class="p-6 px-7 relative z-10 flex justify-between items-center transition-colors duration-500">
+                        <h3 class="font-headings font-bold text-deep-charcoal transition-colors duration-500 group-[.is-open]:text-white">
+                            ¿Qué pasa si la máquina falla durante mi alquiler?
+                        </h3>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-all duration-500 shrink-0 ml-4 text-corporate-red group-[.is-open]:bg-white/20 group-[.is-open]:text-white">
+                            <svg class="transition-transform duration-500 group-[.is-open]:rotate-180" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
+                        <div class="overflow-hidden">
+                            <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
+                                Estamos en constante soporte activo. Si sucede alguna interrupción imprevista imputable a la naturaleza de la máquina, brindamos orientación integral para lograr que la jornada de trabajo continúe.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Flotante CTA -->
+    <section class="py-12 md:py-16 bg-corporate-red px-6 relative overflow-hidden">
+        <div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿REQUIERES UN EQUIPO TEMPORALMENTE?</h2>
+                <p class="font-sans text-white/90 text-sm md:text-base max-w-xl">Platícanos sobre tu evento o proyecto y encontremos en conjunto la alternativa más viable.</p>
+            </div>
+            <div class="shrink-0">
+                <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">
+                    <div class="docs py-4 px-8 border-none flex items-center bg-white text-corporate-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                        <span class="font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Cotizar Renta</span>
+                    </div>
+                    <div class="download border-none bg-green-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<style is:global>
+.more-button { position: relative; border-width: 0; color: #E1061A; font-size: 13px; font-weight: 600; border-radius: 4px; z-index: 1; }
+.more-button .docs { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 38px; padding: 0.5rem 1.25rem; border-radius: 4px; z-index: 1; background-color: white; border: 1px solid #E1061A; color: #E1061A; transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+.more-button .download { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; max-width: 90%; margin: 0 auto; z-index: -1; border-radius: 4px; transform: translateY(0%); background-color: #E1061A; color: white; border: solid 1px #E1061A; transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+.more-button:hover .download { transform: translateY(100%); }
+.more-button.alt-button { color: #4a5568; }
+.more-button.alt-button .docs { background-color: white; color: #e1061a; border: none; }
+.more-button.alt-button .download { background-color: #22c55e; color: white; border: none; }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Implementación de las Interactive Morphing Cards (FAQ)
+        const faqCards = document.querySelectorAll('.faq-card');
+        
+        faqCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Cerrar las otras que estén abiertas (Acordeón único)
+                faqCards.forEach(otherCard => {
+                    if (otherCard !== card && otherCard.classList.contains('is-open')) {
+                        otherCard.classList.remove('is-open');
+                    }
+                });
+                
+                // Alternar el estado open de la tarjeta interactuada
+                card.classList.toggle('is-open');
+            });
+        });
+    });
+</script>

@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+    title="Términos y Políticas de Uso | TOTALLCARD"
+    description="Políticas de uso aplicables al sitio web de TOTALLCARD. Información sobre responsabilidad, uso de la plataforma y consideraciones sobre marcas mencionadas."
+    keywords="términos y condiciones, políticas de uso, reglas de navegación, marcas, totallcard"
+>
+    <Header active="POLÍTICAS" />
+
+    <!-- Hero Section Minimalista -->
+    <section class="relative pt-8 pb-8 md:pt-48 md:pb-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-16 mb-8 pt-6">
+                <!-- Letras Gigantes (Izquierda) -->
+                <h1 class="font-headings font-black text-[5.5rem] sm:text-[7rem] md:text-[9rem] lg:text-[10rem] text-black leading-[0.75] tracking-tighter uppercase shrink-0">
+                    NUESTRAS<br/>
+                    <span class="text-corporate-red">POLÍTICAS.</span>
+                </h1>
+
+                <!-- Eslogan (Derecha Gigante) -->
+                <div class="lg:w-full lg:mt-4 flex lg:justify-end items-center">
+                    <p class="font-headings text-black font-black text-4xl sm:text-6xl lg:text-[4rem] xl:text-[4.5rem] tracking-tighter uppercase leading-[0.85] lg:text-right border-l-8 lg:border-l-0 lg:border-r-[16px] border-corporate-red pl-6 lg:pl-0 lg:pr-8">
+                        REGLAS<br/>CLARAS.<br/>
+                        <span class="text-corporate-red">USO<br/>JUSTO.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Legal -->
+    <section class="py-10 md:py-16 bg-slate-50 px-6 border-t border-b border-light-gray/40">
+        <div class="max-w-[800px] mx-auto bg-white p-8 md:p-12 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="font-headings font-bold text-2xl md:text-3xl text-deep-charcoal mb-8 border-b-2 border-corporate-red pb-4">Términos y Condiciones de Navegación</h2>
+            <div class="space-y-6 font-sans text-slate-600 leading-relaxed">
+                <p>Bienvenido al sitio web corporativo de <strong>TOTALLCARD</strong>. Al acceder o permanecer interactuando con las secciones de esta página, aceptas bajo sentido común los lineamientos expuestos.</p>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">1. Propósito Informativo</h3>
+                    <p>Los contenidos desplegados en este portal comercial (descripciones de productos, ventajas competitivas o casos de uso referenciales) cumplen un rol exclusivamente demostrativo. Evitamos garantizar la precisión quirúrgica o actualidad microscópica de cada letra visualizada y remarcamos la necesidad imperiosa de validar tus proyecciones mediante cotizaciones directas debidamente selladas por uno de nuestros agentes comerciales.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">2. Propiedad Intelectual</h3>
+                    <p>Todo el andamiaje estético y estructural: textos fundacionales, maquetación del portal o logotipos nativos, operan bajo el cobijo de la pertenencia intelectual de sus propios creadores relacionados con <strong>TOTALLCARD</strong>. El abuso con fines comerciales de nuestro contenido no cuenta con permisos cediendo derechos, salvo explícita declaración documentada.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">3. Exención de Responsabilidad</h3>
+                    <p><strong>TOTALLCARD</strong> rechaza explícita e irrevocablemente cualquier indemnización relacionada a interrupciones digitales, supuestas pérdidas de datos o desastres comerciales desatados bajo el uso fortuito e interpretativo del contenido presente. El entorno del portal es expuesto "tal y como aparece".</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">4. Disposición sobre Marcas de Terceros</h3>
+                    <p>Marcas comerciales registradas y de ecosistema como <em>Soft Restaurant</em> u otras que fungen como ejemplo de interconectividad a lo ancho del sitio web, se declaran ajenas e imparciales a <strong>TOTALLCARD</strong>. Son marcas patentadas de sus respectivos dueños corporativos y se utilizan aquí al mero estilo bibliográfico e intertextual sin reclamar asociación ni apadrinamiento directo oficial.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black text-lg mb-2">5. Conducta del Usuario</h3>
+                    <p>Operaciones como la inyección maliciosa de software en nuestros buzones, el rastreo destructivo de bases o la extracción irrazonable de nuestro contenido (web scraping) facultará al operador del sitio a tomar respuestas preventivas inmediatas.</p>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100 italic text-sm">
+                    <p>El escrutinio habitual y el provecho informativo que obtienes interactuando en nuestros dominios presuponen el reconocimiento de este pequeño manual legal de uso justo y responsable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

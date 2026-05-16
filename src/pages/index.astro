@@ -25,11 +25,10 @@ import Footer from '../components/Footer.astro';
 					Impresión de identidad. Conexión de confianza.
 				</p>
 				<h1 class="font-headings font-extrabold text-4xl md:text-5xl lg:text-6xl text-deep-charcoal leading-[1.1] mb-6">
-					Soluciones integrales en credencialización
-				</h1>
-				<p class="font-sans text-base md:text-lg text-medium-gray mb-6 max-w-xl">
-					Descubre nuestra oferta completa: desde impresión de credenciales PVC y tarjetas de lealtad, hasta impresoras de escritorio, software especializado y servicio técnico profesional.
-				</p>
+                                        Expertos en Impresión de Gafetes y Credenciales PVC
+                                </h1>
+                                <p class="font-sans text-base md:text-lg text-medium-gray mb-6 max-w-xl">
+                                        Entregamos credenciales de alta seguridad impresas listas para usar en colegios, empresas y residenciales. Además, en caso de requerirlo, somos proveedores de impresoras y consumibles originales.
 				
 				<div class="hidden md:flex flex-col sm:flex-row gap-6 mb-6 items-center">
 					<a href="https://wa.me/525615429492" class="download-button inline-flex">
@@ -123,36 +122,40 @@ import Footer from '../components/Footer.astro';
                         </div>
 
                         <div class="flex items-center md:items-stretch md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 md:grid-cols-2 lg:grid-cols-4 md:gap-6 pb-6 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-                                <!-- Item 1: Impresoras -->
+                                <!-- Item 1: Tarjetas PVC (Destacado en Rojo) -->
+                                <a href="#productos" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-corporate-red text-white rounded-2xl p-6 shadow-[0_8px_30px_rgba(225,6,26,0.3)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden ring-4 ring-corporate-red/30 ring-offset-4">
+                                        <!-- Lo más solicitado badge -->
+                                        <div class="absolute top-0 right-0 bg-white text-corporate-red font-bold text-[10px] uppercase tracking-wider py-1 px-3 rounded-bl-xl z-20 shadow-md">
+                                                Lo Más Solicitado
+                                        </div>
+                                        <!-- Image Placeholder -->
+                                        <div class="w-full aspect-[4/3] bg-white rounded-xl mb-6 flex items-center justify-center overflow-hidden shadow-inner">
+                                            <picture class="contents">
+    <source srcset="/images/tarjetasindex.avif" type="image/avif" />
+    <source srcset="/images/tarjetasindex.webp" type="image/webp" />
+    <img src="/images/tarjetasindex.webp" alt="Tarjetas PVC" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
+</picture>
+                                        </div>
+                                        <h3 class="font-headings font-bold text-xl text-white mb-3 px-2">Credenciales Impresas</h3>
+                                        <p class="font-sans text-sm text-white/90 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Maquilas de impresión para todo tipo de tarjetas, membresías y gafetes escolares. Listos para usar.</p>
+                                        <div class="flex items-center gap-2 text-white font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
+                                                Ver opciones 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </div>
+                                </a>
+
+                                <!-- Item 2: Impresoras (Atrás) -->
                                 <a href="/impresoras" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
                                         <!-- Image Placeholder -->
                                         <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
                                             <picture class="contents">
     <source srcset="/images/impresoraindex.avif" type="image/avif" />
     <source srcset="/images/impresoraindex.webp" type="image/webp" />
-    <img src="/images/impresoraindex.webp" alt="Impresoras PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
+    <img src="/images/impresoraindex.webp" alt="Impresoras PVC" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
 </picture>
                                         </div>
-                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Impresoras PVC</h3>
-                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Impresión de alta calidad y durabilidad para credenciales seguras y profesionales.</p>
-                                        <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
-                                                Saber más 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                                        </div>
-                                </a>
-
-                                <!-- Item 2: Tarjetas PVC -->
-                                <a href="#productos" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center group bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
-                                        <!-- Image Placeholder -->
-                                        <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center overflow-hidden border border-slate-100">
-                                            <picture class="contents">
-    <source srcset="/images/tarjetasindex.avif" type="image/avif" />
-    <source srcset="/images/tarjetasindex.webp" type="image/webp" />
-    <img src="/images/tarjetasindex.webp" alt="Tarjetas PVC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
-</picture>
-                                        </div>
-                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Tarjetas PVC</h3>
-                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Tarjetas inteligentes, proximidad y accesorios con la máxima seguridad y tecnología.</p>
+                                        <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Equipos de Impresión</h3>
+                                        <p class="font-sans text-sm text-slate-500 leading-relaxed max-w-[95%] mb-6 flex-1 px-2">Venta de impresoras y refacciones para clientes que prefieren imprimir in-house.</p>
                                         <div class="flex items-center gap-2 text-corporate-red font-bold text-xs uppercase tracking-wider mt-auto group-hover:gap-3 transition-all px-2">
                                                 Saber más 
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -166,7 +169,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/lanyardsindex.avif" type="image/avif" />
     <source srcset="/images/lanyardsindex.webp" type="image/webp" />
-    <img src="/images/lanyardsindex.webp" alt="Portagafetes y Lanyards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
+    <img src="/images/lanyardsindex.webp" alt="Portagafetes y Lanyards" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Portagafetes y Lanyards</h3>
@@ -184,7 +187,7 @@ import Footer from '../components/Footer.astro';
                                             <picture class="contents">
     <source srcset="/images/consumiblesindex.avif" type="image/avif" />
     <source srcset="/images/consumiblesindex.webp" type="image/webp" />
-    <img src="/images/consumiblesindex.webp" alt="Consumibles y Cintas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
+    <img src="/images/consumiblesindex.webp" alt="Consumibles y Cintas" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="2000" height="1493" />
 </picture>
                                         </div>
                                         <h3 class="font-headings font-bold text-xl text-deep-charcoal mb-3 px-2">Consumibles y Cintas</h3>
@@ -256,9 +259,9 @@ import Footer from '../components/Footer.astro';
                             <img src="/icons/flechaLogoRojo.svg" alt="" class="w-48" loading="lazy" decoding="async" width="192" height="68" />
                         </div>
 
-                        <!-- Foto del Empleado (Silueta / Icono) -->
+                        <!-- Foto del Empleado (Foto Real) -->
                         <div class="w-[100px] h-[100px] rounded-full overflow-hidden border-[3px] border-corporate-red shadow-md bg-gray-50 mb-3 z-10 flex items-center justify-center relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Foto Empleado" class="w-full h-full object-cover">
                         </div>
                         
                         <!-- Datos -->
@@ -319,9 +322,9 @@ import Footer from '../components/Footer.astro';
                         <div class="absolute -right-6 top-10 w-24 h-24 bg-blue-50 rounded-full z-0 opacity-80"></div>
                         <div class="absolute -left-8 -bottom-4 w-32 h-32 bg-yellow-50 rounded-full z-0 opacity-80"></div>
 
-                        <!-- Foto del Alumno -->
+                        <!-- Foto del Alumno (Foto Real) -->
                         <div class="w-[100px] h-[100px] overflow-hidden border-[3px] border-[#1e3a8a] shadow-md bg-gray-50 mb-3 z-10 flex items-center justify-center relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Foto Alumno" class="w-full h-full object-cover">
                         </div>
                         
                         <!-- Datos -->
@@ -728,7 +731,7 @@ import Footer from '../components/Footer.astro';
                         </div>
 
                         <div class="bg-white border text-deep-charcoal border-gray-100 rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-8 md:p-10 max-w-full lg:overflow-visible overflow-hidden">
-                                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:min-w-[800px] gap-8 lg:gap-4 xl:gap-8">
+                                <div class="flex flex-col lg:flex-row items-start lg:items-start justify-between lg:min-w-[800px] gap-8 lg:gap-4 xl:gap-8">
                                         
                                         <!-- Step 1 -->
                                         <div class="flex items-start gap-4 flex-1">
@@ -740,71 +743,203 @@ import Footer from '../components/Footer.astro';
                                                                 <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">1</span>
                                                                 <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Diseño</h4>
                                                         </div>
-                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Analizamos tus necesidades y creamos el diseño ideal para tu organización.</p>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Envía tu diseño de frente y reverso en PDF (300 dpi) con sangrado de 2 a 3 mm.</p>
                                                 </div>
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mt-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
                                         <!-- Step 2 -->
                                         <div class="flex items-start gap-4 flex-1">
                                                 <div class="w-12 h-12 flex items-center justify-center shrink-0 text-deep-charcoal">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
                                                 </div>
                                                 <div>
                                                         <div class="flex items-center gap-3 mb-1">
                                                                 <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">2</span>
-                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Impresión</h4>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Base de Datos</h4>
                                                         </div>
-                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Utilizamos tecnología de vanguardia para garantizar resultados de alta calidad.</p>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Proporciona la información variable en Excel o CSV, con las columnas bien identificadas.</p>
                                                 </div>
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mt-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
                                         <!-- Step 3 -->
                                         <div class="flex items-start gap-4 flex-1">
                                                 <div class="w-13 h-12 flex items-center justify-center shrink-0 text-deep-charcoal relative -left-1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="13" x="4" y="5" rx="2"/><path d="M16 2v3"/><path d="M8 2v3"/><path d="M4 10h16"/><path d="m8 14 2 2 4-4"/></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
                                                 </div>
                                                 <div>
                                                         <div class="flex items-center gap-3 mb-1">
                                                                 <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">3</span>
-                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Entrega</h4>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Fotografías</h4>
                                                         </div>
-                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Entregamos tus credenciales a tiempo y con la seguridad que tu proyecto merece.</p>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Adjunta fotos tituladas como en tu base, además de logos, códigos QR o firmas.</p>
                                                 </div>
                                         </div>
 
                                         <!-- Arrow -->
-                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mb-4 xl:mb-0 xl:-mt-2">
+                                        <div class="flex w-full justify-center lg:w-auto lg:justify-start rotate-90 lg:rotate-0 text-corporate-red shrink-0 my-2 lg:my-0 lg:mt-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                                         </div>
 
                                         <!-- Step 4 -->
                                         <div class="flex items-start gap-4 flex-1">
                                                 <div class="w-12 h-12 flex items-center justify-center shrink-0 text-deep-charcoal">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"/><path d="m9 14 2 2 4-4"/></svg>
                                                 </div>
                                                 <div>
                                                         <div class="flex items-center gap-3 mb-1">
                                                                 <span class="font-headings font-black text-2xl text-deep-charcoal leading-none">4</span>
-                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Soporte</h4>
+                                                                <h4 class="font-headings font-bold text-[17px] text-deep-charcoal leading-none">Revisión</h4>
                                                         </div>
-                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Te acompañamos con soporte técnico y mantenimiento continuo.</p>
+                                                        <p class="font-sans text-[13px] text-slate-500 leading-relaxed font-medium mt-2">Validamos tu información y aclaramos dudas antes de iniciar la producción.</p>
                                                 </div>
                                         </div>
 
                                 </div>
                         </div>
+
+                        <div class="mt-8 flex justify-end">
+                                <a href="/faq" class="inline-flex items-center gap-2 text-corporate-red font-bold text-[14px] uppercase tracking-wider hover:text-red-700 transition-colors group pr-4 md:pr-0">
+                                        Aprender más del proceso
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                </a>
+                        </div>
                 </div>
         </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="galeria" class="py-12 md:py-16 bg-slate-50 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="mb-10 text-center">
+                <div class="flex items-center justify-center gap-3 mb-3">
+                    <div class="w-8 h-[2px] bg-corporate-red"></div>
+                    <span class="font-sans font-bold text-xs tracking-widest text-corporate-red uppercase">Portafolio</span>
+                    <div class="w-8 h-[2px] bg-corporate-red"></div>
+                </div>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-deep-charcoal">Nuestros Trabajos</h2>
+                <p class="font-sans text-slate-500 mt-4 max-w-2xl mx-auto">Ejemplos reales de credenciales, gafetes y pases que hemos elaborado con la más alta calidad.</p>
+            </div>
+
+            <!-- Galería Animada -->
+            <style>
+                @keyframes scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+                .animate-scroll {
+                    animation: scroll 35s linear infinite;
+                }
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+            </style>
+            <div class="relative w-full overflow-hidden rounded-xl py-4">
+                <div class="flex w-max animate-scroll gap-4 hover:[animation-play-state:paused]">
+                    
+                    <!-- Set 1 (10 imágenes) -->
+                    <!-- Imagen 1 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/1729281686871-8dbf38ef-a796-4b98-baa9-2e4f0e3bfe19_1.jpg" alt="Muestra de Trabajo 1" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/FRONT.png" alt="Muestra de Trabajo 2" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/toppost.JPG" alt="Muestra de Trabajo 3" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 4 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/tarjetalealtadfrente.jpg" alt="Muestra de Trabajo 4" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 5 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/Frontal%20-%20copia3.JPG" alt="Muestra de Trabajo 5" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 6 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/DISE%C3%91O%20EL%20ENCANTO.jpg" alt="Muestra de Trabajo 6" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 7 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/Belenus%20frontal.jpg" alt="Muestra de Trabajo 7" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 8 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/cafe.JPG" alt="Muestra de Trabajo 8" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 9 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/posterior2.JPG" alt="Muestra de Trabajo 9" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 10 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/1742320144789-b8bd4a7c-35ed-4c19-a47d-2201ae9f298f_2.jpg" alt="Muestra de Trabajo 10" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+
+                    <!-- Set 2 duplicado (para el ciclo infinito de repetición) -->
+                    <!-- Imagen 1 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/1729281686871-8dbf38ef-a796-4b98-baa9-2e4f0e3bfe19_1.jpg" alt="Muestra de Trabajo 1" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/FRONT.png" alt="Muestra de Trabajo 2" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/toppost.JPG" alt="Muestra de Trabajo 3" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 4 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/tarjetalealtadfrente.jpg" alt="Muestra de Trabajo 4" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 5 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/Frontal%20-%20copia3.JPG" alt="Muestra de Trabajo 5" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 6 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/DISE%C3%91O%20EL%20ENCANTO.jpg" alt="Muestra de Trabajo 6" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 7 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/Belenus%20frontal.jpg" alt="Muestra de Trabajo 7" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 8 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/cafe.JPG" alt="Muestra de Trabajo 8" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 9 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/posterior2.JPG" alt="Muestra de Trabajo 9" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+                    <!-- Imagen 10 -->
+                    <div class="h-[220px] sm:h-[260px] shrink-0 group relative overflow-hidden rounded-xl bg-white shadow-sm border border-slate-100 p-2 flex justify-center items-center">
+                        <img src="/images/1742320144789-b8bd4a7c-35ed-4c19-a47d-2201ae9f298f_2.jpg" alt="Muestra de Trabajo 10" class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/525615429492" class="inline-flex items-center justify-center gap-2 bg-corporate-red text-white py-3 px-8 rounded-full font-bold uppercase tracking-wider text-sm shadow-[0_8px_20px_rgba(225,6,26,0.3)] hover:-translate-y-1 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" /></svg>
+                    Cotizar mi proyecto
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Venta de Equipos e Impresoras -->
     <section id="impresoras" class="py-12 md:py-16 bg-deep-charcoal px-6 border-y border-deep-charcoal">
@@ -835,7 +970,7 @@ import Footer from '../components/Footer.astro';
                         <picture class="contents">
     <source srcset="/images/impresoraindex2.avif" type="image/avif" />
     <source srcset="/images/impresoraindex2.webp" type="image/webp" />
-    <img src="/images/impresoraindex2.webp" alt="Impresoras PVC" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy" decoding="async" width="2000" height="2000" />
+    <img src="/images/impresoraindex2.webp" alt="Impresoras PVC" class="w-full h-full object-cover object-center absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy" decoding="async" width="2000" height="2000" />
 </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Impresoras</h4>
@@ -844,7 +979,7 @@ import Footer from '../components/Footer.astro';
                         <picture class="contents">
     <source srcset="/images/consumiblesindex2.avif" type="image/avif" />
     <source srcset="/images/consumiblesindex2.webp" type="image/webp" />
-    <img src="/images/consumiblesindex2.webp" alt="Consumibles Originales" class="w-full h-full object-cover absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy" decoding="async" width="2000" height="2000" />
+    <img src="/images/consumiblesindex2.webp" alt="Consumibles Originales" class="w-full h-full object-cover object-center absolute inset-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy" decoding="async" width="2000" height="2000" />
 </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/20 to-transparent pointer-events-none"></div>
                         <h4 class="font-headings font-bold text-white text-lg relative z-10 mt-auto pb-2">Consumibles</h4>
@@ -975,13 +1110,13 @@ import Footer from '../components/Footer.astro';
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                         </div>
-                        <p class="font-sans text-slate-600 text-sm leading-relaxed mb-8 italic">"Los consumibles originales que compramos aquí hacen que nuestras impresoras duren más y libren errores. El servicio de soporte técnico es impecable si surge alguna duda."</p>
+                        <p class="font-sans text-slate-600 text-sm leading-relaxed mb-8 italic">"Dejamos de batallar queriendo imprimir nosotros mismos y solicitamos la maquila a TotalCard. La calidad superó nuestras expectativas y nos ahorró bastante tiempo."</p>
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-500">C</div>
                         <div>
                             <h5 class="font-headings font-bold text-sm text-deep-charcoal">Claudia Vargas</h5>
-                            <p class="font-sans text-[11px] text-slate-400">Administradora Universitaria</p>
+                            <p class="font-sans text-[11px] text-slate-400">Coordinadora Escolar</p>
                         </div>
                     </div>
                 </div>
@@ -1103,7 +1238,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
                         <div class="overflow-hidden">
                             <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
-                                Sí, realizamos envíos de impresoras, consumibles y credencias por volumen a cualquier estado del país mediante paquetería segura y asegurada.
+                                Sí, realizamos envíos de credenciales impresas por maquila, así como equipos y consumibles a todo el país mediante paquetería segura. Si estás en la Ciudad de Querétaro, podemos entregar con aún mayor agilidad.
                             </div>
                         </div>
                     </div>
@@ -1147,7 +1282,7 @@ import Footer from '../components/Footer.astro';
                     <div class="relative z-10 grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.is-open]:grid-rows-[1fr]">
                         <div class="overflow-hidden">
                             <div class="px-7 pb-6 text-sm text-slate-500 leading-relaxed transition-colors duration-500 group-[.is-open]:text-white/90">
-                                Por supuesto. Solo comercializamos cintas (ribbons), tarjetas de PVC y kits de limpieza 100% originales para garantizar que mantengas la vida útil de tus equipos instalados.
+                                Por supuesto. Solo comercializamos cintas (ribbons), tarjetas de PVC y kits de limpieza 100% originales. Así, si decides imprimir in-house, garantizas la vida útil de tus equipos.
                             </div>
                         </div>
                     </div>
@@ -1168,8 +1303,8 @@ import Footer from '../components/Footer.astro';
 
         <div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div>
-                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿Listo para mejorar tu seguridad?</h2>
-                <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Contáctanos ahora y un asesor te guiará para elegir la impresora, tarjeta o sistema perfecto para tu empresa.</p>
+                <h2 class="font-headings font-bold text-3xl md:text-4xl text-white mb-3">¿Listo para obtener tus credenciales?</h2>
+                <p class="font-sans text-white/80 text-sm md:text-base max-w-lg">Contáctanos ahora y un asesor en Querétaro te guiará para obtener tu maquila de impresión o los equipos que necesitas para tu empresa.</p>
             </div>
             <div class="shrink-0">
                 <a href="https://wa.me/525615429492" class="more-button alt-button inline-flex shadow-lg hover:shadow-xl transition-all">

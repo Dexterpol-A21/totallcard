@@ -498,7 +498,7 @@ import Footer from '../components/Footer.astro';
                         </div>
                     </div>
                     
-                    <style>
+                    <style is:global>
                         @keyframes ripple {
                             0% { width: 2rem; height: 2rem; border-color: rgba(56, 189, 248, 0.8); opacity: 1; }
                             100% { width: 12rem; height: 12rem; border-color: rgba(56, 189, 248, 0); opacity: 0; }
@@ -752,7 +752,7 @@ import Footer from '../components/Footer.astro';
                                 <div class="absolute top-0 right-0 w-32 h-32 bg-corporate-red/5 rounded-bl-[100px] -z-0 group-hover:bg-corporate-red/10 transition-colors"></div>
                             </div>
                         </div>
-                        <style>
+                        <style is:global>
                             @keyframes swayAnimation { 0% { transform: rotate(-5deg); } 100% { transform: rotate(5deg); } }
                             @keyframes yoyoStringScale { 0%, 100% { transform: scaleY(0.2); } 50% { transform: scaleY(1); } }
                             @keyframes yoyoCardMove { 0%, 100% { transform: translateY(-60px); } 50% { transform: translateY(0); } }

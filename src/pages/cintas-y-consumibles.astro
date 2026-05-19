@@ -155,7 +155,7 @@ import Footer from '../components/Footer.astro';
                             <div class="w-1/2 h-1.5 md:h-2 bg-slate-100 rounded relative z-10"></div>
                         </div>
 
-                        <style>
+                        <style is:global>
                             @keyframes stream-ribbon {
                                 0% { transform: translateX(0); }
                                 100% { transform: translateX(-50%); }
@@ -260,7 +260,7 @@ import Footer from '../components/Footer.astro';
                             <div class="absolute -left-3 top-[-10%] bottom-[-10%] w-6 bg-slate-400/90 rounded-full shadow-lg border-2 border-slate-300 animate-pulse"></div>
                             <div class="absolute -right-3 top-[-10%] bottom-[-10%] w-6 bg-slate-400/90 rounded-full shadow-lg border-2 border-slate-300 animate-pulse" style="animation-delay: 1s;"></div>
                         </div>
-                        <style>
+                        <style is:global>
                             @keyframes slide {
                                 0% { transform: translateX(0); }
                                 100% { transform: translateX(-50%); }

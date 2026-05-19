@@ -26,7 +26,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
   }, []);
 
   return (
-    <div className="lanyard-wrapper" style={{ width: '100%', height: '100%', pointerEvents: 'none' }}>
+    <div className="lanyard-wrapper" style={{ position: 'relative', zIndex: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', transform: 'scale(1)', transformOrigin: 'center', pointerEvents: 'none' }}>
       <Canvas
         camera={{ position: position, fov: fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
@@ -89,7 +89,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }) {
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 };
   const { nodes, materials } = useGLTF(cardGLB);
   const texture = useTexture(lanyardTexture);
-  const logoTexture = useTexture('/images/logoNoF.png');
+  const logoTexture = useTexture('/images/logoNoF.webp');
   
   // Configure the texture so it maps correctly onto the glTF UVs
   // but since we are using Decal, we don't strictly need to flip
